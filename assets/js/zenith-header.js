@@ -1,5 +1,7 @@
 jQuery(document).ready(function ($) {
 
+    $('header#masthead.header-style-vertical #vertical-header-wrap').fadeIn();
+
     /* -------------------------------------------------------------------------
      * Header: Custom A - Split Primary Menu (sticky.js)
      * ---------------------------------------------------------------------- */
@@ -15,7 +17,7 @@ jQuery(document).ready(function ($) {
   
     $('img.custom-logo').addClass('animated');
   
-    $("header#masthead #slim-header-wrap").sticky({
+    $("header#masthead:not(.header-style-vertical) #slim-header-wrap").sticky({
         topSpacing: $('#wpadminbar').length > 0 ? 32 : 0,
         zIndex:9999,
     }).on('sticky-start', function() { 
@@ -74,7 +76,7 @@ jQuery(document).ready(function ($) {
      * Header: Mobile Menu - Submenu Expansion / Contraction
      * ---------------------------------------------------------------------- */
 
-    $( '#mobile-menu-wrap ul#mobile-menu > li.menu-item-has-children').prepend('<span style="font-family: Helvetica;">+</span>');
+    $( '#mobile-menu-wrap ul#mobile-menu > li.menu-item-has-children').prepend('<span style="font-family: Helvetica !important;">+</span>');
     $( "#mobile-menu-wrap ul#mobile-menu > li.menu-item-has-children > span" ).on( 'click', function() {
         
         $(this).stop().toggleClass('expanded').parent().find('ul.sub-menu').stop().slideToggle();
@@ -174,5 +176,57 @@ jQuery(document).ready(function ($) {
         color: '#333333',
         position: 'right'
     });
+    
+    /* -------------------------------------------------------------------------
+     * Vertical Navbar Main Menu: Expand Items
+     * ---------------------------------------------------------------------- */
+    
+    $('#vertical-header-wrap ul.vertical-header-menu > li.menu-item-has-children ul.sub-menu').before( '<span style="font-family: Helvetica !important;">○</span>' );
+    $( '#vertical-header-wrap ul.vertical-header-menu > li.menu-item-has-children > span' ).on( 'click', function() {
+        if ( $(this).hasClass('expanded') ) {
+            $(this).stop().html('○').toggleClass('expanded').parent().find('ul.sub-menu').stop().slideToggle();   
+        } else {
+            $(this).stop().html('●').toggleClass('expanded').parent().find('ul.sub-menu').stop().slideToggle();   
+        }
+    });
+
+    /* -------------------------------------------------------------------------
+     * Vertical Navbar Slide
+     * ---------------------------------------------------------------------- */
+    
+    var default_state;
+    default_state = ( zenith_local.vert_state == 'always' ) ? 'open' : 'closed';
+    
+    $('#vertical-menu-toggle-wrap').bigSlide({
+        menu: 'header#masthead.header-style-vertical #vertical-header-wrap',
+        push: '#vertical-navbar-push',
+        menuWidth: '280px',
+        side: 'left',
+        state: default_state,
+        beforeOpen: function() {
+            $('#vertical-menu-toggle .bar').toggleClass('animate');
+            $('#vertical-navbar-push,header#masthead.header-style-vertical #vertical-header-wrap').addClass('expanded');
+        },
+        afterClose: function() {
+            $('#vertical-navbar-push,header#masthead.header-style-vertical #vertical-header-wrap').removeClass('expanded');
+            $('#vertical-menu-toggle .bar').toggleClass('animate');
+        }
+    });
+   
+    /* -------------------------------------------------------------------------
+     * Vertical Navbar slimScroll Menu
+     * ---------------------------------------------------------------------- */
+    $('#vert-nav-slim-scroll-wrap').slimScroll({
+        height: $(window).height() - $('header#masthead.header-style-vertical div#vertical-header-wrap #custom-logo-wrap').outerHeight() - $('header#masthead.header-style-vertical .navbar-social').outerHeight(),
+        size: '0px',
+        railVisible: false,
+        railColor: '#e6e6e6',
+        railOpacity: 1.0,
+        color: '#333333',
+        position: 'right'
+    });
+    
+    $('#vert-nav-slim-scroll-wrap ul#vertical-header-primary').css('padding-bottom', $('div#vertical-header-wrap #footer-branding-wrap').outerHeight() + 220 );
+
         
 });

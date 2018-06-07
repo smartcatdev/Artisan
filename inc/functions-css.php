@@ -40,7 +40,8 @@ function zenith_wp_head_styles() { ?>
         .nav-pills > li > a,
         .edd-table td.edd_purchase_details a,
         table.edd-table td a.edd_download_file_link,
-        form.edd_form .edd-submit {
+        form.edd_form .edd-submit,
+        ul.vertical-header-menu > li a {
             font-family: <?php echo esc_attr( get_theme_mod( ZENITH_OPTIONS::FONT_PRIMARY, ZENITH_DEFAULTS::FONT_PRIMARY ) ); ?>;
         }
 
@@ -55,7 +56,8 @@ function zenith_wp_head_styles() { ?>
         <?php if ( get_theme_mod( ZENITH_OPTIONS::NAVBAR_LINKS_FONT_FAMILY, ZENITH_DEFAULTS::NAVBAR_LINKS_FONT_FAMILY ) == 'secondary' ) : ?>
 
             ul#mobile-menu li a,
-            ul.slim-header-menu > li a {
+            ul.slim-header-menu > li a,
+            ul.vertical-header-menu > li a {
                 font-family: <?php echo esc_attr( get_theme_mod( ZENITH_OPTIONS::FONT_SECONDARY, ZENITH_DEFAULTS::FONT_SECONDARY ) ); ?>;
             }
 
@@ -135,7 +137,8 @@ function zenith_wp_head_styles() { ?>
         table.edd-table td a.edd_download_file_link:focus,
         form.edd_form .edd-submit.button,
         form.edd_form .edd-submit.button:hover,
-        form.edd_form .edd-submit.button:focus {
+        form.edd_form .edd-submit.button:focus,
+        div#vertical-header-wrap ul#mobile-menu:before {
             background-color: <?php echo esc_attr( $theme_colors['primary'] ); ?>;
         }
         
@@ -217,7 +220,8 @@ function zenith_wp_head_styles() { ?>
 
         <?php endif; ?>
 
-        ul.slim-header-menu > li.menu-item-has-children > ul.sub-menu {
+        ul.slim-header-menu > li.menu-item-has-children > ul.sub-menu,
+        header#masthead.header-style-vertical #vertical-header-wrap {
             background-color: <?php echo esc_attr( $theme_colors['navbar_bg'] ); ?>;
         }
 
@@ -228,7 +232,9 @@ function zenith_wp_head_styles() { ?>
         ul.slim-header-menu > li.current-menu-item > a,
         header#masthead.header-style-split .navbar-social #split-social-trigger,
         div.site-branding a,
-        ul#mobile-menu li a {
+        ul#mobile-menu li a,
+        #vertical-header-wrap,
+        ul#vertical-header-primary li a {
             color: <?php echo esc_attr( $theme_colors['navbar_fg'] ); ?>;
         }
         
@@ -236,10 +242,11 @@ function zenith_wp_head_styles() { ?>
             color: <?php echo esc_attr( $theme_colors['navbar_fg'] ); ?> !important;
         }
 
-        a#split-social-trigger path {
+        a#split-social-trigger path,
+        div#vertical-header-wrap #footer-branding-wrap svg path {
             fill: <?php echo esc_attr( $theme_colors['navbar_fg'] ); ?>;
         }
-
+         
         #mobile-menu-trigger .bar,
         #mobile-menu-trigger .bar:before,
         #mobile-menu-trigger .bar:after {
@@ -274,12 +281,14 @@ function zenith_wp_head_styles() { ?>
         }
 
         header#masthead.header-style-slim .navbar-social a.navbar-icon,
-        header#masthead.header-style-split div#split-social-slide-in a.navbar-icon {
+        header#masthead.header-style-split div#split-social-slide-in a.navbar-icon,
+        header#masthead.header-style-vertical .navbar-social a.navbar-icon {
             color: <?php echo esc_attr( $theme_colors['social_fg'] ); ?>;
         }
 
         header#masthead.header-style-slim .navbar-social a.navbar-icon:hover,
-        header#masthead.header-style-split div#split-social-slide-in a.navbar-icon:hover {
+        header#masthead.header-style-split div#split-social-slide-in a.navbar-icon:hover,
+        header#masthead.header-style-vertical .navbar-social a.navbar-icon:hover {
             color: <?php echo esc_attr( $theme_colors['social_fg_hov'] ); ?>;
         }
        
@@ -323,6 +332,45 @@ function zenith_wp_head_styles() { ?>
             color: <?php echo esc_attr( $theme_colors['footer_fg'] ); ?>;
         }
         
+        footer span.zenith_by {
+            border-color: <?php echo esc_attr( $theme_colors['footer_fg'] ); ?> !important;
+        }
+        
+        #footer-branding-wrap svg path {
+            fill: <?php echo esc_attr( $theme_colors['footer_fg'] ); ?>;
+        }
+        
+        /* ----- Vertical Navbar -------------------------------------------- */
+        
+        #vertical-header-menu-wrap {
+            border-color: <?php echo esc_attr( zenith_hex2rgba( $theme_colors['navbar_fg'], .35 ) ); ?>;
+        }
+        
+        #vertical-header-wrap ul.vertical-header-menu > li:before {
+            background-color: <?php echo esc_attr( zenith_hex2rgba( $theme_colors['navbar_fg'], .65 ) ); ?>;
+        }
+        
+        div#vertical-header-wrap #footer-branding-wrap {
+            background: -moz-linear-gradient(top, rgba(255,255,255,0.0) 0%, <?php echo esc_attr( zenith_hex2rgba( $theme_colors['navbar_bg'] ) ); ?> 30%, <?php echo esc_attr( zenith_hex2rgba( $theme_colors['navbar_bg'] ) ); ?> 100%);
+            background: -webkit-linear-gradient(top, rgba(255,255,255,0.0) 0%, <?php echo esc_attr( zenith_hex2rgba( $theme_colors['navbar_bg'] ) ); ?> 30%, <?php echo esc_attr( zenith_hex2rgba( $theme_colors['navbar_bg'] ) ); ?> 100%);
+            background: linear-gradient(to bottom, rgba(255,255,255,0.0) 0%, <?php echo esc_attr( zenith_hex2rgba( $theme_colors['navbar_bg'] ) ); ?> 30%, <?php echo esc_attr( zenith_hex2rgba( $theme_colors['navbar_bg'] ) ); ?> 100%);
+            /*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4dffffff', endColorstr='#ffffff',GradientType=0 );*/
+        }
+        
+        span#vertical-menu-toggle-wrap {
+            background-color: <?php echo esc_attr(get_theme_mod( ZENITH_OPTIONS::VERT_NAVBAR_TAB_BACKGROUND, ZENITH_DEFAULTS::VERT_NAVBAR_TAB_BACKGROUND ) ); ?>;
+        }
+        
+        span#vertical-menu-toggle-wrap #vertical-menu-toggle .bar,
+        span#vertical-menu-toggle-wrap #vertical-menu-toggle .bar:before,
+        span#vertical-menu-toggle-wrap #vertical-menu-toggle .bar:after {
+            background-color: <?php echo esc_attr(get_theme_mod( ZENITH_OPTIONS::VERT_NAVBAR_TAB_FOREGROUND, ZENITH_DEFAULTS::VERT_NAVBAR_TAB_FOREGROUND ) ); ?>;
+        }
+        
+        div#vertical-header-wrap #footer-branding-wrap img.custom-logo.alternate {
+            height: <?php echo intval( get_theme_mod( ZENITH_OPTIONS::FOOTER_ALTERNATE_LOGO_HEIGHT, ZENITH_DEFAULTS::FOOTER_ALTERNATE_LOGO_HEIGHT ) ); ?>px;
+        }
+        
         /* ----- Slide-in Cart Tab ------------------------------------------ */
         
         div#cart-panel-trigger {
@@ -351,6 +399,10 @@ function zenith_wp_head_styles() { ?>
             div#slim-header-wrap,
             div#banner-header-wrap {
                 box-shadow: 0px 0px 10px 0px rgba(0,0,0,.75);
+            }
+            
+            header#masthead.header-style-vertical #vertical-header-wrap {
+                box-shadow: 0px 0px 15px 5px rgba(0,0,0,0.25);
             }
             
         <?php endif; ?>
@@ -493,7 +545,8 @@ function zenith_wp_head_styles() { ?>
         }
 
         ul#mobile-menu li a,
-        ul.slim-header-menu > li a {
+        ul.slim-header-menu > li a,
+        ul.vertical-header-menu > li {
             font-size: <?php echo intval( get_theme_mod( ZENITH_OPTIONS::NAVBAR_LINKS_FONT_SIZE, ZENITH_DEFAULTS::NAVBAR_LINKS_FONT_SIZE ) ); ?>px;
         }
 
@@ -584,7 +637,68 @@ function zenith_wp_head_styles() { ?>
             <?php endif; ?>
             
         <?php endif; ?>
+                
+        /* ----- Vertical Navbar: Logo Settings ----------------------------- */
         
+        header#masthead.header-style-vertical div#vertical-header-wrap #custom-logo-wrap img.custom-logo {
+            height: <?php echo intval( get_theme_mod( ZENITH_OPTIONS::NAVBAR_LOGO_HEIGHT_DSK, ZENITH_DEFAULTS::NAVBAR_LOGO_HEIGHT_DSK ) ); ?>px;
+        }
+        
+        header#masthead.header-style-vertical div#vertical-header-wrap #custom-logo-wrap {
+            margin-top: <?php echo intval( get_theme_mod( ZENITH_OPTIONS::NAVBAR_BRANDING_SPACE_TOP_DSK, ZENITH_DEFAULTS::NAVBAR_BRANDING_SPACE_TOP_DSK ) ); ?>px;
+            margin-bottom: <?php echo intval( get_theme_mod( ZENITH_OPTIONS::NAVBAR_BRANDING_SPACE_BOTTOM_DSK, ZENITH_DEFAULTS::NAVBAR_BRANDING_SPACE_BOTTOM_DSK ) ); ?>px;
+        }
+        
+        @media (max-width:991px) {
+            header#masthead.header-style-vertical #custom-logo-wrap {
+                margin-top: 0;
+                margin-bottom: 0;
+                padding-top: <?php echo intval( get_theme_mod( ZENITH_OPTIONS::NAVBAR_BRANDING_SPACE_TOP_MBL, ZENITH_DEFAULTS::NAVBAR_BRANDING_SPACE_TOP_MBL ) ); ?>px !important;
+                padding-bottom: <?php echo intval( get_theme_mod( ZENITH_OPTIONS::NAVBAR_BRANDING_SPACE_BOTTOM_MBL, ZENITH_DEFAULTS::NAVBAR_BRANDING_SPACE_BOTTOM_MBL ) ); ?>px !important;
+            }
+        }
+        
+        <?php if ( get_theme_mod( ZENITH_OPTIONS::NAVBAR_MENU_ALIGNMENT, ZENITH_DEFAULTS::NAVBAR_MENU_ALIGNMENT ) == 'right' || get_theme_mod( ZENITH_OPTIONS::NAVBAR_MENU_ALIGNMENT, ZENITH_DEFAULTS::NAVBAR_MENU_ALIGNMENT ) == 'center' ) : ?>
+        
+            <?php if ( get_theme_mod( ZENITH_OPTIONS::NAVBAR_MENU_ALIGNMENT, ZENITH_DEFAULTS::NAVBAR_MENU_ALIGNMENT ) == 'right' ) : ?>
+            
+                header#masthead.header-style-vertical #vertical-header-wrap ul#vertical-header-primary {
+                    text-align: right;
+                }
+                
+                #vertical-header-wrap ul.vertical-header-menu > li {
+                    padding-left: 0;
+                    padding-right: 15px;
+                }
+                
+                #vertical-header-wrap ul.vertical-header-menu > li:before {
+                    left: unset;
+                    right: 0;
+                }
+            
+            <?php else : ?>
+        
+                header#masthead.header-style-vertical #vertical-header-wrap ul#vertical-header-primary {
+                    text-align: center;
+                }
+                
+                #vertical-header-wrap ul.vertical-header-menu > li {
+                    padding-left: 0 !important;
+                    padding-right: 0 !important;
+                }
+                
+                #vertical-header-wrap ul.vertical-header-menu > li:before {
+                    visibility: hidden !important;
+                }
+                
+            <?php endif; ?>
+            
+        <?php endif; ?>
+                
+        div#vertical-header-wrap #footer-branding-wrap {
+            font-size: <?php echo intval( get_theme_mod( ZENITH_OPTIONS::FOOTER_COPYRIGHT_TAGLINE_FONT_SIZE, ZENITH_DEFAULTS::FOOTER_COPYRIGHT_TAGLINE_FONT_SIZE ) ); ?>px;
+        }
+                
         /* ---------------------------------------------------------------------
          * Homepage
          * ------------------------------------------------------------------ */

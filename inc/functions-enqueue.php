@@ -54,6 +54,7 @@ function zenith_scripts() {
         'parallax_texture_layer'        => $parallax_preset['texture_layer'],
         'parallax_color_layer'          => $parallax_preset['color_layer'],
         'parallax_content_layer'        => $parallax_preset['content_layer'],
+        'vert_state'                    => get_theme_mod( ZENITH_OPTIONS::VERT_NAVBAR_DISPLAY_SETTING, ZENITH_DEFAULTS::VERT_NAVBAR_DISPLAY_SETTING ),
     );
     $zenith_general_JS = array(
         'ease_scroll_toggle'            => get_theme_mod( ZENITH_OPTIONS::EASE_SCROLL_TOGGLE, ZENITH_DEFAULTS::EASE_SCROLL_TOGGLE ) ? 'yes' : 'no',

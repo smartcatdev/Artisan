@@ -11,9 +11,15 @@
 
 ?>
 
-	</div><!-- #content -->
+    </div><!-- #content -->
 
-	<?php get_template_part( 'template-parts/footer', 'slim' ); ?>
+    <?php if ( get_theme_mod( ZENITH_OPTIONS::NAVBAR_STYLE, ZENITH_DEFAULTS::NAVBAR_STYLE ) != 'vertical' ) : ?>
+        <?php get_template_part( 'template-parts/footer', 'slim' ); ?>
+    <?php endif; ?>
+
+    <?php if ( get_theme_mod( ZENITH_OPTIONS::NAVBAR_STYLE, ZENITH_DEFAULTS::NAVBAR_STYLE ) == 'vertical' ) : ?>
+        </div>
+    <?php endif; ?>
 
 </div><!-- #page -->
 

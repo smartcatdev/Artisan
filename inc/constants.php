@@ -100,6 +100,10 @@ interface ZENITH_OPTIONS {
             NAVBAR_FINAL_LINK_ROUNDED               = 'navbar_final_link_rounded',
             NAVBAR_FINAL_LINK_FILL                  = 'navbar_final_link_fill',
             
+            VERT_NAVBAR_DISPLAY_SETTING             = 'zenith_vertical_navbar_display_setting',
+            VERT_NAVBAR_TAB_BACKGROUND              = 'zenith_vertical_navbar_tab_background',
+            VERT_NAVBAR_TAB_FOREGROUND              = 'zenith_vertical_navbar_tab_foreground',
+    
             NAVBAR_SHOW_SOCIAL                      = 'navbar_show_social',
             SOCIAL_URL_1                            = 'social_icon_1_url',
             SOCIAL_ICON_1                           = 'social_icon_1_icon',
@@ -243,7 +247,7 @@ interface ZENITH_DEFAULTS {
             BLOG_CARD_FONT_SIZE_MBL                 = 20,
             BLOG_META_FONT_SIZE                     = 12,
             
-            NAVBAR_STYLE                            = 'slim_left',
+            NAVBAR_STYLE                            = 'vertical',
             NAVBAR_HIDE_TAGLINE                     = true,
             NAVBAR_SITE_TITLE_FONT_FAMILY           = 'secondary',
             NAVBAR_SITE_TITLE_FONT_SIZE             = 32,
@@ -276,6 +280,10 @@ interface ZENITH_DEFAULTS {
             NAVBAR_FINAL_LINK_ROUNDED               = true,
             NAVBAR_FINAL_LINK_FILL                  = true,
             
+            VERT_NAVBAR_DISPLAY_SETTING             = 'toggled',
+            VERT_NAVBAR_TAB_BACKGROUND              = '#ffffff',
+            VERT_NAVBAR_TAB_FOREGROUND              = '#141414',
+            
             NAVBAR_SHOW_SOCIAL                      = false,
             SOCIAL_URL_1                            = '',
             SOCIAL_ICON_1                           = '',
@@ -289,13 +297,13 @@ interface ZENITH_DEFAULTS {
             SOCIAL_ICON_5                           = '',
             
             NAVBAR_BG_STYLE                         = 'color',
-            NAVBAR_BG_COLOR                         = '#141414',
-            NAVBAR_FG_COLOR                         = '#ffffff',
-            NAVBAR_MENU_BG_COLOR                    = '#141414',
-            NAVBAR_MENU_FG_COLOR                    = '#ffffff',
+            NAVBAR_BG_COLOR                         = '#ffffff',
+            NAVBAR_FG_COLOR                         = '#141414',
+            NAVBAR_MENU_BG_COLOR                    = '#ffffff',
+            NAVBAR_MENU_FG_COLOR                    = '#141414',
             NAVBAR_BG_IMAGE                         = '',
-            NAVBAR_SOCIAL_BG_COLOR                  = '#141414',
-            NAVBAR_SOCIAL_FG_COLOR                  = '#ffffff',
+            NAVBAR_SOCIAL_BG_COLOR                  = '#ffffff',
+            NAVBAR_SOCIAL_FG_COLOR                  = '#141414',
             NAVBAR_SOCIAL_FG_COLOR_HOVER            = '#348aa7',
             
             COLOR_SKIN_PRIMARY                      = '#f04265',
