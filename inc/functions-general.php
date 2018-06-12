@@ -147,3 +147,8 @@ function zenith_theme_path( $path = null ) {
 function zenith_theme_url( $url = null ) {
     return trailingslashit( get_template_directory_uri() ) . $url;
 }
+
+add_action( 'after_setup_theme', 'zenith_load_acid_customize', 99 );  
+function zenith_load_acid_customize() { 
+    require get_template_directory() . '/inc/functions-customizer.php';
+}
