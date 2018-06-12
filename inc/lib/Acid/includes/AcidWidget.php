@@ -25,7 +25,7 @@ if ( !class_exists( 'AcidWidget' ) ) {
             if ( file_exists( $args[ 'output_file' ] ) ) {
                 $this->file = $args[ 'output_file' ];
             } else {
-                _doing_it_wrong( '__construct()', __( 'The file path you specified is incorrect in ' . get_called_class(), 'acid' ), self::VERSION );
+                _doing_it_wrong( '__construct()', sprintf( __( 'The file path you specified is incorrect in %', 'acid' ), get_called_class() ), self::VERSION );
                 return;
             }
 
