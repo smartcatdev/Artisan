@@ -5,7 +5,7 @@
  *
  * @package Zenith
  */
-include_once get_template_directory() . '/inc/lib/Acid/acid.php';
+if ( !class_exists( 'AcidConfig' ) ) { include_once get_template_directory() . '/inc/lib/Acid/acid.php'; }
 
 /**
  * Add postMessage support for site title and description for the Theme Customizer.
