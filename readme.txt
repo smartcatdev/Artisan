@@ -143,22 +143,27 @@ Zenith includes support for Infinite Scroll in Jetpack.
     - License               MIT
     - License URL           http://opensource.org/licenses/MIT 
 
-13. Underscores starter theme - Copyright: Automattic, automattic.com 
+13. slick
+    - URL                   https://github.com/kenwheeler/slick/blob/master/LICENSE
+    - License               MIT
+    - License URL           http://opensource.org/licenses/MIT 
+
+14. Underscores starter theme - Copyright: Automattic, automattic.com 
     - URL                   http://underscores.me/
     - Licence               Licensed under GPLv2 or later    
     - Licence URL           http://www.gnu.org/licenses/gpl.html
 
-14. Google Fonts
+15. Google Fonts
     - URL                   https://www.google.com/fonts/
     - License               SIL Open Font
     - License URL           http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL
 
-15. TGM Plugin Activation  
+16. TGM Plugin Activation  
     - URL                   http://tgmpluginactivation.com/
     - License               Licensed under GPLv2 or later
     - License URL           http://www.gnu.org/licenses/gpl.html
 
-16. Images
+17. Images
     - URL                   https://pixabay.com/en/decor-design-creative-business-2618511/          
                             https://pixabay.com/en/reichstag-berlin-building-bundestag-1615165/ 
                             https://pixabay.com/en/poster-mockup-interior-wall-desk-2857423/
@@ -166,11 +171,12 @@ Zenith includes support for Infinite Scroll in Jetpack.
                             https://pixabay.com/en/woodtype-wood-blocks-wood-type-type-846089/
                             https://pixabay.com/en/office-paper-business-accounting-3309862/
                             https://pixabay.com/en/workplace-team-business-meeting-1245776/
+                            https://pixabay.com/en/portrait-people-woman-one-grown-up-3337796/
 
     - License               CC0
     - License URL           http://creativecommons.org/publicdomain/zero/1.0/deed.en
 
-17. TRT Customizer Pro
+18. TRT Customizer Pro
     - URL                   https://github.com/justintadlock/trt-customizer-pro
     - License               Licensed under GPLv2 or later
     - License URL           http://www.gnu.org/licenses/gpl.html

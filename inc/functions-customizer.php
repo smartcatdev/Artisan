@@ -267,7 +267,7 @@ $data = array (
                             'label'         => __( 'Header - Style', 'zenith' ),
                             'default'       => ZENITH_DEFAULTS::CUSTOM_HEADER_STYLE_TOGGLE,
                             'choices'   => array (
-                                'split'                 => __( 'Angled & Split', 'zenith' ),
+                                'social'                => __( 'Parallax - Social', 'zenith' ),
                                 'parallax_vertical'     => __( 'Parallax - Vertical Scroll', 'zenith' ),
                                 'parallax_layers'       => __( 'Parallax - Perspective Layers', 'zenith' ),
                             )
@@ -330,6 +330,26 @@ $data = array (
                             'label'         => __( 'Perspective Layers - Pattern (Opacity)', 'zenith' ),
                             'description'   => __( '0.0 for transparent, up to 1.0 for solid/opaque', 'zenith' ),
                             'default'       => ZENITH_DEFAULTS::CUSTOM_HEADER_TEXTURE_OPAC,
+                        ),
+                        ZENITH_OPTIONS::SOCIAL_HEADER_ALIGNMENT => array (
+                            'type'          => 'radio-toggle',
+                            'label'         => __( 'Parallax Social - Content Alignment', 'zenith' ),
+                            'default'       => ZENITH_DEFAULTS::SOCIAL_HEADER_ALIGNMENT,
+                            'choices'   => array (
+                                'flex-start'        => __( 'Left Side', 'zenith' ),
+                                'center'            => __( 'Centered', 'zenith' ),
+                                'flex-end'          => __( 'Right Side', 'zenith' ),
+                            )
+                        ),
+                        ZENITH_OPTIONS::SOCIAL_HEADER_SHOW_SOCIAL => array (
+                            'type'          => 'toggle',
+                            'label'         => __( 'Parallax Social - Show Social Icons?', 'zenith' ),
+                            'default'       => ZENITH_DEFAULTS::SOCIAL_HEADER_SHOW_SOCIAL,
+                        ),
+                        ZENITH_OPTIONS::SOCIAL_HEADER_SHOW_SCROLL_TAB => array (
+                            'type'          => 'toggle',
+                            'label'         => __( 'Parallax Social - Show Scroll Tab?', 'zenith' ),
+                            'default'       => ZENITH_DEFAULTS::SOCIAL_HEADER_SHOW_SCROLL_TAB,
                         ),
                         
                     )

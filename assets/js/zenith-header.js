@@ -228,5 +228,13 @@ jQuery(document).ready(function ($) {
     
     $('#vert-nav-slim-scroll-wrap ul#vertical-header-primary').css('padding-bottom', $('div#vertical-header-wrap #footer-branding-wrap').outerHeight() + 220 );
 
-        
+    /* -------------------------------------------------------------------------
+     * Custom Header: Social Scroll Down Tab
+     * ---------------------------------------------------------------------- */
+    $('#down-scroll-tab-trigger,#down-scroll-tab-trigger span').on( 'click', function() {
+        $('html, body').stop().animate({
+            scrollTop: $('#zenith-custom-header').offset().top + $('#zenith-custom-header').outerHeight() - ( $('body').hasClass('admin-bar') ? 32 : 0 )
+        }, 1000);
+    });
+    
 });
