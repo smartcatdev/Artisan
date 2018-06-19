@@ -99,7 +99,7 @@ final class Zenith_Customize {
         wp_enqueue_style( 'zenith-pro-customize-controls', trailingslashit( get_template_directory_uri() ) . 'inc/lib/trt-customize/companion-plugin/customize-controls.css' );
         
         wp_localize_script( 'zenith-pro-customize-controls', 'zenith_customize', array(
-            'ajax_url'                  => admin_url( 'admin-ajax.php' ),
+            'ajax_url'                  => esc_url( admin_url( 'admin-ajax.php' ) ),
             'zenith_dismiss_nonce'      => wp_create_nonce( 'zenith_dismiss_nonce' )
         ) );
         

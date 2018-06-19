@@ -30,10 +30,10 @@ function zenith_custom_header_setup() {
     ) ) );
     
     register_default_headers( array(
-        'office' => array(
+        'woman' => array(
             'url'           => get_template_directory_uri() . '/assets/images/header-demo_1.jpg',
             'thumbnail_url' => get_template_directory_uri() . '/assets/images/header-demo_1.jpg',
-            'description'   => __( 'Office Interior', 'zenith' )
+            'description'   => __( 'Woman and Reflection', 'zenith' )
         ), 
         'architecture' => array(
             'url'           => get_template_directory_uri() . '/assets/images/header-demo_2.jpg',

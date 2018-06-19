@@ -58,7 +58,7 @@ if ( !function_exists( 'zenith_setup' ) ) :
     function zenith_setup() {
     
         if( !defined( 'ZENITH_VERSION' ) ) :
-            define( 'ZENITH_VERSION', '1.2.0' );
+            define( 'ZENITH_VERSION', '1.0.0' );
         endif;
         
         /*

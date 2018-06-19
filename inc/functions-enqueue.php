@@ -41,9 +41,9 @@ function zenith_scripts() {
     wp_enqueue_script( 'jquery-slimScroll', get_template_directory_uri() . '/assets/lib/slim-scroll/jquery.slimscroll.min.js', array('jquery'), ZENITH_VERSION, true );
     wp_enqueue_script( 'jquery-parallax', get_template_directory_uri() . '/assets/lib/jquery-parallax/jquery.parallax.js', array('jquery'), ZENITH_VERSION, false );
     wp_enqueue_script( 'zenith-parallax', get_template_directory_uri() . '/assets/lib/zenith-parallax/parallax.js', array('jquery'), ZENITH_VERSION, true );
-    wp_enqueue_script( 'zenith-general', get_template_directory_uri() . '/assets/js/zenith-general.js', array('jquery', 'wow', 'jquery-textillate'), ZENITH_VERSION, true );
-    wp_enqueue_script( 'zenith-header', get_template_directory_uri() . '/assets/js/zenith-header.js', array('jquery'), ZENITH_VERSION, false );
-    wp_enqueue_script( 'zenith-resize', get_template_directory_uri() . '/assets/js/zenith-resize.js', array('jquery','masonry'), ZENITH_VERSION, true );
+    wp_enqueue_script( 'zenith-general', get_template_directory_uri() . '/assets/js/zenith-general.js', array('jquery', 'wow', 'jquery-textillate', 'jquery-easeScroll', 'slick' ), ZENITH_VERSION, true );
+    wp_enqueue_script( 'zenith-header', get_template_directory_uri() . '/assets/js/zenith-header.js', array('jquery', 'jquery-parallax', 'jquery-sticky', 'bigSlide', 'jquery-slimScroll' ), ZENITH_VERSION, false );
+    wp_enqueue_script( 'zenith-resize', get_template_directory_uri() . '/assets/js/zenith-resize.js', array('jquery', 'masonry', 'bootstrap-toolkit'), ZENITH_VERSION, true );
     
     // _s
     wp_enqueue_script( 'zenith-navigation', get_template_directory_uri() . '/assets/js/navigation.js', array(), ZENITH_VERSION, true );
@@ -52,17 +52,17 @@ function zenith_scripts() {
     // Localization Data
     $parallax_preset = zenith_get_parallax_preset();
     $zenith_header_JS = array(
-        'parallax_image_layer'          => $parallax_preset['image_layer'],
-        'parallax_texture_layer'        => $parallax_preset['texture_layer'],
-        'parallax_color_layer'          => $parallax_preset['color_layer'],
-        'parallax_content_layer'        => $parallax_preset['content_layer'],
-        'vert_state'                    => get_theme_mod( ZENITH_OPTIONS::VERT_NAVBAR_DISPLAY_SETTING, ZENITH_DEFAULTS::VERT_NAVBAR_DISPLAY_SETTING ),
+        'parallax_image_layer'          => esc_js( $parallax_preset['image_layer'] ),
+        'parallax_texture_layer'        => esc_js( $parallax_preset['texture_layer'] ),
+        'parallax_color_layer'          => esc_js( $parallax_preset['color_layer'] ),
+        'parallax_content_layer'        => esc_js( $parallax_preset['content_layer'] ),
+        'vert_state'                    => esc_js( get_theme_mod( ZENITH_OPTIONS::VERT_NAVBAR_DISPLAY_SETTING, ZENITH_DEFAULTS::VERT_NAVBAR_DISPLAY_SETTING ) ),
     );
     $zenith_general_JS = array(
         'ease_scroll_toggle'            => get_theme_mod( ZENITH_OPTIONS::EASE_SCROLL_TOGGLE, ZENITH_DEFAULTS::EASE_SCROLL_TOGGLE ) ? 'yes' : 'no',
     );
     $zenith_parallax_JS = array(
-        'intensity_value'   => zenith_get_parallax_preset('vertical')
+        'intensity_value'               => intval( zenith_get_parallax_preset('vertical') )
     );
     
     // Localizations
