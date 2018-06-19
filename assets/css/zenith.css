@@ -2385,6 +2385,11 @@ body.admin-bar header#masthead.header-style-vertical #vertical-header-wrap {
     top: 32px !important;
 }
 
+div#vertical-header-wrap .site-title, 
+div#vertical-header-wrap .site-tagline {
+    padding: 0 15px;
+}
+
 #vertical-menu-toggle {
     margin: 10px 0 0 11px !important;
 }
@@ -2609,4 +2614,149 @@ div#vertical-header-wrap #footer-branding-wrap img.custom-logo.alternate {
 
 header#masthead.header-style-vertical #vertical-header-wrap.always-visible {
     left: 0 !important;
+}
+
+/* -----------------------------------------------------------------------------
+ * Custom Header: Social
+ * -------------------------------------------------------------------------- */
+
+@-webkit-keyframes smoothBounce {
+    0% {
+        transform: translate(-50%,-0px);
+    }
+    100% {
+        transform: translate(-50%,-20px);
+    }
+}
+@-moz-keyframes smoothBounce {
+    0% {
+        transform: translate(-50%,-0px);
+    }
+    100% {
+        transform: translate(-50%,-20px);
+    }
+}
+@-ms-keyframes smoothBounce {
+    0% {
+        transform: translate(-50%,-0px);
+    }
+    100% {
+        transform: translate(-50%,-20px);
+    }
+}
+@keyframes smoothBounce {
+    0% {
+        transform: translate(-50%,-0px);
+    }
+    100% {
+        transform: translate(-50%,-20px);
+    }
+}
+
+
+
+@-webkit-keyframes smoothBounceExtended {
+    0% {
+        transform: translate(-50%,-0px);
+    }
+    100% {
+        transform: translate(-50%,-24px);
+    }
+}
+@-moz-keyframes smoothBounceExtended {
+    0% {
+        transform: translate(-50%,-0px);
+    }
+    100% {
+        transform: translate(-50%,-24px);
+    }
+}
+@-ms-keyframes smoothBounceExtended {
+    0% {
+        transform: translate(-50%,-0px);
+    }
+    100% {
+        transform: translate(-50%,-24px);
+    }
+}
+@keyframes smoothBounceExtended {
+    0% {
+        transform: translate(-50%,-0px);
+    }
+    100% {
+        transform: translate(-50%,-24px);
+    }
+}
+
+div#custom-header-content.social-header {
+    display: flex;
+    padding: 30px 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width:767px) {
+    div#custom-header-content.social-header {
+        padding: 30px;
+    }
+}
+
+div#custom-header-content.social-header .marquee-inner {
+    background: none;
+    padding: 30px;
+    text-align: center;
+}
+
+#custom-header-overlay.no {
+    background: none !important;
+}
+
+div#custom-header-content.social-header .marquee-inner .navbar-social {
+    margin-top: 15px;
+    letter-spacing: normal;    
+    line-height: .5em;
+}
+
+div#custom-header-content.social-header .marquee-inner .navbar-social .navbar-icon {
+    margin-right: .40em;
+    font-size: .5em;
+    width: auto;
+    height: auto;
+}
+
+div#custom-header-content.social-header .marquee-inner .navbar-social .navbar-icon:hover {
+    opacity: .8;
+}
+
+div#custom-header-content.social-header .down-scroll-tab {
+    position: absolute;
+    z-index: 99999;
+    bottom: 0;
+    left: 50%;
+    transform: translate(0%,0%);
+    /* width: 50px; */
+}
+
+div#custom-header-content.social-header #down-scroll-tab-trigger {
+    position: absolute;
+    bottom: 40px;
+}
+
+div#custom-header-content.social-header .down-scroll-tab span {
+    display: inline-block;
+    position: absolute;
+    font-size: 30px;
+    transform: translate(-50%,0px);
+    -webkit-animation: smoothBounce 1s 1.8s infinite ease-out alternate;
+    -moz-animation: smoothBounce 1s 1.8s infinite ease-out alternate;
+    -ms-animation: smoothBounce 1s 1.8s infinite ease-out alternate;
+    animation: smoothBounce 1s 1.8s infinite ease-out alternate;
+}
+
+div#custom-header-content.social-header .down-scroll-tab span:first-child {
+    bottom: -20px;
+    -webkit-animation: smoothBounceExtended 1s 1.8s infinite ease-out alternate;
+    -moz-animation: smoothBounceExtended 1s 1.8s infinite ease-out alternate;
+    -ms-animation: smoothBounceExtended 1s 1.8s infinite ease-out alternate;
+    animation: smoothBounceExtended 1s 1.8s infinite ease-out alternate;
 }

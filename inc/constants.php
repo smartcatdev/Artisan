@@ -42,6 +42,10 @@ interface ZENITH_OPTIONS {
             CUSTOM_HEADER_SHOW_ON_SHOP              = 'custom_header_show_on_shop',
             CUSTOM_HEADER_MENU_BUTTONS              = 'custom_Header_menu_buttons',
             
+            SOCIAL_HEADER_ALIGNMENT                 = 'custom_header_social_alignment',
+            SOCIAL_HEADER_SHOW_SOCIAL               = 'custom_header_social_icons_toggle',
+            SOCIAL_HEADER_SHOW_SCROLL_TAB           = 'custom_header_show_scroll_tab_toggle',
+            
             GRADIENT_STYLE                          = 'parallax_layers_gradient_style',
             GRADIENT_OVERALL_OPACITY                = 'parallax_layers_gradient_overall_opacity',
             GRADIENT_LINEAR_DIRECTION               = 'parallax_layers_gradient_linear_direction',
@@ -182,7 +186,7 @@ interface ZENITH_OPTIONS {
 
 interface ZENITH_DEFAULTS {
     
-    const   CUSTOM_HEADER_STYLE_TOGGLE              = 'parallax_vertical',
+    const   CUSTOM_HEADER_STYLE_TOGGLE              = 'social',
             CUSTOM_HEADER_HEIGHT_CALC               = 'percent',
             CUSTOM_HEADER_HEIGHT_PCT                = 100,
             CUSTOM_HEADER_HEIGHT_PCT_MBL            = 35,
@@ -221,6 +225,10 @@ interface ZENITH_DEFAULTS {
             CUSTOM_HEADER_SHOW_ON_ARCHIVE           = true,
             CUSTOM_HEADER_SHOW_ON_SHOP              = false,
             CUSTOM_HEADER_MENU_BUTTONS              = true,
+            
+            SOCIAL_HEADER_ALIGNMENT                 = 'center',
+            SOCIAL_HEADER_SHOW_SOCIAL               = true,
+            SOCIAL_HEADER_SHOW_SCROLL_TAB           = true,
             
             GRADIENT_STYLE                          = 'linear',
             GRADIENT_OVERALL_OPACITY                = .9,

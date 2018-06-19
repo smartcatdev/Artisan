@@ -295,7 +295,9 @@ function zenith_wp_head_styles() { ?>
         /* ----- Custom Header Colors --------------------------------------- */
 
         div#custom-header-content .custom-header-title,
-        div#zenith-custom-header.parallax_layers .custom-header-title {
+        div#zenith-custom-header.parallax_layers .custom-header-title,
+        div#custom-header-content.social-header .marquee-inner .navbar-social .navbar-icon,
+        div#custom-header-content.social-header .down-scroll-tab span {
             color: <?php echo esc_attr( $theme_colors['custom_header_title'] ); ?>;
         }
 
@@ -865,7 +867,8 @@ function zenith_wp_head_styles() { ?>
          * ------------------------------------------------------------------ */
 
         div#custom-header-content .custom-header-title,
-        div#zenith-custom-header.parallax_layers .custom-header-title {
+        div#zenith-custom-header.parallax_layers .custom-header-title,
+        div#custom-header-content.social-header .marquee-inner {
             font-size: <?php echo intval( get_theme_mod( ZENITH_OPTIONS::CUSTOM_HEADER_TITLE_FONT_SIZE, ZENITH_DEFAULTS::CUSTOM_HEADER_TITLE_FONT_SIZE ) ); ?>px;
             letter-spacing: <?php echo esc_attr( get_theme_mod( ZENITH_OPTIONS::CUSTOM_HEADER_TITLE_LETTER_GAP, ZENITH_DEFAULTS::CUSTOM_HEADER_TITLE_LETTER_GAP ) ); ?>em;
         }
@@ -892,6 +895,7 @@ function zenith_wp_head_styles() { ?>
             }
         
         <?php endif; ?>
+            
         
         /* ----- Perspective Layer ------------------------------------------ */
 
@@ -1014,6 +1018,17 @@ function zenith_wp_head_styles() { ?>
             opacity: <?php echo esc_attr( get_theme_mod( ZENITH_OPTIONS::GRADIENT_OVERALL_OPACITY, ZENITH_DEFAULTS::GRADIENT_OVERALL_OPACITY ) ); ?>;
         }
 
+        /* ----- Custom Header: Social -------------------------------------- */
+
+        <?php if ( get_theme_mod( ZENITH_OPTIONS::SOCIAL_HEADER_ALIGNMENT, ZENITH_DEFAULTS::SOCIAL_HEADER_ALIGNMENT ) != 'center' ) : ?>
+            div#custom-header-content.social-header {
+                justify-content: <?php echo esc_attr( get_theme_mod( ZENITH_OPTIONS::SOCIAL_HEADER_ALIGNMENT, ZENITH_DEFAULTS::SOCIAL_HEADER_ALIGNMENT ) ); ?>;
+            }
+            div#custom-header-content.social-header .marquee-inner {
+                text-align: <?php echo get_theme_mod( ZENITH_OPTIONS::SOCIAL_HEADER_ALIGNMENT, ZENITH_DEFAULTS::SOCIAL_HEADER_ALIGNMENT ) == 'flex-start' ? 'left' : 'right'; ?>;
+            }
+        <?php endif; ?>
+        
         /* ---------------------------------------------------------------------
          * Footer
          * ------------------------------------------------------------------ */
