@@ -25,16 +25,6 @@ function zenith_widgets_init() {
     }
     
     register_sidebar( array (
-        'name'              => esc_html__( 'Frontpage - Above Content', 'zenith' ),
-        'id'                => 'sidebar-front-above',
-        'description'       => esc_html__( 'Add widgets here.', 'zenith' ),
-        'before_widget'     => '<aside id="%1$s" class="widget %2$s">',
-        'after_widget'      => '</aside>',
-        'before_title'      => '<h2 class="widget-title">',
-        'after_title'       => '</h2>',
-    )); 
-    
-    register_sidebar( array (
         'name'              => esc_html__( 'Frontpage - Below Content', 'zenith' ),
         'id'                => 'sidebar-front-below',
         'description'       => esc_html__( 'Add widgets here.', 'zenith' ),
@@ -43,6 +33,16 @@ function zenith_widgets_init() {
         'before_title'      => '<h2 class="widget-title">',
         'after_title'       => '</h2>',
     ));
+    
+    register_sidebar( array (
+        'name'              => esc_html__( 'Frontpage - Above Content', 'zenith' ),
+        'id'                => 'sidebar-front-above',
+        'description'       => esc_html__( 'Add widgets here.', 'zenith' ),
+        'before_widget'     => '<aside id="%1$s" class="widget %2$s">',
+        'after_widget'      => '</aside>',
+        'before_title'      => '<h2 class="widget-title">',
+        'after_title'       => '</h2>',
+    )); 
 
     register_sidebar( array (
         'name'              => esc_html__( 'Blog - Above Content', 'zenith' ),

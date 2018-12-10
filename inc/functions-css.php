@@ -324,7 +324,6 @@ function zenith_wp_head_styles() { ?>
             color: <?php echo esc_attr( $theme_colors['footer_widget_title'] ); ?>;
         }
         
-        html,
         footer div#slim-footer-wrap {
             background-color: <?php echo esc_attr( $theme_colors['footer_bg'] ); ?>;
         }
@@ -360,13 +359,13 @@ function zenith_wp_head_styles() { ?>
         }
         
         span#vertical-menu-toggle-wrap {
-            background-color: <?php echo esc_attr(get_theme_mod( ZENITH_OPTIONS::VERT_NAVBAR_TAB_BACKGROUND, ZENITH_DEFAULTS::VERT_NAVBAR_TAB_BACKGROUND ) ); ?>;
+            background-color: <?php echo esc_attr( get_theme_mod( ZENITH_OPTIONS::VERT_NAVBAR_TAB_BACKGROUND, ZENITH_DEFAULTS::VERT_NAVBAR_TAB_BACKGROUND ) ); ?>;
         }
         
         span#vertical-menu-toggle-wrap #vertical-menu-toggle .bar,
         span#vertical-menu-toggle-wrap #vertical-menu-toggle .bar:before,
         span#vertical-menu-toggle-wrap #vertical-menu-toggle .bar:after {
-            background-color: <?php echo esc_attr(get_theme_mod( ZENITH_OPTIONS::VERT_NAVBAR_TAB_FOREGROUND, ZENITH_DEFAULTS::VERT_NAVBAR_TAB_FOREGROUND ) ); ?>;
+            background-color: <?php echo esc_attr( get_theme_mod( ZENITH_OPTIONS::VERT_NAVBAR_TAB_FOREGROUND, ZENITH_DEFAULTS::VERT_NAVBAR_TAB_FOREGROUND ) ); ?>;
         }
         
         div#vertical-header-wrap #footer-branding-wrap img.custom-logo.alternate {
@@ -1024,7 +1023,8 @@ function zenith_wp_head_styles() { ?>
             div#custom-header-content.social-header {
                 justify-content: <?php echo esc_attr( get_theme_mod( ZENITH_OPTIONS::SOCIAL_HEADER_ALIGNMENT, ZENITH_DEFAULTS::SOCIAL_HEADER_ALIGNMENT ) ); ?>;
             }
-            div#custom-header-content.social-header .marquee-inner {
+            div#custom-header-content.social-header .marquee-inner,
+            div#custom-header-content.social-header .marquee-inner .navbar-social {
                 text-align: <?php echo get_theme_mod( ZENITH_OPTIONS::SOCIAL_HEADER_ALIGNMENT, ZENITH_DEFAULTS::SOCIAL_HEADER_ALIGNMENT ) == 'flex-start' ? 'left' : 'right'; ?>;
             }
         <?php endif; ?>

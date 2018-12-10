@@ -188,8 +188,8 @@ interface ZENITH_DEFAULTS {
     
     const   CUSTOM_HEADER_STYLE_TOGGLE              = 'social',
             CUSTOM_HEADER_HEIGHT_CALC               = 'percent',
-            CUSTOM_HEADER_HEIGHT_PCT                = 100,
-            CUSTOM_HEADER_HEIGHT_PCT_MBL            = 35,
+            CUSTOM_HEADER_HEIGHT_PCT                = 65,
+            CUSTOM_HEADER_HEIGHT_PCT_MBL            = 40,
             CUSTOM_HEADER_HEIGHT_PX                 = 500,
             CUSTOM_HEADER_HEIGHT_PX_MBL             = 250,
             CUSTOM_HEADER_PLX_INTENSITY             = 'default',
@@ -203,7 +203,7 @@ interface ZENITH_DEFAULTS {
             CUSTOM_HEADER_SHOW_TITLE                = true,
             CUSTOM_HEADER_TITLE_CONTENT             = 'site_title',
             CUSTOM_HEADER_TITLE_FONT_FAMILY         = 'secondary',
-            CUSTOM_HEADER_TITLE_FONT_SIZE           = 48,
+            CUSTOM_HEADER_TITLE_FONT_SIZE           = 65,
             CUSTOM_HEADER_TITLE_LETTER_GAP          = '.250',
             CUSTOM_HEADER_TITLE_ALL_CAPS            = true,
             CUSTOM_HEADER_TITLE_COLOR               = '#ffffff',
@@ -226,17 +226,17 @@ interface ZENITH_DEFAULTS {
             CUSTOM_HEADER_SHOW_ON_SHOP              = false,
             CUSTOM_HEADER_MENU_BUTTONS              = true,
             
-            SOCIAL_HEADER_ALIGNMENT                 = 'center',
+            SOCIAL_HEADER_ALIGNMENT                 = 'flex-start',
             SOCIAL_HEADER_SHOW_SOCIAL               = true,
             SOCIAL_HEADER_SHOW_SCROLL_TAB           = true,
             
             GRADIENT_STYLE                          = 'linear',
-            GRADIENT_OVERALL_OPACITY                = .9,
-            GRADIENT_LINEAR_DIRECTION               = 'up',
-            GRADIENT_START_COLOR                    = '#136986',
-            GRADIENT_START_COLOR_OPACITY            = 1,
-            GRADIENT_END_COLOR                      = '#348aa7',
-            GRADIENT_END_COLOR_OPACITY              = .2,
+            GRADIENT_OVERALL_OPACITY                = 1,
+            GRADIENT_LINEAR_DIRECTION               = 'right',
+            GRADIENT_START_COLOR                    = '#00a0bc',
+            GRADIENT_START_COLOR_OPACITY            = .85,
+            GRADIENT_END_COLOR                      = '#000000',
+            GRADIENT_END_COLOR_OPACITY              = 0.01,
             
             BLOG_LAYOUT_STYLE                       = 'blog_masonry',
             BLOG_SHOW_DATE                          = true,
@@ -288,7 +288,7 @@ interface ZENITH_DEFAULTS {
             NAVBAR_FINAL_LINK_ROUNDED               = true,
             NAVBAR_FINAL_LINK_FILL                  = true,
             
-            VERT_NAVBAR_DISPLAY_SETTING             = 'toggled',
+            VERT_NAVBAR_DISPLAY_SETTING             = 'always',
             VERT_NAVBAR_TAB_BACKGROUND              = '#ffffff',
             VERT_NAVBAR_TAB_FOREGROUND              = '#141414',
             
@@ -314,8 +314,8 @@ interface ZENITH_DEFAULTS {
             NAVBAR_SOCIAL_FG_COLOR                  = '#141414',
             NAVBAR_SOCIAL_FG_COLOR_HOVER            = '#348aa7',
             
-            COLOR_SKIN_PRIMARY                      = '#f04265',
-            COLOR_SKIN_SECONDARY                    = '#d60059',
+            COLOR_SKIN_PRIMARY                      = '#00a0bc',
+            COLOR_SKIN_SECONDARY                    = '#007fa3',
 
             FONT_PRIMARY                            = 'Montserrat, sans-serif',
             FONT_SECONDARY                          = 'Abel, sans-serif',
