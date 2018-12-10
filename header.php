@@ -6,7 +6,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
- * @package Zenith
+ * @package Artisan
  */
 ?>
 <!doctype html>
@@ -24,20 +24,20 @@
 
     <body <?php body_class(); ?>>
         
-        <?php do_action( 'zenith_body_start' ); ?>
+        <?php do_action( 'artisan_body_start' ); ?>
         
         <div id="page" class="site">
             
-            <a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'zenith' ); ?></a>
+            <a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'artisan' ); ?></a>
 
-            <?php get_template_part( 'template-parts/navbar', get_theme_mod( ZENITH_OPTIONS::NAVBAR_STYLE, ZENITH_DEFAULTS::NAVBAR_STYLE ) ); ?>
+            <?php get_template_part( 'template-parts/navbar', get_theme_mod( ARTISAN_OPTIONS::NAVBAR_STYLE, ARTISAN_DEFAULTS::NAVBAR_STYLE ) ); ?>
             
-            <?php if ( class_exists('WooCommerce') && get_theme_mod( ZENITH_OPTIONS::WOO_SLIDE_CART_TOGGLE, ZENITH_DEFAULTS::WOO_SLIDE_CART_TOGGLE ) ) { get_template_part( 'template-parts/cart-slide_in' ); } ?>
+            <?php if ( class_exists('WooCommerce') && get_theme_mod( ARTISAN_OPTIONS::WOO_SLIDE_CART_TOGGLE, ARTISAN_DEFAULTS::WOO_SLIDE_CART_TOGGLE ) ) { get_template_part( 'template-parts/cart-slide_in' ); } ?>
 
-            <?php if ( get_theme_mod( ZENITH_OPTIONS::NAVBAR_STYLE, ZENITH_DEFAULTS::NAVBAR_STYLE ) == 'vertical' ) : ?>
-                <div id="vertical-navbar-push" class="<?php echo get_theme_mod( ZENITH_OPTIONS::VERT_NAVBAR_DISPLAY_SETTING, ZENITH_DEFAULTS::VERT_NAVBAR_DISPLAY_SETTING ) == 'always'? 'expanded' : ''; ?>">
+            <?php if ( get_theme_mod( ARTISAN_OPTIONS::NAVBAR_STYLE, ARTISAN_DEFAULTS::NAVBAR_STYLE ) == 'vertical' ) : ?>
+                <div id="vertical-navbar-push" class="<?php echo get_theme_mod( ARTISAN_OPTIONS::VERT_NAVBAR_DISPLAY_SETTING, ARTISAN_DEFAULTS::VERT_NAVBAR_DISPLAY_SETTING ) == 'always'? 'expanded' : ''; ?>">
             <?php endif; ?>
             
             <div id="content" class="site-content">
 
-                <?php do_action( 'zenith_custom_header' ); ?>
+                <?php do_action( 'artisan_custom_header' ); ?>

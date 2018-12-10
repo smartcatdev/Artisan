@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package Zenith
+ * @package Artisan
  */
 ?>
 
@@ -12,7 +12,7 @@
     <header class="entry-header">
         <?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
         
-        <?php do_action( 'zenith_social_icons' ); ?>
+        <?php do_action( 'artisan_social_icons' ); ?>
         
     </header><!-- .entry-header -->
 
@@ -22,7 +22,7 @@
         the_content();
 
         wp_link_pages( array (
-            'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'zenith' ),
+            'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'artisan' ),
             'after' => '</div>',
         ) );
         ?>
@@ -35,7 +35,7 @@
                     sprintf(
                             wp_kses(
                                     /* translators: %s: Name of current post. Only visible to screen readers */
-                                    __( 'Edit <span class="screen-reader-text">%s</span>', 'zenith' ), array (
+                                    __( 'Edit <span class="screen-reader-text">%s</span>', 'artisan' ), array (
                 'span' => array (
                     'class' => array (),
                 ),

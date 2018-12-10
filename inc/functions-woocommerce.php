@@ -4,7 +4,7 @@
  *
  * @link https://woocommerce.com/
  *
- * @package Zenith
+ * @package Artisan
  */
 
 /**
@@ -22,20 +22,20 @@ remove_action( 'woocommerce_after_single_product_summary', 'woocommerce_output_r
  * 
  */
 
-add_action( 'woocommerce_before_shop_loop', 'zenith_results_bar_wrapper_before', 15 );                                 // Wrap the Results Count and Filter Select in a <div> for styling
-add_action( 'woocommerce_before_shop_loop', 'zenith_results_bar_wrapper_after', 35 );                                  // Wrap the Results Count and Filter Select in a </div> for styling
-add_action( 'woocommerce_before_shop_loop_item_title', 'zenith_woocommerce_product_details_wrapper_before', 50 );      // Wrap the Shop loop Product content in <div class="details-wrap"> for styling
-add_action( 'woocommerce_after_shop_loop_item', 'zenith_woocommerce_product_details_wrapper_after', 50 );              // Wrap the Shop loop Product content in <div class="details-wrap"> for styling
-add_action( 'woocommerce_before_subcategory_title', 'zenith_woocommerce_product_details_wrapper_before', 50 );         // Wrap the Shop loop Category content in <div class="details-wrap"> for styling
-add_action( 'woocommerce_after_subcategory', 'zenith_woocommerce_product_details_wrapper_after', 50 );                 // Wrap the Shop loop Category content in <div class="details-wrap"> for styling
-add_action( 'woocommerce_shop_loop_item_title', 'zenith_woocommerce_product_loop_category', 5 );                       // Inject the Category in the Product details
-add_action( 'woocommerce_shop_loop_item_title', 'zenith_woocommerce_product_loop_excerpt', 20 );                       // Inject the Excerpt in the Product details
-add_action( 'zenith_featured_products', 'zenith_render_featured_products', 10 );                                       // Output the Featured Products section
-add_action( 'after_setup_theme', 'zenith_woocommerce_setup' );                                                         // Add WooCommerce theme support
-add_action( 'wp_enqueue_scripts', 'zenith_woocommerce_scripts' );                                                      // Enqueue WooCommerce scripts
-add_action( 'woocommerce_single_product_summary', 'zenith_woocommerce_product_underline', 7 );                         // Inject an underline <span> after the product title
-add_action( 'woocommerce_single_product_summary', 'zenith_woocommerce_single_product_category', 3 );                   // Inject the category before the product title
-add_action( 'woocommerce_after_single_product_summary', 'zenith_woocommerce_single_product_clear', 5 );                // Inject a float clear after the product summary section
+add_action( 'woocommerce_before_shop_loop', 'artisan_results_bar_wrapper_before', 15 );                                 // Wrap the Results Count and Filter Select in a <div> for styling
+add_action( 'woocommerce_before_shop_loop', 'artisan_results_bar_wrapper_after', 35 );                                  // Wrap the Results Count and Filter Select in a </div> for styling
+add_action( 'woocommerce_before_shop_loop_item_title', 'artisan_woocommerce_product_details_wrapper_before', 50 );      // Wrap the Shop loop Product content in <div class="details-wrap"> for styling
+add_action( 'woocommerce_after_shop_loop_item', 'artisan_woocommerce_product_details_wrapper_after', 50 );              // Wrap the Shop loop Product content in <div class="details-wrap"> for styling
+add_action( 'woocommerce_before_subcategory_title', 'artisan_woocommerce_product_details_wrapper_before', 50 );         // Wrap the Shop loop Category content in <div class="details-wrap"> for styling
+add_action( 'woocommerce_after_subcategory', 'artisan_woocommerce_product_details_wrapper_after', 50 );                 // Wrap the Shop loop Category content in <div class="details-wrap"> for styling
+add_action( 'woocommerce_shop_loop_item_title', 'artisan_woocommerce_product_loop_category', 5 );                       // Inject the Category in the Product details
+add_action( 'woocommerce_shop_loop_item_title', 'artisan_woocommerce_product_loop_excerpt', 20 );                       // Inject the Excerpt in the Product details
+add_action( 'artisan_featured_products', 'artisan_render_featured_products', 10 );                                       // Output the Featured Products section
+add_action( 'after_setup_theme', 'artisan_woocommerce_setup' );                                                         // Add WooCommerce theme support
+add_action( 'wp_enqueue_scripts', 'artisan_woocommerce_scripts' );                                                      // Enqueue WooCommerce scripts
+add_action( 'woocommerce_single_product_summary', 'artisan_woocommerce_product_underline', 7 );                         // Inject an underline <span> after the product title
+add_action( 'woocommerce_single_product_summary', 'artisan_woocommerce_single_product_category', 3 );                   // Inject the category before the product title
+add_action( 'woocommerce_after_single_product_summary', 'artisan_woocommerce_single_product_clear', 5 );                // Inject a float clear after the product summary section
 
 
 /**
@@ -43,11 +43,11 @@ add_action( 'woocommerce_after_single_product_summary', 'zenith_woocommerce_sing
  * 
  */
 
-add_filter( 'woocommerce_enqueue_styles', 'zenith_woocommerce_dequeue_styles' );                                       // Dequeue select WooCommerce default styles
-add_filter( 'body_class', 'zenith_woocommerce_active_body_class' );                                                    // Add active WooCommerce body class
-add_filter( 'woocommerce_output_related_products_args', 'zenith_woocommerce_related_products_args' );                  // Set arguments for Related Products
-add_filter( 'woocommerce_add_to_cart_fragments', 'zenith_woocommerce_cart_link_fragment' );                            // Code for AJAX-ed Cart subtotal updates
-add_filter( 'woocommerce_pagination_args', 'zenith_filter_woocommerce_pagination_args', 10, 1 );                       // Filter the Pagination $args array
+add_filter( 'woocommerce_enqueue_styles', 'artisan_woocommerce_dequeue_styles' );                                       // Dequeue select WooCommerce default styles
+add_filter( 'body_class', 'artisan_woocommerce_active_body_class' );                                                    // Add active WooCommerce body class
+add_filter( 'woocommerce_output_related_products_args', 'artisan_woocommerce_related_products_args' );                  // Set arguments for Related Products
+add_filter( 'woocommerce_add_to_cart_fragments', 'artisan_woocommerce_cart_link_fragment' );                            // Code for AJAX-ed Cart subtotal updates
+add_filter( 'woocommerce_pagination_args', 'artisan_filter_woocommerce_pagination_args', 10, 1 );                       // Filter the Pagination $args array
 
 /**
  * Hooked & Filtered Functions -------------------------------------------------
@@ -62,7 +62,7 @@ add_filter( 'woocommerce_pagination_args', 'zenith_filter_woocommerce_pagination
  *
  * @return void
  */
-function zenith_woocommerce_setup() {
+function artisan_woocommerce_setup() {
     add_theme_support( 'woocommerce' );
     add_theme_support( 'wc-product-gallery-zoom' );
     add_theme_support( 'wc-product-gallery-lightbox' );
@@ -74,9 +74,9 @@ function zenith_woocommerce_setup() {
  *
  * @return void
  */
-function zenith_woocommerce_scripts() {
+function artisan_woocommerce_scripts() {
     
-    wp_enqueue_style( 'zenith-woocommerce-style', get_template_directory_uri() . '/woocommerce.css' );
+    wp_enqueue_style( 'artisan-woocommerce-style', get_template_directory_uri() . '/woocommerce.css' );
 
     $font_path = WC()->plugin_url() . '/assets/fonts/';
     $inline_font = '@font-face {
@@ -90,7 +90,7 @@ function zenith_woocommerce_scripts() {
         font-style: normal;
     }';
 
-    wp_add_inline_style( 'zenith-woocommerce-style', $inline_font );
+    wp_add_inline_style( 'artisan-woocommerce-style', $inline_font );
     
 }
 
@@ -103,7 +103,7 @@ function zenith_woocommerce_scripts() {
  * @link https://docs.woocommerce.com/document/disable-the-default-stylesheet/
  */
 
-function zenith_woocommerce_dequeue_styles( $enqueue_styles ) {
+function artisan_woocommerce_dequeue_styles( $enqueue_styles ) {
     unset( $enqueue_styles['woocommerce-general'] );            // Remove the gloss
     unset( $enqueue_styles['woocommerce-smallscreen'] );	// Remove the smallscreen optimisation
     //  unset( $enqueue_styles['woocommerce-layout'] );		// Remove the layout
@@ -116,7 +116,7 @@ function zenith_woocommerce_dequeue_styles( $enqueue_styles ) {
  * @param  array $classes CSS classes applied to the body tag.
  * @return array $classes modified to include 'woocommerce-active' class.
  */
-function zenith_woocommerce_active_body_class( $classes ) {
+function artisan_woocommerce_active_body_class( $classes ) {
     $classes[] = 'woocommerce-active';
     return $classes;
 }
@@ -127,7 +127,7 @@ function zenith_woocommerce_active_body_class( $classes ) {
  * @param array $args related products args.
  * @return array $args related products args.
  */
-function zenith_woocommerce_related_products_args( $args ) {
+function artisan_woocommerce_related_products_args( $args ) {
 
     $defaults = array (
         'posts_per_page'    => 3,
@@ -148,9 +148,9 @@ function zenith_woocommerce_related_products_args( $args ) {
  * @param array $fragments Fragments to refresh via AJAX.
  * @return array Fragments to refresh via AJAX.
  */
-function zenith_woocommerce_cart_link_fragment( $fragments ) {
+function artisan_woocommerce_cart_link_fragment( $fragments ) {
     ob_start();
-    zenith_woocommerce_cart_link();
+    artisan_woocommerce_cart_link();
     $fragments[ 'a.cart-contents' ] = ob_get_clean(); 
 
     return $fragments;
@@ -163,11 +163,11 @@ function zenith_woocommerce_cart_link_fragment( $fragments ) {
  *
  * @return void
  */
-function zenith_woocommerce_cart_link() { ?>
+function artisan_woocommerce_cart_link() { ?>
 
-    <a class="cart-contents" href="<?php echo esc_url( wc_get_cart_url() ); ?>" title="<?php esc_attr_e( 'View your shopping cart', 'zenith' ); ?>">
+    <a class="cart-contents" href="<?php echo esc_url( wc_get_cart_url() ); ?>" title="<?php esc_attr_e( 'View your shopping cart', 'artisan' ); ?>">
         <?php /* translators: count of the number of items or one item */ ?>
-        <?php echo wp_kses_data( sprintf( _n( '%d item', '%d items', WC()->cart->get_cart_contents_count(), 'zenith' ), WC()->cart->get_cart_contents_count() ) ); ?> 
+        <?php echo wp_kses_data( sprintf( _n( '%d item', '%d items', WC()->cart->get_cart_contents_count(), 'artisan' ), WC()->cart->get_cart_contents_count() ) ); ?>
         - 
         <?php echo wp_kses_data( WC()->cart->get_cart_subtotal() ); ?>
     </a> 
@@ -176,14 +176,14 @@ function zenith_woocommerce_cart_link() { ?>
 
 }
 
-if ( !function_exists( 'zenith_results_bar_wrapper_before' ) ) {
+if ( !function_exists( 'artisan_results_bar_wrapper_before' ) ) {
 
     /**
      * Wraps woocommerce_result_count and woocommerce_catalog_ordering in a <div>
      *
      * @return void
      */
-    function zenith_results_bar_wrapper_before() { ?>
+    function artisan_results_bar_wrapper_before() { ?>
         
         <div class="results-bar-wrap">
           
@@ -191,14 +191,14 @@ if ( !function_exists( 'zenith_results_bar_wrapper_before' ) ) {
 
 }
 
-if ( !function_exists( 'zenith_results_bar_wrapper_after' ) ) {
+if ( !function_exists( 'artisan_results_bar_wrapper_after' ) ) {
 
     /**
      * Wraps woocommerce_result_count and woocommerce_catalog_ordering in a </div>
      *
      * @return void
      */
-    function zenith_results_bar_wrapper_after() { ?>
+    function artisan_results_bar_wrapper_after() { ?>
         
         </div>
           
@@ -231,7 +231,7 @@ if ( !function_exists( 'woocommerce_output_content_wrapper' ) ) {
 
                 <?php endif; ?>
                 
-                <div id="zenith-woocommerce-wrap" class="<?php echo is_shop() ? 'shop-archive' : 'single'; ?>">
+                <div id="artisan-woocommerce-wrap" class="<?php echo is_shop() ? 'shop-archive' : 'single'; ?>">
                 
                     <div class="container">
                     
@@ -259,7 +259,7 @@ if ( !function_exists( 'woocommerce_output_content_wrapper' ) ) {
 
                                     </header>
                                     
-                                    <?php do_action( 'zenith_featured_products' ); ?>
+                                    <?php do_action( 'artisan_featured_products' ); ?>
 
                                 </div>
                             
@@ -290,7 +290,7 @@ if ( !function_exists( 'woocommerce_output_content_wrapper_end' ) ) {
                             
                                 <div class="col-sm-3">
                                     
-                                    <div class="zenith-sidebar">
+                                    <div class="artisan-sidebar">
                                         <?php woocommerce_get_sidebar(); ?>
                                     </div>
                                     
@@ -308,7 +308,7 @@ if ( !function_exists( 'woocommerce_output_content_wrapper_end' ) ) {
 
                     <?php endif; ?>
                     
-                </div><!-- #zenith-woocommerce-wrap -->
+                </div><!-- #artisan-woocommerce-wrap -->
                               
                 <?php if ( is_active_sidebar( 'sidebar-shop-below') && is_shop() ) : ?>
 
@@ -330,7 +330,7 @@ if ( !function_exists( 'woocommerce_output_content_wrapper_end' ) ) {
 
 }
 
-if ( !function_exists( 'zenith_woocommerce_product_details_wrapper_before' ) ) {
+if ( !function_exists( 'artisan_woocommerce_product_details_wrapper_before' ) ) {
 
     /**
      * Before the Title in WooCommerce Product content.
@@ -339,7 +339,7 @@ if ( !function_exists( 'zenith_woocommerce_product_details_wrapper_before' ) ) {
      *
      * @return void
      */
-    function zenith_woocommerce_product_details_wrapper_before() { ?>
+    function artisan_woocommerce_product_details_wrapper_before() { ?>
         
         <div class="details-wrap">
 
@@ -349,7 +349,7 @@ if ( !function_exists( 'zenith_woocommerce_product_details_wrapper_before' ) ) {
 
 }
 
-if ( !function_exists( 'zenith_woocommerce_product_details_wrapper_after' ) ) {
+if ( !function_exists( 'artisan_woocommerce_product_details_wrapper_after' ) ) {
 
     /**
      * After the Title in WooCommerce Product content.
@@ -358,7 +358,7 @@ if ( !function_exists( 'zenith_woocommerce_product_details_wrapper_after' ) ) {
      *
      * @return void
      */
-    function zenith_woocommerce_product_details_wrapper_after() { ?>
+    function artisan_woocommerce_product_details_wrapper_after() { ?>
                         
             <div class="clear"></div>
             
@@ -370,14 +370,14 @@ if ( !function_exists( 'zenith_woocommerce_product_details_wrapper_after' ) ) {
 
 }
 
-if ( !function_exists( 'zenith_woocommerce_product_loop_category' ) ) {
+if ( !function_exists( 'artisan_woocommerce_product_loop_category' ) ) {
 
-    if ( get_theme_mod( 'zenith_woocommerce_loop_show_categories', true ) ) {
+    if ( get_theme_mod( 'artisan_woocommerce_loop_show_categories', true ) ) {
         
         /**
          * Output the category for the product if toggled on.
          */
-        function zenith_woocommerce_product_loop_category() {
+        function artisan_woocommerce_product_loop_category() {
 
             $product_cats = wp_get_post_terms( get_the_ID(), 'product_cat' );
 
@@ -399,14 +399,14 @@ if ( !function_exists( 'zenith_woocommerce_product_loop_category' ) ) {
     
 }
 
-if ( !function_exists( 'zenith_woocommerce_product_loop_excerpt' ) ) {
+if ( !function_exists( 'artisan_woocommerce_product_loop_excerpt' ) ) {
 
-    if ( get_theme_mod( 'zenith_woocommerce_loop_show_excerpts', true ) ) {
+    if ( get_theme_mod( 'artisan_woocommerce_loop_show_excerpts', true ) ) {
 
         /**
          * Output the excerpt/content for the product if toggled on.
          */
-        function zenith_woocommerce_product_loop_excerpt() { ?>
+        function artisan_woocommerce_product_loop_excerpt() { ?>
 
             <div class="product_category_excerpt">
                 <?php the_excerpt(); ?>
@@ -420,12 +420,12 @@ if ( !function_exists( 'zenith_woocommerce_product_loop_excerpt' ) ) {
 
 }
 
-if ( !function_exists( 'zenith_woocommerce_product_underline' ) ) {
+if ( !function_exists( 'artisan_woocommerce_product_underline' ) ) {
 
     /**
      * Output an underline span
      */
-    function zenith_woocommerce_product_underline() { ?>
+    function artisan_woocommerce_product_underline() { ?>
 
         <span class="small-divider dark"></span>
 
@@ -435,12 +435,12 @@ if ( !function_exists( 'zenith_woocommerce_product_underline' ) ) {
 
 }
 
-if ( !function_exists( 'zenith_woocommerce_single_product_category' ) ) {
+if ( !function_exists( 'artisan_woocommerce_single_product_category' ) ) {
 
     /**
      * Output the single product category
      */
-    function zenith_woocommerce_single_product_category() { ?>
+    function artisan_woocommerce_single_product_category() { ?>
 
         <?php global $product; ?>
         <?php echo wc_get_product_category_list( $product->get_id(), ', ', '<span class="posted_in product-cat">', '</span>' ); ?>
@@ -451,12 +451,12 @@ if ( !function_exists( 'zenith_woocommerce_single_product_category' ) ) {
 
 }
 
-if ( !function_exists( 'zenith_woocommerce_single_product_clear' ) ) {
+if ( !function_exists( 'artisan_woocommerce_single_product_clear' ) ) {
 
     /**
      * Output a clear div at the end of the product summary and image gallery wrapper
      */
-    function zenith_woocommerce_single_product_clear() { ?>
+    function artisan_woocommerce_single_product_clear() { ?>
 
         <div class="clear"></div>
 
@@ -466,14 +466,14 @@ if ( !function_exists( 'zenith_woocommerce_single_product_clear' ) ) {
 
 }
 
-if ( !function_exists( 'zenith_render_featured_products' ) ) {
+if ( !function_exists( 'artisan_render_featured_products' ) ) {
 
     /**
      * Output all Featured Products if they're toggled on in Customizer
      */
-    function zenith_render_featured_products() {
+    function artisan_render_featured_products() {
 
-        if ( get_theme_mod( ZENITH_OPTIONS::WOO_SHOW_FEATURED_PRODUCTS, ZENITH_DEFAULTS::WOO_SHOW_FEATURED_PRODUCTS ) ) : 
+        if ( get_theme_mod( ARTISAN_OPTIONS::WOO_SHOW_FEATURED_PRODUCTS, ARTISAN_DEFAULTS::WOO_SHOW_FEATURED_PRODUCTS ) ) :
 
             $args = array(
                 'post_type' => 'product',
@@ -490,17 +490,17 @@ if ( !function_exists( 'zenith_render_featured_products' ) ) {
 
             <?php if ( $featured_products_loop->have_posts() ) : ?>
 
-                <div id="zenith-featured-woocommerce">
+                <div id="artisan-featured-woocommerce">
 
-                    <?php if ( get_theme_mod( ZENITH_OPTIONS::WOO_SHOW_FEATURED_PRODUCT_HEADING, ZENITH_DEFAULTS::WOO_SHOW_FEATURED_PRODUCT_HEADING ) ) : ?>
+                    <?php if ( get_theme_mod( ARTISAN_OPTIONS::WOO_SHOW_FEATURED_PRODUCT_HEADING, ARTISAN_DEFAULTS::WOO_SHOW_FEATURED_PRODUCT_HEADING ) ) : ?>
                     
                         <h3 class="shop-sub-heading">
-                            <?php esc_html_e( 'Featured', 'zenith' ); ?>
+                            <?php esc_html_e( 'Featured', 'artisan' ); ?>
                         </h3>
                     
                     <?php endif; ?>
 
-                    <ul class="products columns-<?php echo get_theme_mod( ZENITH_OPTIONS::WOO_FEATURED_PRODUCTS_NUM_COLS, ZENITH_DEFAULTS::WOO_FEATURED_PRODUCTS_NUM_COLS ) == 'two' ? 2 : 3; ?>">
+                    <ul class="products columns-<?php echo get_theme_mod( ARTISAN_OPTIONS::WOO_FEATURED_PRODUCTS_NUM_COLS, ARTISAN_DEFAULTS::WOO_FEATURED_PRODUCTS_NUM_COLS ) == 'two' ? 2 : 3; ?>">
 
                         <?php 
                         while ( $featured_products_loop->have_posts() ) : $featured_products_loop->the_post();
@@ -528,10 +528,10 @@ if ( !function_exists( 'zenith_render_featured_products' ) ) {
  * @param type $array
  * @return type
  */
-function zenith_filter_woocommerce_pagination_args( $array ) { 
+function artisan_filter_woocommerce_pagination_args( $array ) {
     
-    $array['prev_text'] = __( 'Previous', 'zenith' );
-    $array['next_text'] = __( 'Next', 'zenith' );
+    $array['prev_text'] = __( 'Previous', 'artisan' );
+    $array['next_text'] = __( 'Next', 'artisan' );
     
     return $array; 
     

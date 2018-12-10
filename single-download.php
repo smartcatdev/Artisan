@@ -4,13 +4,13 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#single-post
  *
- * @package Zenith
+ * @package Artisan
  */
 get_header(); ?>
 
     <div id="primary" class="content-area">
         
-        <main id="main" class="site-main zenith-single-edd-product">
+        <main id="main" class="site-main artisan-single-edd-product">
 
             <?php
             while ( have_posts() ) : the_post();

@@ -225,7 +225,7 @@ if ( !class_exists( 'AcidWidget' ) ) {
                     
                     case 'toggle':
                         $output .= '<div class="acid-widget-control-toggle">';
-                        $output .= '<label class="zenith-control-title">';
+                        $output .= '<label class="artisan-control-title">';
                         $output .= '<span>' . esc_html( $widget_field[ 'label' ], 'acid' ) . '</span>';
                         $output .= '</label>';
                         $output .= '<div class="toggle-flex">';

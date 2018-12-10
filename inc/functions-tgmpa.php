@@ -11,7 +11,7 @@
  *
  * @package    TGM-Plugin-Activation
  * @subpackage Example
- * @version    2.6.1 for parent theme Zenith for publication on WordPress.org
+ * @version    2.6.1 for parent theme Artisan for publication on WordPress.org
  * @author     Thomas Griffin, Gary Jones, Juliette Reinders Folmer
  * @copyright  Copyright (c) 2011, Thomas Griffin
  * @license    http://opensource.org/licenses/gpl-2.0.php GPL v2 or later
@@ -20,16 +20,16 @@
 
 require get_template_directory() . '/inc/lib/tgmpa/class-tgm-plugin-activation.php';
 
-add_action( 'tgmpa_register', 'zenith_register_required_plugins' );
+add_action( 'tgmpa_register', 'artisan_register_required_plugins' );
 
 
-function zenith_register_required_plugins() {
+function artisan_register_required_plugins() {
     
     $plugins = array (
 
         array(
-            'name'          => 'Zenith Features',
-            'slug'          => 'zenith-features',
+            'name'          => 'Artisan Features',
+            'slug'          => 'artisan-features',
             'required'      => false,
         ),
 
@@ -45,7 +45,7 @@ function zenith_register_required_plugins() {
      * Only uncomment the strings in the config array if you want to customize the strings.
      */
     $config = array (
-        'id' => 'zenith', // Unique ID for hashing notices for multiple instances of TGMPA.
+        'id' => 'artisan', // Unique ID for hashing notices for multiple instances of TGMPA.
         'default_path' => '', // Default absolute path to bundled plugins.
         'menu' => 'tgmpa-install-plugins', // Menu slug.
         'has_notices' => true, // Show admin notices or not.
@@ -54,13 +54,13 @@ function zenith_register_required_plugins() {
         'is_automatic' => false, // Automatically activate plugins after installation or not.
         'message' => '', // Message to output right before the plugins table.
         'strings'   => array(
-            'menu_title'        => __( 'Theme Plugins', 'zenith' ),
-            'page_title'        => __( 'Install the Zenith plugin to unlock the full customizable features of the theme', 'zenith' ),
+            'menu_title'        => __( 'Theme Plugins', 'artisan' ),
+            'page_title'        => __( 'Install the Artisan plugin to unlock the full customizable features of the theme', 'artisan' ),
               'notice_can_install_recommended'  => _n_noop(
               /* translators: 1: plugin name(s). */
               'This theme recommends the following plugin - Install this free plugin to unlock additional theme features: %1$s.',
               'This theme recommends the following plugins - Install these free plugins to unlock additional theme features: %1$s.',
-              'zenith'
+              'artisan'
               ),
         ),
     );

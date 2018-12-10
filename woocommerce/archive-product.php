@@ -56,7 +56,7 @@ if ( have_posts() ) { ?>
                         the_post();
                         
                         /**
-                         * Include "zenith_woocommerce_product_loop_cta( $ctr )" before $ctr++ to inject loop CTA
+                         * Include "artisan_woocommerce_product_loop_cta( $ctr )" before $ctr++ to inject loop CTA
                          */
                         $ctr++;
                         

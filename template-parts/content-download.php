@@ -4,14 +4,14 @@
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
- * @package Zenith
+ * @package Artisan
  */
 
-$edd_gallery = get_post_meta( get_the_ID(), ZENITH_META::EDD_GALLERY, true );
+$edd_gallery = get_post_meta( get_the_ID(), ARTISAN_META::EDD_GALLERY, true );
 
 ?>
 
-<div id="zenith-edd-header">
+<div id="artisan-edd-header">
 
     <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
@@ -25,10 +25,10 @@ $edd_gallery = get_post_meta( get_the_ID(), ZENITH_META::EDD_GALLERY, true );
                         
                         <div id="edd-header-wrap-blurb">
 
-                            <?php if ( get_post_meta( get_the_ID(), ZENITH_META::EDD_CATEGORY, true ) ) : ?>
+                            <?php if ( get_post_meta( get_the_ID(), ARTISAN_META::EDD_CATEGORY, true ) ) : ?>
                                 
                                 <span class="product-category">
-                                    <?php echo esc_html( get_post_meta( get_the_ID(), ZENITH_META::EDD_CATEGORY, true ) ); ?>
+                                    <?php echo esc_html( get_post_meta( get_the_ID(), ARTISAN_META::EDD_CATEGORY, true ) ); ?>
                                 </span>
                             
                             <?php endif; ?>
@@ -64,10 +64,10 @@ $edd_gallery = get_post_meta( get_the_ID(), ZENITH_META::EDD_GALLERY, true );
                                         'class'             => 'primary',
                                     ) ); ?>
                                     
-                                    <?php if ( get_post_meta( get_the_ID(), ZENITH_META::EDD_SECOND_BUTTON_LABEL, true ) && get_post_meta( get_the_ID(), ZENITH_META::EDD_SECOND_BUTTON_URL, true ) ) : ?>
+                                    <?php if ( get_post_meta( get_the_ID(), ARTISAN_META::EDD_SECOND_BUTTON_LABEL, true ) && get_post_meta( get_the_ID(), ARTISAN_META::EDD_SECOND_BUTTON_URL, true ) ) : ?>
                                     
-                                        <a class="button secondary" href="<?php echo esc_url( get_post_meta( get_the_ID(), ZENITH_META::EDD_SECOND_BUTTON_URL, true ) ); ?>" <?php echo get_post_meta( get_the_ID(), ZENITH_META::EDD_SECOND_BUTTON_TARGET, true ) != 'same' ? ' target="_BLANK" ' : ''; ?>>
-                                            <?php echo esc_html( get_post_meta( get_the_ID(), ZENITH_META::EDD_SECOND_BUTTON_LABEL, true ) ); ?>
+                                        <a class="button secondary" href="<?php echo esc_url( get_post_meta( get_the_ID(), ARTISAN_META::EDD_SECOND_BUTTON_URL, true ) ); ?>" <?php echo get_post_meta( get_the_ID(), ARTISAN_META::EDD_SECOND_BUTTON_TARGET, true ) != 'same' ? ' target="_BLANK" ' : ''; ?>>
+                                            <?php echo esc_html( get_post_meta( get_the_ID(), ARTISAN_META::EDD_SECOND_BUTTON_LABEL, true ) ); ?>
                                         </a>
                                     
                                     <?php endif; ?>
@@ -80,15 +80,15 @@ $edd_gallery = get_post_meta( get_the_ID(), ZENITH_META::EDD_GALLERY, true );
                             
                         </div>
                         
-                        <?php if ( get_post_meta( get_the_ID(), ZENITH_META::EDD_VIDEO_ID, true ) ) : ?>
+                        <?php if ( get_post_meta( get_the_ID(), ARTISAN_META::EDD_VIDEO_ID, true ) ) : ?>
                         
                             <iframe class="edd-product-video" id="ytplayer" type="text/html" width="640" height="360"
-                            src="https://www.youtube.com/embed/<?php echo esc_attr( get_post_meta( get_the_ID(), ZENITH_META::EDD_VIDEO_ID, true ) ); ?>?autoplay=<?php echo get_post_meta( get_the_ID(), ZENITH_META::EDD_VIDEO_AUTOPLAY, true ) == 'autoplay' ? 1 : 0; ?>"
+                            src="https://www.youtube.com/embed/<?php echo esc_attr( get_post_meta( get_the_ID(), ARTISAN_META::EDD_VIDEO_ID, true ) ); ?>?autoplay=<?php echo get_post_meta( get_the_ID(), ARTISAN_META::EDD_VIDEO_AUTOPLAY, true ) == 'autoplay' ? 1 : 0; ?>"
                             frameborder="0"></iframe>
                         
                         <?php else : ?>
 
-                            <?php zenith_output_edd_product_gallery( $edd_gallery ); ?>
+                            <?php artisan_output_edd_product_gallery( $edd_gallery ); ?>
                         
                         <?php endif; ?>
                         
@@ -104,7 +104,7 @@ $edd_gallery = get_post_meta( get_the_ID(), ZENITH_META::EDD_GALLERY, true );
 
 </div>
     
-<div id="zenith-edd-body">
+<div id="artisan-edd-body">
         
     <div class="container">
             
@@ -116,15 +116,15 @@ $edd_gallery = get_post_meta( get_the_ID(), ZENITH_META::EDD_GALLERY, true );
                     
                     <li class="active">
                         <a data-toggle="pill" href="#description">
-                            <?php esc_html_e( 'Description', 'zenith' ); ?>
+                            <?php esc_html_e( 'Description', 'artisan' ); ?>
                         </a>
                     </li>
                     
-                    <?php if ( get_post_meta( get_the_ID(), ZENITH_META::EDD_ADDITIONAL_INFO, true ) ) : ?>
+                    <?php if ( get_post_meta( get_the_ID(), ARTISAN_META::EDD_ADDITIONAL_INFO, true ) ) : ?>
                                 
                         <li>
                             <a data-toggle="pill" href="#additional-info">
-                                <?php esc_html_e( 'Additional Info', 'zenith' ); ?>
+                                <?php esc_html_e( 'Additional Info', 'artisan' ); ?>
                             </a>
                         </li>
 
@@ -140,11 +140,11 @@ $edd_gallery = get_post_meta( get_the_ID(), ZENITH_META::EDD_GALLERY, true );
                         </div>
                     </div>
                     
-                    <?php if ( get_post_meta( get_the_ID(), ZENITH_META::EDD_ADDITIONAL_INFO, true ) ) : ?>
+                    <?php if ( get_post_meta( get_the_ID(), ARTISAN_META::EDD_ADDITIONAL_INFO, true ) ) : ?>
 
                         <div id="additional-info" class="tab-pane fade">
                             <div class="tab-inner">
-                                <?php echo esc_html( get_post_meta( get_the_ID(), ZENITH_META::EDD_ADDITIONAL_INFO, true ) ); ?>
+                                <?php echo esc_html( get_post_meta( get_the_ID(), ARTISAN_META::EDD_ADDITIONAL_INFO, true ) ); ?>
                             </div>
                         </div>
                     

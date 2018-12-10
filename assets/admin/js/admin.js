@@ -1,6 +1,6 @@
 jQuery( document ).ready( function ( $ ) {
 
-    $.zenithMediaUploader({
+    $.artisanMediaUploader({
 
         target : '.smartcat-multiple-uploader', // The class wrapping the textbox
         uploaderTitle : 'Select or upload image', // The title of the media upload popup

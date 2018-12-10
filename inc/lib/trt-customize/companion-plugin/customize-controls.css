@@ -9,7 +9,7 @@
     background-color: #f1f1f1 !important;
 }
 
-#accordion-section-zenith_companion .accordion-section-details {
+#accordion-section-artisan_companion .accordion-section-details {
     background-color: #fff;
     margin: 0;
     padding: 10px 10px 11px 14px;
@@ -17,7 +17,7 @@
     background-color: #f1f1f1;
 }
 
-#accordion-section-zenith_companion .accordion-section-buttons {
+#accordion-section-artisan_companion .accordion-section-buttons {
     background-color: #fff;
     margin: 0;
     padding: 10px 10px 11px 14px;
@@ -25,7 +25,7 @@
     background-color: #f1f1f1;
 }
 
-.zenith-companion-icon {
+.artisan-companion-icon {
     line-height: 26px;
 }
 
@@ -40,6 +40,6 @@
     margin-right: 8px;
 }
 
-.zenith-dismiss-confirm {
+.artisan-dismiss-confirm {
     display: none;
 }

@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package Zenith
+ * @package Artisan
  */
 ?>
 
@@ -21,13 +21,13 @@
             ?>
             <div class="entry-meta">
                 <?php
-                zenith_posted_on();
-                zenith_posted_by();
+                artisan_posted_on();
+                artisan_posted_by();
                 ?>
             </div><!-- .entry-meta -->
         <?php endif;
         
-        do_action( 'zenith_social_icons' );
+        do_action( 'artisan_social_icons' );
         
         ?>
     </header><!-- .entry-header -->
@@ -37,7 +37,7 @@
         the_content( sprintf(
                         wp_kses(
                                 /* translators: %s: Name of current post. Only visible to screen readers */
-                                __( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'zenith' ), array (
+                                __( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'artisan' ), array (
             'span' => array (
                 'class' => array (),
             ),
@@ -46,19 +46,19 @@
         ) );
 
         wp_link_pages( array (
-            'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'zenith' ),
+            'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'artisan' ),
             'after' => '</div>',
         ) );
         ?>
     </div><!-- .entry-content -->
 
     <footer class="entry-footer">
-        <?php zenith_entry_footer(); ?>
+        <?php artisan_entry_footer(); ?>
     </footer><!-- .entry-footer -->
     
     <?php 
     
-    if ( get_theme_mod( ZENITH_OPTIONS::SINGLE_POST_SHOW_NAVIGATION, ZENITH_DEFAULTS::SINGLE_POST_SHOW_NAVIGATION ) ) :
+    if ( get_theme_mod( ARTISAN_OPTIONS::SINGLE_POST_SHOW_NAVIGATION, ARTISAN_DEFAULTS::SINGLE_POST_SHOW_NAVIGATION ) ) :
     
         the_post_navigation(); ?>
     

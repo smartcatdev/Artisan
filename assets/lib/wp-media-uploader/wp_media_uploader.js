@@ -6,7 +6,7 @@
  */
 ( function( $ ) {
     
-    $.zenithMediaUploader = function( options ) {
+    $.artisanMediaUploader = function( options ) {
         
         var settings = $.extend({
             
@@ -53,7 +53,7 @@
                                         
                     $( "#mfi_images" ).append('\
                         <li class="mfi_image_item" style="background-image: url(' + attachment[i].url + ');" >\n\
-                            <input type="hidden" name="zenith_edd_product_image_gallery[]" value="' + attachment[i].url + '" /> \n\
+                            <input type="hidden" name="artisan_edd_product_image_gallery[]" value="' + attachment[i].url + '" /> \n\
                             <span class="remove_mfi_image">X</span>\n\
                         </li>');                    
                                         

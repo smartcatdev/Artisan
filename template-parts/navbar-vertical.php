@@ -4,9 +4,9 @@
 
         <div id="slim-header">
     
-            <?php if ( function_exists( 'has_custom_logo' ) && has_custom_logo() && get_theme_mod( ZENITH_OPTIONS::NAVBAR_BRANDING_WHAT_TO_SHOW, ZENITH_DEFAULTS::NAVBAR_BRANDING_WHAT_TO_SHOW ) == 'logo' ) : ?>
+            <?php if ( function_exists( 'has_custom_logo' ) && has_custom_logo() && get_theme_mod( ARTISAN_OPTIONS::NAVBAR_BRANDING_WHAT_TO_SHOW, ARTISAN_DEFAULTS::NAVBAR_BRANDING_WHAT_TO_SHOW ) == 'logo' ) : ?>
 
-                <div id="custom-logo-wrap" class="has-logo <?php echo ! get_theme_mod( ZENITH_OPTIONS::NAVBAR_ALWAYS_SHOW_LOGO, ZENITH_DEFAULTS::NAVBAR_ALWAYS_SHOW_LOGO ) ? 'sometimes-hidden' : ''; ?>">
+                <div id="custom-logo-wrap" class="has-logo <?php echo ! get_theme_mod( ARTISAN_OPTIONS::NAVBAR_ALWAYS_SHOW_LOGO, ARTISAN_DEFAULTS::NAVBAR_ALWAYS_SHOW_LOGO ) ? 'sometimes-hidden' : ''; ?>">
             
                     <?php the_custom_logo(); ?>
 
@@ -14,7 +14,7 @@
                     
             <?php else : ?> 
             
-                <div id="custom-logo-wrap" class="<?php echo ! get_theme_mod( ZENITH_OPTIONS::NAVBAR_ALWAYS_SHOW_LOGO, ZENITH_DEFAULTS::NAVBAR_ALWAYS_SHOW_LOGO ) ? 'sometimes-hidden' : ''; ?>">
+                <div id="custom-logo-wrap" class="<?php echo ! get_theme_mod( ARTISAN_OPTIONS::NAVBAR_ALWAYS_SHOW_LOGO, ARTISAN_DEFAULTS::NAVBAR_ALWAYS_SHOW_LOGO ) ? 'sometimes-hidden' : ''; ?>">
             
                     <div class="site-branding">
                         <h1 class="site-title">
@@ -35,37 +35,37 @@
             
             <?php endif; ?> 
             
-            <?php if ( get_theme_mod( ZENITH_OPTIONS::NAVBAR_SHOW_SOCIAL, ZENITH_DEFAULTS::NAVBAR_SHOW_SOCIAL ) ) : ?>
+            <?php if ( get_theme_mod( ARTISAN_OPTIONS::NAVBAR_SHOW_SOCIAL, ARTISAN_DEFAULTS::NAVBAR_SHOW_SOCIAL ) ) : ?>
             
                 <div class="navbar-social">
 
-                    <?php if ( get_theme_mod( ZENITH_OPTIONS::SOCIAL_ICON_1, ZENITH_DEFAULTS::SOCIAL_ICON_1 ) != '' ) : ?>
-                        <a class="navbar-icon" href="<?php echo esc_url( get_theme_mod( ZENITH_OPTIONS::SOCIAL_URL_1, ZENITH_DEFAULTS::SOCIAL_URL_1 ) ); ?>">
-                            <span class="fab <?php echo esc_attr( get_theme_mod( ZENITH_OPTIONS::SOCIAL_ICON_1, ZENITH_DEFAULTS::SOCIAL_ICON_1 ) ); ?>"></span>
+                    <?php if ( get_theme_mod( ARTISAN_OPTIONS::SOCIAL_ICON_1, ARTISAN_DEFAULTS::SOCIAL_ICON_1 ) != '' ) : ?>
+                        <a class="navbar-icon" href="<?php echo esc_url( get_theme_mod( ARTISAN_OPTIONS::SOCIAL_URL_1, ARTISAN_DEFAULTS::SOCIAL_URL_1 ) ); ?>">
+                            <span class="fab <?php echo esc_attr( get_theme_mod( ARTISAN_OPTIONS::SOCIAL_ICON_1, ARTISAN_DEFAULTS::SOCIAL_ICON_1 ) ); ?>"></span>
                         </a>
                     <?php endif; ?>
 
-                    <?php if ( get_theme_mod( ZENITH_OPTIONS::SOCIAL_ICON_2, ZENITH_DEFAULTS::SOCIAL_ICON_2 ) != '' ) : ?>
-                        <a class="navbar-icon" href="<?php echo esc_url( get_theme_mod( ZENITH_OPTIONS::SOCIAL_URL_2, ZENITH_DEFAULTS::SOCIAL_URL_2 ) ); ?>">
-                            <span class="fab <?php echo esc_attr( get_theme_mod( ZENITH_OPTIONS::SOCIAL_ICON_2, ZENITH_DEFAULTS::SOCIAL_ICON_2 ) ); ?>"></span>
+                    <?php if ( get_theme_mod( ARTISAN_OPTIONS::SOCIAL_ICON_2, ARTISAN_DEFAULTS::SOCIAL_ICON_2 ) != '' ) : ?>
+                        <a class="navbar-icon" href="<?php echo esc_url( get_theme_mod( ARTISAN_OPTIONS::SOCIAL_URL_2, ARTISAN_DEFAULTS::SOCIAL_URL_2 ) ); ?>">
+                            <span class="fab <?php echo esc_attr( get_theme_mod( ARTISAN_OPTIONS::SOCIAL_ICON_2, ARTISAN_DEFAULTS::SOCIAL_ICON_2 ) ); ?>"></span>
                         </a>
                     <?php endif; ?>
 
-                    <?php if ( get_theme_mod( ZENITH_OPTIONS::SOCIAL_ICON_3, ZENITH_DEFAULTS::SOCIAL_ICON_3 ) != '' ) : ?>
-                        <a class="navbar-icon" href="<?php echo esc_url( get_theme_mod( ZENITH_OPTIONS::SOCIAL_URL_3, ZENITH_DEFAULTS::SOCIAL_URL_3 ) ); ?>">
-                            <span class="fab <?php echo esc_attr( get_theme_mod( ZENITH_OPTIONS::SOCIAL_ICON_3, ZENITH_DEFAULTS::SOCIAL_ICON_3 ) ); ?>"></span>
+                    <?php if ( get_theme_mod( ARTISAN_OPTIONS::SOCIAL_ICON_3, ARTISAN_DEFAULTS::SOCIAL_ICON_3 ) != '' ) : ?>
+                        <a class="navbar-icon" href="<?php echo esc_url( get_theme_mod( ARTISAN_OPTIONS::SOCIAL_URL_3, ARTISAN_DEFAULTS::SOCIAL_URL_3 ) ); ?>">
+                            <span class="fab <?php echo esc_attr( get_theme_mod( ARTISAN_OPTIONS::SOCIAL_ICON_3, ARTISAN_DEFAULTS::SOCIAL_ICON_3 ) ); ?>"></span>
                         </a>
                     <?php endif; ?>
 
-                    <?php if ( get_theme_mod( ZENITH_OPTIONS::SOCIAL_ICON_4, ZENITH_DEFAULTS::SOCIAL_ICON_4 ) != '' ) : ?>
-                        <a class="navbar-icon" href="<?php echo esc_url( get_theme_mod( ZENITH_OPTIONS::SOCIAL_URL_4, ZENITH_DEFAULTS::SOCIAL_URL_4 ) ); ?>">
-                            <span class="fab <?php echo esc_attr( get_theme_mod( ZENITH_OPTIONS::SOCIAL_ICON_4, ZENITH_DEFAULTS::SOCIAL_ICON_4 ) ); ?>"></span>
+                    <?php if ( get_theme_mod( ARTISAN_OPTIONS::SOCIAL_ICON_4, ARTISAN_DEFAULTS::SOCIAL_ICON_4 ) != '' ) : ?>
+                        <a class="navbar-icon" href="<?php echo esc_url( get_theme_mod( ARTISAN_OPTIONS::SOCIAL_URL_4, ARTISAN_DEFAULTS::SOCIAL_URL_4 ) ); ?>">
+                            <span class="fab <?php echo esc_attr( get_theme_mod( ARTISAN_OPTIONS::SOCIAL_ICON_4, ARTISAN_DEFAULTS::SOCIAL_ICON_4 ) ); ?>"></span>
                         </a>
                     <?php endif; ?>
 
-                    <?php if ( get_theme_mod( ZENITH_OPTIONS::SOCIAL_ICON_5, ZENITH_DEFAULTS::SOCIAL_ICON_5 ) != '' ) : ?>
-                        <a class="navbar-icon" href="<?php echo esc_url( get_theme_mod( ZENITH_OPTIONS::SOCIAL_URL_5, ZENITH_DEFAULTS::SOCIAL_URL_5 ) ); ?>">
-                            <span class="fab <?php echo esc_attr( get_theme_mod( ZENITH_OPTIONS::SOCIAL_ICON_5, ZENITH_DEFAULTS::SOCIAL_ICON_5 ) ); ?>"></span>
+                    <?php if ( get_theme_mod( ARTISAN_OPTIONS::SOCIAL_ICON_5, ARTISAN_DEFAULTS::SOCIAL_ICON_5 ) != '' ) : ?>
+                        <a class="navbar-icon" href="<?php echo esc_url( get_theme_mod( ARTISAN_OPTIONS::SOCIAL_URL_5, ARTISAN_DEFAULTS::SOCIAL_URL_5 ) ); ?>">
+                            <span class="fab <?php echo esc_attr( get_theme_mod( ARTISAN_OPTIONS::SOCIAL_ICON_5, ARTISAN_DEFAULTS::SOCIAL_ICON_5 ) ); ?>"></span>
                         </a>
                     <?php endif; ?>
 
@@ -73,15 +73,15 @@
             
             <?php endif; ?>
             
-            <?php do_action( 'zenith_mobile_menu' ); ?>
+            <?php do_action( 'artisan_mobile_menu' ); ?>
             
         </div>
     
     </div>
     
-    <div id="vertical-header-wrap" class="<?php echo get_theme_mod( ZENITH_OPTIONS::VERT_NAVBAR_DISPLAY_SETTING, ZENITH_DEFAULTS::VERT_NAVBAR_DISPLAY_SETTING ) == 'always'? 'always-visible expanded' : ''; ?>">
+    <div id="vertical-header-wrap" class="<?php echo get_theme_mod( ARTISAN_OPTIONS::VERT_NAVBAR_DISPLAY_SETTING, ARTISAN_DEFAULTS::VERT_NAVBAR_DISPLAY_SETTING ) == 'always'? 'always-visible expanded' : ''; ?>">
         
-        <?php if ( get_theme_mod( ZENITH_OPTIONS::VERT_NAVBAR_DISPLAY_SETTING, ZENITH_DEFAULTS::VERT_NAVBAR_DISPLAY_SETTING ) == 'toggled' ) : ?>
+        <?php if ( get_theme_mod( ARTISAN_OPTIONS::VERT_NAVBAR_DISPLAY_SETTING, ARTISAN_DEFAULTS::VERT_NAVBAR_DISPLAY_SETTING ) == 'toggled' ) : ?>
             <span id="vertical-menu-toggle-wrap">
                 <div id="vertical-menu-toggle">
                     <div class="bar"></div>
@@ -89,7 +89,7 @@
             </span>
         <?php endif; ?>
     
-        <?php if ( function_exists( 'has_custom_logo' ) && has_custom_logo() && get_theme_mod( ZENITH_OPTIONS::NAVBAR_BRANDING_WHAT_TO_SHOW, ZENITH_DEFAULTS::NAVBAR_BRANDING_WHAT_TO_SHOW ) == 'logo' ) : ?>
+        <?php if ( function_exists( 'has_custom_logo' ) && has_custom_logo() && get_theme_mod( ARTISAN_OPTIONS::NAVBAR_BRANDING_WHAT_TO_SHOW, ARTISAN_DEFAULTS::NAVBAR_BRANDING_WHAT_TO_SHOW ) == 'logo' ) : ?>
 
             <div id="custom-logo-wrap" class="has-logo">
 
@@ -120,37 +120,37 @@
 
         <?php endif; ?> 
 
-        <?php if ( get_theme_mod( ZENITH_OPTIONS::NAVBAR_SHOW_SOCIAL, ZENITH_DEFAULTS::NAVBAR_SHOW_SOCIAL ) ) : ?>
+        <?php if ( get_theme_mod( ARTISAN_OPTIONS::NAVBAR_SHOW_SOCIAL, ARTISAN_DEFAULTS::NAVBAR_SHOW_SOCIAL ) ) : ?>
 
             <div class="navbar-social">
 
-                <?php if ( get_theme_mod( ZENITH_OPTIONS::SOCIAL_ICON_1, ZENITH_DEFAULTS::SOCIAL_ICON_1 ) != '' ) : ?>
-                    <a class="navbar-icon" href="<?php echo esc_url( get_theme_mod( ZENITH_OPTIONS::SOCIAL_URL_1, ZENITH_DEFAULTS::SOCIAL_URL_1 ) ); ?>">
-                        <span class="fab <?php echo esc_attr( get_theme_mod( ZENITH_OPTIONS::SOCIAL_ICON_1, ZENITH_DEFAULTS::SOCIAL_ICON_1 ) ); ?>"></span>
+                <?php if ( get_theme_mod( ARTISAN_OPTIONS::SOCIAL_ICON_1, ARTISAN_DEFAULTS::SOCIAL_ICON_1 ) != '' ) : ?>
+                    <a class="navbar-icon" href="<?php echo esc_url( get_theme_mod( ARTISAN_OPTIONS::SOCIAL_URL_1, ARTISAN_DEFAULTS::SOCIAL_URL_1 ) ); ?>">
+                        <span class="fab <?php echo esc_attr( get_theme_mod( ARTISAN_OPTIONS::SOCIAL_ICON_1, ARTISAN_DEFAULTS::SOCIAL_ICON_1 ) ); ?>"></span>
                     </a>
                 <?php endif; ?>
 
-                <?php if ( get_theme_mod( ZENITH_OPTIONS::SOCIAL_ICON_2, ZENITH_DEFAULTS::SOCIAL_ICON_2 ) != '' ) : ?>
-                    <a class="navbar-icon" href="<?php echo esc_url( get_theme_mod( ZENITH_OPTIONS::SOCIAL_URL_2, ZENITH_DEFAULTS::SOCIAL_URL_2 ) ); ?>">
-                        <span class="fab <?php echo esc_attr( get_theme_mod( ZENITH_OPTIONS::SOCIAL_ICON_2, ZENITH_DEFAULTS::SOCIAL_ICON_2 ) ); ?>"></span>
+                <?php if ( get_theme_mod( ARTISAN_OPTIONS::SOCIAL_ICON_2, ARTISAN_DEFAULTS::SOCIAL_ICON_2 ) != '' ) : ?>
+                    <a class="navbar-icon" href="<?php echo esc_url( get_theme_mod( ARTISAN_OPTIONS::SOCIAL_URL_2, ARTISAN_DEFAULTS::SOCIAL_URL_2 ) ); ?>">
+                        <span class="fab <?php echo esc_attr( get_theme_mod( ARTISAN_OPTIONS::SOCIAL_ICON_2, ARTISAN_DEFAULTS::SOCIAL_ICON_2 ) ); ?>"></span>
                     </a>
                 <?php endif; ?>
 
-                <?php if ( get_theme_mod( ZENITH_OPTIONS::SOCIAL_ICON_3, ZENITH_DEFAULTS::SOCIAL_ICON_3 ) != '' ) : ?>
-                    <a class="navbar-icon" href="<?php echo esc_url( get_theme_mod( ZENITH_OPTIONS::SOCIAL_URL_3, ZENITH_DEFAULTS::SOCIAL_URL_3 ) ); ?>">
-                        <span class="fab <?php echo esc_attr( get_theme_mod( ZENITH_OPTIONS::SOCIAL_ICON_3, ZENITH_DEFAULTS::SOCIAL_ICON_3 ) ); ?>"></span>
+                <?php if ( get_theme_mod( ARTISAN_OPTIONS::SOCIAL_ICON_3, ARTISAN_DEFAULTS::SOCIAL_ICON_3 ) != '' ) : ?>
+                    <a class="navbar-icon" href="<?php echo esc_url( get_theme_mod( ARTISAN_OPTIONS::SOCIAL_URL_3, ARTISAN_DEFAULTS::SOCIAL_URL_3 ) ); ?>">
+                        <span class="fab <?php echo esc_attr( get_theme_mod( ARTISAN_OPTIONS::SOCIAL_ICON_3, ARTISAN_DEFAULTS::SOCIAL_ICON_3 ) ); ?>"></span>
                     </a>
                 <?php endif; ?>
 
-                <?php if ( get_theme_mod( ZENITH_OPTIONS::SOCIAL_ICON_4, ZENITH_DEFAULTS::SOCIAL_ICON_4 ) != '' ) : ?>
-                    <a class="navbar-icon" href="<?php echo esc_url( get_theme_mod( ZENITH_OPTIONS::SOCIAL_URL_4, ZENITH_DEFAULTS::SOCIAL_URL_4 ) ); ?>">
-                        <span class="fab <?php echo esc_attr( get_theme_mod( ZENITH_OPTIONS::SOCIAL_ICON_4, ZENITH_DEFAULTS::SOCIAL_ICON_4 ) ); ?>"></span>
+                <?php if ( get_theme_mod( ARTISAN_OPTIONS::SOCIAL_ICON_4, ARTISAN_DEFAULTS::SOCIAL_ICON_4 ) != '' ) : ?>
+                    <a class="navbar-icon" href="<?php echo esc_url( get_theme_mod( ARTISAN_OPTIONS::SOCIAL_URL_4, ARTISAN_DEFAULTS::SOCIAL_URL_4 ) ); ?>">
+                        <span class="fab <?php echo esc_attr( get_theme_mod( ARTISAN_OPTIONS::SOCIAL_ICON_4, ARTISAN_DEFAULTS::SOCIAL_ICON_4 ) ); ?>"></span>
                     </a>
                 <?php endif; ?>
 
-                <?php if ( get_theme_mod( ZENITH_OPTIONS::SOCIAL_ICON_5, ZENITH_DEFAULTS::SOCIAL_ICON_5 ) != '' ) : ?>
-                    <a class="navbar-icon" href="<?php echo esc_url( get_theme_mod( ZENITH_OPTIONS::SOCIAL_URL_5, ZENITH_DEFAULTS::SOCIAL_URL_5 ) ); ?>">
-                        <span class="fab <?php echo esc_attr( get_theme_mod( ZENITH_OPTIONS::SOCIAL_ICON_5, ZENITH_DEFAULTS::SOCIAL_ICON_5 ) ); ?>"></span>
+                <?php if ( get_theme_mod( ARTISAN_OPTIONS::SOCIAL_ICON_5, ARTISAN_DEFAULTS::SOCIAL_ICON_5 ) != '' ) : ?>
+                    <a class="navbar-icon" href="<?php echo esc_url( get_theme_mod( ARTISAN_OPTIONS::SOCIAL_URL_5, ARTISAN_DEFAULTS::SOCIAL_URL_5 ) ); ?>">
+                        <span class="fab <?php echo esc_attr( get_theme_mod( ARTISAN_OPTIONS::SOCIAL_ICON_5, ARTISAN_DEFAULTS::SOCIAL_ICON_5 ) ); ?>"></span>
                     </a>
                 <?php endif; ?>
 
@@ -179,7 +179,7 @@
                             <li class="menu-item menu-item-type-custom menu-item-object-custom">
 
                                 <a href="<?php echo esc_url( admin_url( 'nav-menus.php' ) ); ?>">
-                                   <?php esc_html_e( 'Add a Primary Menu?', 'zenith' ); ?>
+                                   <?php esc_html_e( 'Add a Primary Menu?', 'artisan' ); ?>
                                 </a>
 
                             </li>
@@ -196,13 +196,13 @@
         
         <div id="footer-branding-wrap">
 
-            <?php if ( get_theme_mod( ZENITH_OPTIONS::FOOTER_SHOW_BRANDING, ZENITH_DEFAULTS::FOOTER_SHOW_BRANDING ) ) : ?>
+            <?php if ( get_theme_mod( ARTISAN_OPTIONS::FOOTER_SHOW_BRANDING, ARTISAN_DEFAULTS::FOOTER_SHOW_BRANDING ) ) : ?>
 
-                <?php if ( get_theme_mod( ZENITH_OPTIONS::FOOTER_BRANDING_TYPE, ZENITH_DEFAULTS::FOOTER_BRANDING_TYPE ) == 'alt_logo' ) : ?>
+                <?php if ( get_theme_mod( ARTISAN_OPTIONS::FOOTER_BRANDING_TYPE, ARTISAN_DEFAULTS::FOOTER_BRANDING_TYPE ) == 'alt_logo' ) : ?>
 
-                    <?php if ( get_theme_mod( ZENITH_OPTIONS::FOOTER_ALTERNATE_LOGO, ZENITH_DEFAULTS::FOOTER_ALTERNATE_LOGO ) && get_theme_mod( ZENITH_OPTIONS::FOOTER_ALTERNATE_LOGO, ZENITH_DEFAULTS::FOOTER_ALTERNATE_LOGO ) != '' ) : ?>
+                    <?php if ( get_theme_mod( ARTISAN_OPTIONS::FOOTER_ALTERNATE_LOGO, ARTISAN_DEFAULTS::FOOTER_ALTERNATE_LOGO ) && get_theme_mod( ARTISAN_OPTIONS::FOOTER_ALTERNATE_LOGO, ARTISAN_DEFAULTS::FOOTER_ALTERNATE_LOGO ) != '' ) : ?>
 
-                        <img class="custom-logo alternate" src="<?php echo esc_url( get_theme_mod( ZENITH_OPTIONS::FOOTER_ALTERNATE_LOGO, ZENITH_DEFAULTS::FOOTER_ALTERNATE_LOGO ) ); ?>" alt="<?php echo esc_attr( get_bloginfo('name') ); ?>">
+                        <img class="custom-logo alternate" src="<?php echo esc_url( get_theme_mod( ARTISAN_OPTIONS::FOOTER_ALTERNATE_LOGO, ARTISAN_DEFAULTS::FOOTER_ALTERNATE_LOGO ) ); ?>" alt="<?php echo esc_attr( get_bloginfo('name') ); ?>">
 
                     <?php endif; ?>
 
@@ -216,15 +216,15 @@
 
             <?php endif; ?>
 
-            <?php if ( get_theme_mod( ZENITH_OPTIONS::FOOTER_SHOW_COPYRIGHT, ZENITH_DEFAULTS::FOOTER_SHOW_COPYRIGHT ) ) : ?>
+            <?php if ( get_theme_mod( ARTISAN_OPTIONS::FOOTER_SHOW_COPYRIGHT, ARTISAN_DEFAULTS::FOOTER_SHOW_COPYRIGHT ) ) : ?>
 
                 <div class="footer-copyright">
-                    <?php echo esc_html( get_theme_mod( ZENITH_OPTIONS::FOOTER_COPYRIGHT_TAGLINE, ZENITH_DEFAULTS::FOOTER_COPYRIGHT_TAGLINE ) ); ?>
+                    <?php echo esc_html( get_theme_mod( ARTISAN_OPTIONS::FOOTER_COPYRIGHT_TAGLINE, ARTISAN_DEFAULTS::FOOTER_COPYRIGHT_TAGLINE ) ); ?>
                 </div>
 
             <?php endif; ?>
 
-            <?php do_action('zenith_designer'); ?>
+            <?php do_action('artisan_designer'); ?>
 
         </div>
 

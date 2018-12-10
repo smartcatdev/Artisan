@@ -20,19 +20,19 @@
 
                 <div class="blog-meta">
                     
-                    <?php if ( get_theme_mod( ZENITH_OPTIONS::BLOG_SHOW_DATE, ZENITH_DEFAULTS::BLOG_SHOW_DATE ) || get_theme_mod( ZENITH_OPTIONS::BLOG_SHOW_AUTHOR, ZENITH_DEFAULTS::BLOG_SHOW_AUTHOR ) ) : ?>
+                    <?php if ( get_theme_mod( ARTISAN_OPTIONS::BLOG_SHOW_DATE, ARTISAN_DEFAULTS::BLOG_SHOW_DATE ) || get_theme_mod( ARTISAN_OPTIONS::BLOG_SHOW_AUTHOR, ARTISAN_DEFAULTS::BLOG_SHOW_AUTHOR ) ) : ?>
                     
-                        <?php if ( get_theme_mod( ZENITH_OPTIONS::BLOG_SHOW_DATE, ZENITH_DEFAULTS::BLOG_SHOW_DATE ) ) : ?>    
+                        <?php if ( get_theme_mod( ARTISAN_OPTIONS::BLOG_SHOW_DATE, ARTISAN_DEFAULTS::BLOG_SHOW_DATE ) ) : ?>
                             <span class="post-date">
                                 <?php echo esc_html( get_the_date( get_option( 'date_format' ) ) ); ?>
                             </span>
                         <?php endif; ?>
                     
-                        <?php echo get_theme_mod( ZENITH_OPTIONS::BLOG_SHOW_DATE, ZENITH_DEFAULTS::BLOG_SHOW_DATE ) && get_theme_mod( ZENITH_OPTIONS::BLOG_SHOW_AUTHOR, ZENITH_DEFAULTS::BLOG_SHOW_AUTHOR ) ? ' | ' : ''; ?>
+                        <?php echo get_theme_mod( ARTISAN_OPTIONS::BLOG_SHOW_DATE, ARTISAN_DEFAULTS::BLOG_SHOW_DATE ) && get_theme_mod( ARTISAN_OPTIONS::BLOG_SHOW_AUTHOR, ARTISAN_DEFAULTS::BLOG_SHOW_AUTHOR ) ? ' | ' : ''; ?>
                     
-                        <?php if ( get_theme_mod( ZENITH_OPTIONS::BLOG_SHOW_AUTHOR, ZENITH_DEFAULTS::BLOG_SHOW_AUTHOR ) ) : ?>    
+                        <?php if ( get_theme_mod( ARTISAN_OPTIONS::BLOG_SHOW_AUTHOR, ARTISAN_DEFAULTS::BLOG_SHOW_AUTHOR ) ) : ?>
                             <span class="post-author">
-                                <?php esc_html_e( 'by', 'zenith' ); ?> <?php the_author_posts_link(); ?>
+                                <?php esc_html_e( 'by', 'artisan' ); ?> <?php the_author_posts_link(); ?>
                             </span>
                         <?php endif; ?>
                             
@@ -41,34 +41,34 @@
                 </div>
 
                 <div class="excerpt">
-                    <?php if ( get_theme_mod( ZENITH_OPTIONS::BLOG_SHOW_CONTENT, ZENITH_DEFAULTS::BLOG_SHOW_CONTENT ) ) : ?>
+                    <?php if ( get_theme_mod( ARTISAN_OPTIONS::BLOG_SHOW_CONTENT, ARTISAN_DEFAULTS::BLOG_SHOW_CONTENT ) ) : ?>
                         <?php the_excerpt(); ?>
                     <?php endif; ?>
                 </div>
 
             </div>
 
-            <?php if ( ( get_theme_mod( ZENITH_OPTIONS::BLOG_SHOW_COMMENT_COUNT, ZENITH_DEFAULTS::BLOG_SHOW_COMMENT_COUNT ) || get_theme_mod( 'blog_layout_show_view_count', false ) ) || get_theme_mod( ZENITH_OPTIONS::BLOG_SHOW_CATEGORY, ZENITH_DEFAULTS::BLOG_SHOW_CATEGORY ) ) : ?>
+            <?php if ( ( get_theme_mod( ARTISAN_OPTIONS::BLOG_SHOW_COMMENT_COUNT, ARTISAN_DEFAULTS::BLOG_SHOW_COMMENT_COUNT ) || get_theme_mod( 'blog_layout_show_view_count', false ) ) || get_theme_mod( ARTISAN_OPTIONS::BLOG_SHOW_CATEGORY, ARTISAN_DEFAULTS::BLOG_SHOW_CATEGORY ) ) : ?>
             
                 <div class="footer-meta">
 
-                    <?php if ( get_theme_mod( ZENITH_OPTIONS::BLOG_SHOW_COMMENT_COUNT, ZENITH_DEFAULTS::BLOG_SHOW_COMMENT_COUNT ) || get_theme_mod( 'blog_layout_show_view_count', false ) ) : ?>
+                    <?php if ( get_theme_mod( ARTISAN_OPTIONS::BLOG_SHOW_COMMENT_COUNT, ARTISAN_DEFAULTS::BLOG_SHOW_COMMENT_COUNT ) || get_theme_mod( 'blog_layout_show_view_count', false ) ) : ?>
 
                         <div class="meta-stats">
 
-                            <?php if ( get_theme_mod( ZENITH_OPTIONS::BLOG_SHOW_COMMENT_COUNT, ZENITH_DEFAULTS::BLOG_SHOW_COMMENT_COUNT ) ) : ?> 
+                            <?php if ( get_theme_mod( ARTISAN_OPTIONS::BLOG_SHOW_COMMENT_COUNT, ARTISAN_DEFAULTS::BLOG_SHOW_COMMENT_COUNT ) ) : ?>
                                 <?php $comment_count = wp_count_comments( get_the_ID() ); ?>
                                 <span class="fas fa-comment"></span> <?php echo intval( $comment_count->approved ); ?>
                             <?php endif; ?>
                             
-                            <?php do_action('zenith_get_blog_meta_view_counter'); ?>
+                            <?php do_action('artisan_get_blog_meta_view_counter'); ?>
                                 
                         </div>
 
                     <?php endif; ?>
 
                     <?php $categories = get_the_category(); ?>
-                    <?php if ( get_theme_mod( ZENITH_OPTIONS::BLOG_SHOW_CATEGORY, ZENITH_DEFAULTS::BLOG_SHOW_CATEGORY ) && !empty( $categories ) && is_array( $categories ) ) : ?> 
+                    <?php if ( get_theme_mod( ARTISAN_OPTIONS::BLOG_SHOW_CATEGORY, ARTISAN_DEFAULTS::BLOG_SHOW_CATEGORY ) && !empty( $categories ) && is_array( $categories ) ) : ?>
                         <div class="categories-bar">
                             <?php $ctr = 0; ?>
                             <?php foreach ( $categories as $cat ) : ?>

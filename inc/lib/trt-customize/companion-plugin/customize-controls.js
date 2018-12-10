@@ -19,29 +19,29 @@
 (function ($) {
     
     // Clicker so that theme editor can dismiss notice to install plugin
-    $(document).on( 'click', '.zenith-dismiss-companion', function(e) {
+    $(document).on( 'click', '.artisan-dismiss-companion', function(e) {
        
         e.preventDefault()
         
         $.ajax({
-            url         : zenith_customize.ajax_url,
+            url         : artisan_customize.ajax_url,
             type        : 'post',
             dataType    : 'json',
             data        : {
-                'action'                : 'zenith_dismiss_companion',
-                'zenith_dismiss_nonce'  : zenith_customize.zenith_dismiss_nonce
+                'action'                : 'artisan_dismiss_companion',
+                'artisan_dismiss_nonce'  : artisan_customize.artisan_dismiss_nonce
             }
         })
         
         .done( function( data) {
-            wp.customize.section('zenith_companion').deactivate()
+            wp.customize.section('artisan_companion').deactivate()
         })
        
     })
     
-    $(document).on( 'click', '.zenith-initiate-dismiss', function(e) {
+    $(document).on( 'click', '.artisan-initiate-dismiss', function(e) {
         $(this).hide()
-        $('.zenith-dismiss-confirm').slideDown(300) 
+        $('.artisan-dismiss-confirm').slideDown(300)
     })
     
 })(jQuery);

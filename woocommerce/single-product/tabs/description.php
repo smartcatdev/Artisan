@@ -22,7 +22,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 global $post;
 
-$heading = esc_html( apply_filters( 'woocommerce_product_description_heading', __( 'Description', 'zenith' ) ) );
+$heading = esc_html( apply_filters( 'woocommerce_product_description_heading', __( 'Description', 'artisan' ) ) );
 
 ?>
 

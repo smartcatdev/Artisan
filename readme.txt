@@ -1,4 +1,4 @@
-=== Zenith ===
+=== Artisan ===
 
 Contributors: smartcat
 Tags: two-columns, three-columns, four-columns, right-sidebar, grid-layout, flexible-header, custom-colors, custom-header, custom-menu, custom-logo, featured-images, footer-widgets, full-width-template, theme-options, threaded-comments, translation-ready, e-commerce, blog, entertainment
@@ -10,14 +10,14 @@ Requires PHP: 5.3
 License: GNU General Public License v2 or later
 License URI: LICENSE
 
-Build a professional site for yourself, for one client, or for all your clients using Zenith, without touching a line of code. A highly customizable theme which packs tons of premium features in a free theme. 3 navbar menu styles, custom header, 3 blog styles, customizable colors, fonts and so much more! Zenith comes with a free companion plugin which includes many drag & drop widgets that you can use to build your pages any way you like, as well as 3 pre-designed presets that you can install with one click, saving you time, and providing you with a professionally desined site to start from.
+Build a professional site for yourself, for one client, or for all your clients using Artisan, without touching a line of code. A highly customizable theme which packs tons of premium features in a free theme. 3 navbar menu styles, custom header, 3 blog styles, customizable colors, fonts and so much more! Artisan comes with a free companion plugin which includes many drag & drop widgets that you can use to build your pages any way you like, as well as 3 pre-designed presets that you can install with one click, saving you time, and providing you with a professionally desined site to start from.
 
-Zenith theme, Copyright 2018 Smartcat Solutions Inc.
+Artisan theme, Copyright 2018 Smartcat Solutions Inc.
 This theme, like WordPress, is distributed under the terms of the GNU GPL.
 
 == Description ==
 
-Build a professional site for yourself, for one client, or for all your clients using Zenith. A highly customizable theme which packs tons of premium features in a free theme. 3 navbar menu styles, custom header, 3 blog styles, customizable colors, fonts and so much more! Zenith comes with a free companion plugin which includes many drag & drop widgets that you can use to build your pages any way you like, as well as 3 pre-designed presets that you can install with one click, saving you time, and providing you with a professionally desined site to start from.
+Build a professional site for yourself, for one client, or for all your clients using Artisan. A highly customizable theme which packs tons of premium features in a free theme. 3 navbar menu styles, custom header, 3 blog styles, customizable colors, fonts and so much more! Artisan comes with a free companion plugin which includes many drag & drop widgets that you can use to build your pages any way you like, as well as 3 pre-designed presets that you can install with one click, saving you time, and providing you with a professionally desined site to start from.
 
 == Installation ==
 
@@ -29,7 +29,7 @@ Build a professional site for yourself, for one client, or for all your clients 
 
 = Does this theme support any plugins? =
 
-Zenith includes support for Infinite Scroll in Jetpack.
+Artisan includes support for Infinite Scroll in Jetpack.
 
 == Changelog ==
 

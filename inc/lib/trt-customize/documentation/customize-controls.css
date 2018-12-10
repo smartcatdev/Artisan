@@ -9,7 +9,7 @@
     background-color: #f1f1f1 !important;
 }
 
-#accordion-section-zenith_docs .accordion-section-details {
+#accordion-section-artisan_docs .accordion-section-details {
     background-color: #fff;
     margin: 0;
     padding: 10px 10px 11px 14px;
@@ -17,7 +17,7 @@
     background-color: #f1f1f1;
 }
 
-#accordion-section-zenith_pro h3.accordion-section-title{
+#accordion-section-artisan_pro h3.accordion-section-title{
     padding: 18px 14px;
     background: #ed1558 !important;
     border-left-color: #ed1558;
@@ -25,15 +25,15 @@
     text-transform: uppercase;
 }
 
-#accordion-section-zenith_pro:hover h3.accordion-section-title {
+#accordion-section-artisan_pro:hover h3.accordion-section-title {
     background: #ed1558 !important;
     border-left-color: #ed1558 !important;
     color: #fff !important;
     
 }
 
-#accordion-section-zenith_pro h3.accordion-section-title .button.button-primary,
-#accordion-section-zenith_pro:hover h3.accordion-section-title .button.button-primary {
+#accordion-section-artisan_pro h3.accordion-section-title .button.button-primary,
+#accordion-section-artisan_pro:hover h3.accordion-section-title .button.button-primary {
     background: #fff;
     border: none;
     outline: none;

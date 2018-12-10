@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package Zenith
+ * @package Artisan
  */
 get_header();
 ?>
@@ -37,18 +37,18 @@ get_header();
                 </div>
 
                 <?php 
-                switch ( get_theme_mod( ZENITH_OPTIONS::BLOG_LAYOUT_STYLE, ZENITH_DEFAULTS::BLOG_LAYOUT_STYLE ) ) :
+                switch ( get_theme_mod( ARTISAN_OPTIONS::BLOG_LAYOUT_STYLE, ARTISAN_DEFAULTS::BLOG_LAYOUT_STYLE ) ) :
 
                     case 'blog_masonry' :
-                        do_action( 'zenith_blog_masonry_wrap_open');
+                        do_action( 'artisan_blog_masonry_wrap_open');
                         break;
 
                     case 'blog_mosaic' :
-                        do_action( 'zenith_blog_mosaic_wrap_open');
+                        do_action( 'artisan_blog_mosaic_wrap_open');
                         break;
 
                     default :
-                        do_action( 'zenith_blog_standard_wrap_open');
+                        do_action( 'artisan_blog_standard_wrap_open');
 
                 endswitch; 
                 ?>
@@ -62,24 +62,24 @@ get_header();
                          * If you want to override this in a child theme, then include a file
                          * called content-___.php (where ___ is the Post Format name) and that will be used instead.
                          */
-                        get_template_part( 'template-parts/content', get_theme_mod( ZENITH_OPTIONS::BLOG_LAYOUT_STYLE, ZENITH_DEFAULTS::BLOG_LAYOUT_STYLE ) );
+                        get_template_part( 'template-parts/content', get_theme_mod( ARTISAN_OPTIONS::BLOG_LAYOUT_STYLE, ARTISAN_DEFAULTS::BLOG_LAYOUT_STYLE ) );
 
                     endwhile;
                     ?>
 
                 <?php 
-                switch ( get_theme_mod( ZENITH_OPTIONS::BLOG_LAYOUT_STYLE, ZENITH_DEFAULTS::BLOG_LAYOUT_STYLE ) ) :
+                switch ( get_theme_mod( ARTISAN_OPTIONS::BLOG_LAYOUT_STYLE, ARTISAN_DEFAULTS::BLOG_LAYOUT_STYLE ) ) :
 
                     case 'blog_masonry' :
-                        do_action( 'zenith_blog_masonry_wrap_close');
+                        do_action( 'artisan_blog_masonry_wrap_close');
                         break;
 
                     case 'blog_mosaic' :
-                        do_action( 'zenith_blog_mosaic_wrap_close');
+                        do_action( 'artisan_blog_mosaic_wrap_close');
                         break;
 
                     default :
-                        do_action( 'zenith_blog_standard_wrap_close');
+                        do_action( 'artisan_blog_standard_wrap_close');
 
                 endswitch; 
                 ?>

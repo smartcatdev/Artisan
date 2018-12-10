@@ -1,8 +1,8 @@
 <?php
 
-if( !function_exists( 'zenith_fonts' ) ) {
+if( !function_exists( 'artisan_fonts' ) ) {
 
-    function zenith_fonts(){
+    function artisan_fonts(){
 
         $font_family_array = array(
 
@@ -43,7 +43,7 @@ if( !function_exists( 'zenith_fonts' ) ) {
 
         );
 
-        return apply_filters( 'zenith_fonts', $font_family_array );
+        return apply_filters( 'artisan_fonts', $font_family_array );
 
     }
     

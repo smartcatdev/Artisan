@@ -6,7 +6,7 @@
  * @since 1.0.0
  * @return void
  */
-function zenith_render_mobile_menu() { ?>
+function artisan_render_mobile_menu() { ?>
                         
     <div id="mobile-menu-wrap">
                 
@@ -46,7 +46,7 @@ function zenith_render_mobile_menu() { ?>
                         <li class="menu-item menu-item-type-custom menu-item-object-custom">
 
                             <a href="<?php echo esc_url( admin_url( 'nav-menus.php' ) ); ?>">
-                               <?php esc_html_e( 'Add a Mobile Menu?', 'zenith' ); ?>
+                               <?php esc_html_e( 'Add a Mobile Menu?', 'artisan' ); ?>
                             </a>
 
                         </li>
@@ -62,4 +62,4 @@ function zenith_render_mobile_menu() { ?>
     </div>
 
 <?php }
-add_action( 'zenith_mobile_menu', 'zenith_render_mobile_menu');        
+add_action( 'artisan_mobile_menu', 'artisan_render_mobile_menu');

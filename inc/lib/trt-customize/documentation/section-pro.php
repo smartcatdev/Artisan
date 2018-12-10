@@ -6,7 +6,7 @@
  * @since  1.0.0
  * @access public
  */
-class Zenith_Docs_Customize_Section_Pro extends WP_Customize_Section {
+class Artisan_Docs_Customize_Section_Pro extends WP_Customize_Section {
 
     /**
      * The type of customize section being rendered.
@@ -15,7 +15,7 @@ class Zenith_Docs_Customize_Section_Pro extends WP_Customize_Section {
      * @access public
      * @var    string
      */
-    public $type = 'zenith_docs';
+    public $type = 'artisan_docs';
 
     /**
      * Custom button text to output.

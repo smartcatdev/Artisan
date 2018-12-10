@@ -6,7 +6,7 @@
  * @since  1.0.0
  * @access public
  */
-class Zenith_Customize_Section_Pro extends WP_Customize_Section {
+class Artisan_Customize_Section_Pro extends WP_Customize_Section {
 
     /**
      * The type of customize section being rendered.
@@ -83,19 +83,19 @@ class Zenith_Customize_Section_Pro extends WP_Customize_Section {
                 
                 <# if ( data.install_text && data.install_url ) { #>
                 <a href="{{{ data.install_url }}}" class="button button-primary">
-                    <span class="dashicons dashicons-admin-appearance zenith-companion-icon"></span>
+                    <span class="dashicons dashicons-admin-appearance artisan-companion-icon"></span>
                     {{ data.install_text }}
                 </a>
                 
-                <a href="#" class="button button-default zenith-initiate-dismiss">{{ data.dismiss_text }}</a>
+                <a href="#" class="button button-default artisan-initiate-dismiss">{{ data.dismiss_text }}</a>
                 
                 <# } #>
                 
             </div>
             
-            <div class="accordion-section-buttons zenith-dismiss-confirm">
+            <div class="accordion-section-buttons artisan-dismiss-confirm">
                 <p>{{ data.confirm_text }}</p>
-                <a href="#" class="button button-primary zenith-dismiss-companion">{{data.confirm_button}}</a>
+                <a href="#" class="button button-primary artisan-dismiss-companion">{{data.confirm_button}}</a>
                 
                 
             </div>

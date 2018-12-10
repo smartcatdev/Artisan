@@ -1122,7 +1122,7 @@ header#masthead.header-style-split .navbar-social.expanded .navbar-icon {
 /* -----------------------------------------------------------------------------
  * Custom Header
  * -------------------------------------------------------------------------- */
-#zenith-custom-header {
+#artisan-custom-header {
     background-size: cover;
     background-position: 50%;
     position: relative;
@@ -1175,18 +1175,18 @@ ul#custom-header-menu > li ul.sub-menu li {
     padding: 0;
 }
 
-div#zenith-custom-header.parallax_layers .jparallax-layer.texture-layer {
+div#artisan-custom-header.parallax_layers .jparallax-layer.texture-layer {
     background-size: unset !important;
 }
 
-div#zenith-custom-header.parallax_layers .jparallax-layer.content-layer {
+div#artisan-custom-header.parallax_layers .jparallax-layer.content-layer {
     left: 50%;
     top: 50%;
     display: none;
 }
 
-div#zenith-custom-header.zenith_parallax img.custom-logo,
-div#zenith-custom-header.parallax_layers .jparallax-layer.content-layer img.custom-logo {
+div#artisan-custom-header.artisan_parallax img.custom-logo,
+div#artisan-custom-header.parallax_layers .jparallax-layer.content-layer img.custom-logo {
     width: auto;
     margin-bottom: 15px;
 }
@@ -1255,7 +1255,7 @@ div#footer-branding-wrap svg {
     margin-left: 4px;
 }
 
-footer #zenith_designer {
+footer #artisan_designer {
 /*    transform: scale(1.75);
     margin-left: 25px;*/
 }
@@ -1265,7 +1265,7 @@ footer .footer-copyright {
     display: inline-block;
 }
 
-footer span.zenith_by {
+footer span.artisan_by {
     border-left: thin solid white;
     padding-left: 15px;
 }
@@ -1315,7 +1315,7 @@ aside.widget table#wp-calendar td {
     border-radius: 2px;
 }
 
-.zenith-sidebar .widget-title {
+.artisan-sidebar .widget-title {
     color: #373737;
     border-bottom-color: #eee;
 }
@@ -1353,7 +1353,7 @@ form textarea {
 button, 
 input[type="submit"],
 a.button,
-.zenith-module.featured-pages .featured-inner a.read-more {
+.artisan-module.featured-pages .featured-inner a.read-more {
     background: none;
     border: 2px solid;
     color: #fff;
@@ -1712,14 +1712,14 @@ div#cart-panel ul.product_list_widget .product-wrap a.remove {
     margin-top: 50px;
 }*/
 
-.sidebar-wrap > :not(.zenith-module) {
+.sidebar-wrap > :not(.artisan-module) {
     color: #333333;
     padding: 30px 15px;
     max-width: 1170px;
     margin: 0 auto !important;
 }
 
-.sidebar-wrap > :not(.zenith-module) .widget-title {
+.sidebar-wrap > :not(.artisan-module) .widget-title {
     color: #333;
 }
 
@@ -1739,12 +1739,12 @@ div#primary.widget-shell main#main > article {
 /* -----------------------------------------------------------------------------
  * Pagination Links
  * -------------------------------------------------------------------------- */
-.zenith-pagination-links {
+.artisan-pagination-links {
     text-align: center;
     padding: 15px 0;
 }
 
-.zenith-pagination-links .page-numbers,
+.artisan-pagination-links .page-numbers,
 .woocommerce nav.woocommerce-pagination ul li span,
 .woocommerce nav.woocommerce-pagination ul li > a {
     padding: 4px 12px;
@@ -1756,13 +1756,13 @@ div#primary.widget-shell main#main > article {
     -webkit-transition: .3s all ease-in-out;
 }
 
-.zenith-pagination-links .page-numbers:hover,
+.artisan-pagination-links .page-numbers:hover,
 .woocommerce nav.woocommerce-pagination ul li:hover span,
 .woocommerce nav.woocommerce-pagination ul li:hover > a {
     color: #ffffff;
 }
 
-.zenith-pagination-links .page-numbers.current,
+.artisan-pagination-links .page-numbers.current,
 .woocommerce nav.woocommerce-pagination ul li span.current {
     background-color: #f0f0f0;
 }
@@ -1855,42 +1855,42 @@ div#author-meta-wrap .author-job-location-social .author-social a.social-link:ho
  * Left and Right Sidebars
  * -------------------------------------------------------------------------- */
 
-.zenith-landr-sidebar-wrap aside.widget table#wp-calendar th, 
-.zenith-landr-sidebar-wrap aside.widget table#wp-calendar td {
+.artisan-landr-sidebar-wrap aside.widget table#wp-calendar th,
+.artisan-landr-sidebar-wrap aside.widget table#wp-calendar td {
     color: #373737;
 }
 
 @media (min-width:768px) {
-    .zenith-landr-sidebar-wrap {
+    .artisan-landr-sidebar-wrap {
         margin-top: 100px;
     }    
-    body.blog .zenith-landr-sidebar-wrap,
-    body.archive .zenith-landr-sidebar-wrap,
-    body.search .zenith-landr-sidebar-wrap {
+    body.blog .artisan-landr-sidebar-wrap,
+    body.archive .artisan-landr-sidebar-wrap,
+    body.search .artisan-landr-sidebar-wrap {
         margin-top: 0;
     }
 }
 
-.zenith-landr-sidebar-wrap > aside.widget:first-child h2.widget-title {
+.artisan-landr-sidebar-wrap > aside.widget:first-child h2.widget-title {
     margin-top: 0;
 }
 
-.zenith-landr-sidebar-wrap h2.widget-title {
+.artisan-landr-sidebar-wrap h2.widget-title {
     color: #373737;
     border-bottom-color: #eee;
 }
 
 @media (max-width:1199px) and (min-width:768px) {
-    .zenith-landr-sidebar-wrap ul.product_list_widget .product-wrap {
+    .artisan-landr-sidebar-wrap ul.product_list_widget .product-wrap {
         display: block;
     }
-    .zenith-landr-sidebar-wrap ul.product_list_widget .product-wrap > a img {
+    .artisan-landr-sidebar-wrap ul.product_list_widget .product-wrap > a img {
         max-width: 100%;
         float: none;
     }
 
-    .zenith-landr-sidebar-wrap ul.product_list_widget .product-wrap > .product-title,
-    .zenith-landr-sidebar-wrap ul.product_list_widget .product-wrap > .quantity {
+    .artisan-landr-sidebar-wrap ul.product_list_widget .product-wrap > .product-title,
+    .artisan-landr-sidebar-wrap ul.product_list_widget .product-wrap > .quantity {
         font-size: 14px;
         padding: 0;
         margin-top: 15px;
@@ -1904,10 +1904,10 @@ div#author-meta-wrap .author-job-location-social .author-social a.social-link:ho
     .has-side-sidebar.sidebar-left > article {
         padding-top: 15px !important;
     }
-    .zenith-landr-sidebar-wrap.single.right {
+    .artisan-landr-sidebar-wrap.single.right {
         margin-bottom: 100px;
     }
-    .zenith-landr-sidebar-wrap.single.left {
+    .artisan-landr-sidebar-wrap.single.left {
         margin-top: 100px;
     }
 }
@@ -2003,13 +2003,13 @@ div#author-meta-wrap .author-job-location-social .author-social a.social-link:ho
  * EDD Single Product Page
  * -------------------------------------------------------------------------- */
 
-div#zenith-edd-header {
+div#artisan-edd-header {
     background: #ffffff;
     box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.15);
     position: relative;
 }
 
-div#zenith-edd-header article {
+div#artisan-edd-header article {
     padding: 50px 0;
 }
 
@@ -2027,7 +2027,7 @@ div#edd-header-wrap-gallery {
     width: 40%;
 }
 
-div#zenith-edd-body {
+div#artisan-edd-body {
     padding: 50px 0;
     background: #f8f8f8;
 }
@@ -2042,7 +2042,7 @@ span.product-category {
     display: block;
 }
 
-div#zenith-edd-header h1.product_title {
+div#artisan-edd-header h1.product_title {
     font-size: 48px;
     text-transform: uppercase;
     letter-spacing: .15em;
@@ -2052,27 +2052,27 @@ div#zenith-edd-header h1.product_title {
     margin-bottom: 5px;
 }
 
-div#zenith-edd-header .price {
+div#artisan-edd-header .price {
     font-size: 42px;
     display: block;
     margin-bottom: 15px;
 }
 
-div#zenith-edd-header .price del {
+div#artisan-edd-header .price del {
     color: #333;
 }
 
-div#zenith-edd-header .edd-buttons {
+div#artisan-edd-header .edd-buttons {
     margin-top: 30px;
 }
 
-div#zenith-edd-header .edd-buttons .edd_purchase_submit_wrapper {
+div#artisan-edd-header .edd-buttons .edd_purchase_submit_wrapper {
     display: inline-block;
     float: left;
     margin-right: 10px;
 }
 
-div#zenith-edd-header .edd-buttons span.edd-cart-added-alert {
+div#artisan-edd-header .edd-buttons span.edd-cart-added-alert {
 /*    position: relative;
     text-align: center;
     color: #333;
@@ -2091,11 +2091,11 @@ div#zenith-edd-header .edd-buttons span.edd-cart-added-alert {
     margin-top: -2.5px;
 }
 
-div#zenith-edd-header .edd-buttons .edd_download_purchase_form {
+div#artisan-edd-header .edd-buttons .edd_download_purchase_form {
     margin-bottom: 0px !important;
 }
 
-div#zenith-edd-header .edd-buttons a.button.edd_go_to_checkout {
+div#artisan-edd-header .edd-buttons a.button.edd_go_to_checkout {
     margin-bottom: 5px;
 }
 
@@ -2149,16 +2149,16 @@ div#edd-gallery-wrap .slick-arrow:hover {
     opacity: .75;
 }
 
-#zenith-edd-body #edd-tab-nav {
+#artisan-edd-body #edd-tab-nav {
     margin-bottom: 30px;
 }
 
-#zenith-edd-body .tab-content {
+#artisan-edd-body .tab-content {
     margin-bottom: 50px;
     padding: 15px 0 30px 0;
 }
 
-#zenith-edd-header iframe.edd-product-video {
+#artisan-edd-header iframe.edd-product-video {
     max-width: 100%;
 }
 
@@ -2169,8 +2169,8 @@ div#edd-gallery-wrap .slick-arrow:hover {
         padding-top: 0 !important;  
     }
     
-    div#zenith-edd-header h1.product_title,
-    div#zenith-edd-header .price {
+    div#artisan-edd-header h1.product_title,
+    div#artisan-edd-header .price {
         font-size: 32px;
     }
     div#edd-gallery-wrap {
@@ -2200,12 +2200,12 @@ div#edd-gallery-wrap .slick-arrow:hover {
         margin-bottom: 15px;
     }
     
-    div#zenith-edd-header .edd-buttons .edd_purchase_submit_wrapper {
+    div#artisan-edd-header .edd-buttons .edd_purchase_submit_wrapper {
         float: none;
         margin-right: 0;
     }
     
-    div#zenith-edd-header .edd-buttons span.edd-cart-added-alert {
+    div#artisan-edd-header .edd-buttons span.edd-cart-added-alert {
         margin-top: 0px;
         margin-bottom: 5px;
     }
@@ -2249,7 +2249,7 @@ div#edd-gallery-wrap .slick-arrow:hover {
 }
 
 @media (max-width:767px) {
-    #zenith-edd-body #edd-tab-nav {
+    #artisan-edd-body #edd-tab-nav {
         margin-bottom: 15px;
     }
     .nav-pills > li {
@@ -2260,15 +2260,15 @@ div#edd-gallery-wrap .slick-arrow:hover {
         width: 100%;
         text-align: center;
     }
-    div#zenith-edd-header .edd-buttons .edd_purchase_submit_wrapper {
+    div#artisan-edd-header .edd-buttons .edd_purchase_submit_wrapper {
         width: 100%;
     }
-    div#zenith-edd-header .edd-buttons a.button {
+    div#artisan-edd-header .edd-buttons a.button {
         width: 100% !important;
     }
 }
 
-.zenith-single-edd-product .edd_price_options input[type="radio"] {
+.artisan-single-edd-product .edd_price_options input[type="radio"] {
     display: inline-block !important;
     width: auto !important;
     margin: 0 10px 0 0 !important;
@@ -2575,7 +2575,7 @@ div#footer-branding-wrap .site-title {
     margin-top: 0;
 }
 
-div#vertical-header-wrap #footer-branding-wrap span.zenith_by {
+div#vertical-header-wrap #footer-branding-wrap span.artisan_by {
     vertical-align: middle;
 }
 

@@ -6,38 +6,38 @@
  * @since 1.0.0
  * @return array of hex colors
  */
-function zenith_get_all_theme_colors() {
+function artisan_get_all_theme_colors() {
     
     $theme_colors = array();
     
-    $theme_colors['navbar_bg']              = get_theme_mod( ZENITH_OPTIONS::NAVBAR_BG_COLOR, ZENITH_DEFAULTS::NAVBAR_BG_COLOR );
-    $theme_colors['navbar_fg']              = get_theme_mod( ZENITH_OPTIONS::NAVBAR_FG_COLOR, ZENITH_DEFAULTS::NAVBAR_FG_COLOR );
+    $theme_colors['navbar_bg']              = get_theme_mod( ARTISAN_OPTIONS::NAVBAR_BG_COLOR, ARTISAN_DEFAULTS::NAVBAR_BG_COLOR );
+    $theme_colors['navbar_fg']              = get_theme_mod( ARTISAN_OPTIONS::NAVBAR_FG_COLOR, ARTISAN_DEFAULTS::NAVBAR_FG_COLOR );
     
-    $theme_colors['navbar_menu_bg']         = get_theme_mod( ZENITH_OPTIONS::NAVBAR_MENU_BG_COLOR, ZENITH_DEFAULTS::NAVBAR_MENU_BG_COLOR );
-    $theme_colors['navbar_menu_fg']         = get_theme_mod( ZENITH_OPTIONS::NAVBAR_MENU_FG_COLOR, ZENITH_DEFAULTS::NAVBAR_MENU_FG_COLOR );
+    $theme_colors['navbar_menu_bg']         = get_theme_mod( ARTISAN_OPTIONS::NAVBAR_MENU_BG_COLOR, ARTISAN_DEFAULTS::NAVBAR_MENU_BG_COLOR );
+    $theme_colors['navbar_menu_fg']         = get_theme_mod( ARTISAN_OPTIONS::NAVBAR_MENU_FG_COLOR, ARTISAN_DEFAULTS::NAVBAR_MENU_FG_COLOR );
     
-    $theme_colors['prefooter_bg']           = get_theme_mod( ZENITH_OPTIONS::PRE_FOOTER_BG_COLOR, ZENITH_DEFAULTS::PRE_FOOTER_BG_COLOR );
-    $theme_colors['prefooter_fg']           = get_theme_mod( ZENITH_OPTIONS::PRE_FOOTER_FG_COLOR, ZENITH_DEFAULTS::PRE_FOOTER_FG_COLOR );
+    $theme_colors['prefooter_bg']           = get_theme_mod( ARTISAN_OPTIONS::PRE_FOOTER_BG_COLOR, ARTISAN_DEFAULTS::PRE_FOOTER_BG_COLOR );
+    $theme_colors['prefooter_fg']           = get_theme_mod( ARTISAN_OPTIONS::PRE_FOOTER_FG_COLOR, ARTISAN_DEFAULTS::PRE_FOOTER_FG_COLOR );
     
-    $theme_colors['footer_bg']              = get_theme_mod( ZENITH_OPTIONS::FOOTER_BG_COLOR, ZENITH_DEFAULTS::FOOTER_BG_COLOR );
-    $theme_colors['footer_fg']              = get_theme_mod( ZENITH_OPTIONS::FOOTER_FG_COLOR, ZENITH_DEFAULTS::FOOTER_FG_COLOR );
+    $theme_colors['footer_bg']              = get_theme_mod( ARTISAN_OPTIONS::FOOTER_BG_COLOR, ARTISAN_DEFAULTS::FOOTER_BG_COLOR );
+    $theme_colors['footer_fg']              = get_theme_mod( ARTISAN_OPTIONS::FOOTER_FG_COLOR, ARTISAN_DEFAULTS::FOOTER_FG_COLOR );
     
-    $theme_colors['primary']                = get_theme_mod( ZENITH_OPTIONS::COLOR_SKIN_PRIMARY, ZENITH_DEFAULTS::COLOR_SKIN_PRIMARY );
-    $theme_colors['secondary']              = get_theme_mod( ZENITH_OPTIONS::COLOR_SKIN_SECONDARY, ZENITH_DEFAULTS::COLOR_SKIN_SECONDARY );
+    $theme_colors['primary']                = get_theme_mod( ARTISAN_OPTIONS::COLOR_SKIN_PRIMARY, ARTISAN_DEFAULTS::COLOR_SKIN_PRIMARY );
+    $theme_colors['secondary']              = get_theme_mod( ARTISAN_OPTIONS::COLOR_SKIN_SECONDARY, ARTISAN_DEFAULTS::COLOR_SKIN_SECONDARY );
     
-    $theme_colors['social_bg']              = get_theme_mod( ZENITH_OPTIONS::NAVBAR_SOCIAL_BG_COLOR, ZENITH_DEFAULTS::NAVBAR_SOCIAL_BG_COLOR );
-    $theme_colors['social_fg']              = get_theme_mod( ZENITH_OPTIONS::NAVBAR_SOCIAL_FG_COLOR, ZENITH_DEFAULTS::NAVBAR_SOCIAL_FG_COLOR );
-    $theme_colors['social_fg_hov']          = get_theme_mod( ZENITH_OPTIONS::NAVBAR_SOCIAL_FG_COLOR_HOVER, ZENITH_DEFAULTS::NAVBAR_SOCIAL_FG_COLOR_HOVER );
-    $theme_colors['custom_header_title']    = get_theme_mod( ZENITH_OPTIONS::CUSTOM_HEADER_TITLE_COLOR, ZENITH_DEFAULTS::CUSTOM_HEADER_TITLE_COLOR );
-    $theme_colors['custom_header_menu']     = get_theme_mod( ZENITH_OPTIONS::CUSTOM_HEADER_MENU_COLOR, ZENITH_DEFAULTS::CUSTOM_HEADER_MENU_COLOR );
+    $theme_colors['social_bg']              = get_theme_mod( ARTISAN_OPTIONS::NAVBAR_SOCIAL_BG_COLOR, ARTISAN_DEFAULTS::NAVBAR_SOCIAL_BG_COLOR );
+    $theme_colors['social_fg']              = get_theme_mod( ARTISAN_OPTIONS::NAVBAR_SOCIAL_FG_COLOR, ARTISAN_DEFAULTS::NAVBAR_SOCIAL_FG_COLOR );
+    $theme_colors['social_fg_hov']          = get_theme_mod( ARTISAN_OPTIONS::NAVBAR_SOCIAL_FG_COLOR_HOVER, ARTISAN_DEFAULTS::NAVBAR_SOCIAL_FG_COLOR_HOVER );
+    $theme_colors['custom_header_title']    = get_theme_mod( ARTISAN_OPTIONS::CUSTOM_HEADER_TITLE_COLOR, ARTISAN_DEFAULTS::CUSTOM_HEADER_TITLE_COLOR );
+    $theme_colors['custom_header_menu']     = get_theme_mod( ARTISAN_OPTIONS::CUSTOM_HEADER_MENU_COLOR, ARTISAN_DEFAULTS::CUSTOM_HEADER_MENU_COLOR );
     
-    $theme_colors['cart_tab']               = get_theme_mod( ZENITH_OPTIONS::WOO_SLIDE_CART_TAB_COLOR, ZENITH_DEFAULTS::WOO_SLIDE_CART_TAB_COLOR );
+    $theme_colors['cart_tab']               = get_theme_mod( ARTISAN_OPTIONS::WOO_SLIDE_CART_TAB_COLOR, ARTISAN_DEFAULTS::WOO_SLIDE_CART_TAB_COLOR );
     
-    $theme_colors['plx_overlay_single']     = get_theme_mod( ZENITH_OPTIONS::CUSTOM_HEADER_COLOR_LAYER_COLOR, ZENITH_DEFAULTS::CUSTOM_HEADER_COLOR_LAYER_COLOR );
-    $theme_colors['plx_overlay_grad_start'] = get_theme_mod( ZENITH_OPTIONS::GRADIENT_START_COLOR, ZENITH_DEFAULTS::GRADIENT_START_COLOR );
-    $theme_colors['plx_overlay_grad_end']   = get_theme_mod( ZENITH_OPTIONS::GRADIENT_END_COLOR, ZENITH_DEFAULTS::GRADIENT_END_COLOR );
+    $theme_colors['plx_overlay_single']     = get_theme_mod( ARTISAN_OPTIONS::CUSTOM_HEADER_COLOR_LAYER_COLOR, ARTISAN_DEFAULTS::CUSTOM_HEADER_COLOR_LAYER_COLOR );
+    $theme_colors['plx_overlay_grad_start'] = get_theme_mod( ARTISAN_OPTIONS::GRADIENT_START_COLOR, ARTISAN_DEFAULTS::GRADIENT_START_COLOR );
+    $theme_colors['plx_overlay_grad_end']   = get_theme_mod( ARTISAN_OPTIONS::GRADIENT_END_COLOR, ARTISAN_DEFAULTS::GRADIENT_END_COLOR );
    
-    $theme_colors['footer_widget_title']    = get_theme_mod( ZENITH_OPTIONS::PRE_FOOTER_WIDGET_TITLE_COLOR, ZENITH_DEFAULTS::PRE_FOOTER_WIDGET_TITLE_COLOR );
+    $theme_colors['footer_widget_title']    = get_theme_mod( ARTISAN_OPTIONS::PRE_FOOTER_WIDGET_TITLE_COLOR, ARTISAN_DEFAULTS::PRE_FOOTER_WIDGET_TITLE_COLOR );
  
     return $theme_colors;
     
@@ -49,50 +49,50 @@ function zenith_get_all_theme_colors() {
  * @since 1.0.0
  * @return array of Font Awesome 5 icons
  */
-function zenith_get_icons( $subset = null ) {
+function artisan_get_icons( $subset = null ) {
     
     $icons = array(
-        'fa-app-store'      => __( 'App Store', 'zenith' ),
-        'fa-apple'          => __( 'Apple', 'zenith' ),
-        'fa-bandcamp'       => __( 'Bandcamp', 'zenith' ),
-        'fa-behance'        => __( 'Behance', 'zenith' ),
-        'fa-codepen'        => __( 'CodePen', 'zenith' ),
-        'fa-discord'        => __( 'Discord', 'zenith' ),
-        'fa-dribbble'       => __( 'Dribbble', 'zenith' ),
-        'fa-etsy'           => __( 'Etsy', 'zenith' ),
-        'fa-facebook-f'     => __( 'Facebook', 'zenith' ),
-        'fa-git'            => __( 'Git', 'zenith' ),
-        'fa-github'         => __( 'GitHub', 'zenith' ),
-        'fa-google-play'    => __( 'Google Play', 'zenith' ),
-        'fa-google-plus-g'  => __( 'Google+', 'zenith' ),
-        'fa-imdb'           => __( 'IMDb', 'zenith' ),
-        'fa-instagram'      => __( 'Instagram', 'zenith' ),
-        'fa-itunes-note'    => __( 'iTunes', 'zenith' ),
-        'fa-kickstarter-k'  => __( 'Kickstarter', 'zenith' ),
-        'fa-lastfm'         => __( 'Last.fm', 'zenith' ),
-        'fa-linkedin-in'    => __( 'LinkedIn', 'zenith' ),
-        'fa-medium-m'       => __( 'Medium', 'zenith' ),
-        'fa-microsoft'      => __( 'Microsoft', 'zenith' ),
-        'fa-mixcloud'       => __( 'Mixcloud', 'zenith' ),
-        'fa-patreon'        => __( 'Patreon', 'zenith' ),
-        'fa-pinterest-p'    => __( 'Pinterest', 'zenith' ),
-        'fa-playstation'    => __( 'PlayStation', 'zenith' ),
-        'fa-reddit-alien'   => __( 'Reddit', 'zenith' ),
-        'fas fa-rss'        => __( 'RSS', 'zenith' ),
-        'fa-slack-hash'     => __( 'Slack', 'zenith' ),
-        'fa-snapchat-ghost' => __( 'Snapchat', 'zenith' ),
-        'fa-soundcloud'     => __( 'SoundCloud', 'zenith' ),
-        'fa-spotify'        => __( 'Spotify', 'zenith' ),
-        'fa-steam'          => __( 'Steam', 'zenith' ),
-        'fa-stumbleupon'    => __( 'StumbleUpon', 'zenith' ),
-        'fa-tumblr'         => __( 'Tumblr', 'zenith' ),
-        'fa-twitch'         => __( 'Twitch', 'zenith' ),
-        'fa-twitter'        => __( 'Twitter', 'zenith' ),
-        'fa-vimeo'          => __( 'Vimeo', 'zenith' ),
-        'fa-vimeo'          => __( 'Vimeo', 'zenith' ),
-        'fa-xbox'           => __( 'Xbox', 'zenith' ),
-        'fa-yelp'           => __( 'Yelp', 'zenith' ),
-        'fa-youtube'        => __( 'YouTube', 'zenith' ),
+        'fa-app-store'      => __( 'App Store', 'artisan' ),
+        'fa-apple'          => __( 'Apple', 'artisan' ),
+        'fa-bandcamp'       => __( 'Bandcamp', 'artisan' ),
+        'fa-behance'        => __( 'Behance', 'artisan' ),
+        'fa-codepen'        => __( 'CodePen', 'artisan' ),
+        'fa-discord'        => __( 'Discord', 'artisan' ),
+        'fa-dribbble'       => __( 'Dribbble', 'artisan' ),
+        'fa-etsy'           => __( 'Etsy', 'artisan' ),
+        'fa-facebook-f'     => __( 'Facebook', 'artisan' ),
+        'fa-git'            => __( 'Git', 'artisan' ),
+        'fa-github'         => __( 'GitHub', 'artisan' ),
+        'fa-google-play'    => __( 'Google Play', 'artisan' ),
+        'fa-google-plus-g'  => __( 'Google+', 'artisan' ),
+        'fa-imdb'           => __( 'IMDb', 'artisan' ),
+        'fa-instagram'      => __( 'Instagram', 'artisan' ),
+        'fa-itunes-note'    => __( 'iTunes', 'artisan' ),
+        'fa-kickstarter-k'  => __( 'Kickstarter', 'artisan' ),
+        'fa-lastfm'         => __( 'Last.fm', 'artisan' ),
+        'fa-linkedin-in'    => __( 'LinkedIn', 'artisan' ),
+        'fa-medium-m'       => __( 'Medium', 'artisan' ),
+        'fa-microsoft'      => __( 'Microsoft', 'artisan' ),
+        'fa-mixcloud'       => __( 'Mixcloud', 'artisan' ),
+        'fa-patreon'        => __( 'Patreon', 'artisan' ),
+        'fa-pinterest-p'    => __( 'Pinterest', 'artisan' ),
+        'fa-playstation'    => __( 'PlayStation', 'artisan' ),
+        'fa-reddit-alien'   => __( 'Reddit', 'artisan' ),
+        'fas fa-rss'        => __( 'RSS', 'artisan' ),
+        'fa-slack-hash'     => __( 'Slack', 'artisan' ),
+        'fa-snapchat-ghost' => __( 'Snapchat', 'artisan' ),
+        'fa-soundcloud'     => __( 'SoundCloud', 'artisan' ),
+        'fa-spotify'        => __( 'Spotify', 'artisan' ),
+        'fa-steam'          => __( 'Steam', 'artisan' ),
+        'fa-stumbleupon'    => __( 'StumbleUpon', 'artisan' ),
+        'fa-tumblr'         => __( 'Tumblr', 'artisan' ),
+        'fa-twitch'         => __( 'Twitch', 'artisan' ),
+        'fa-twitter'        => __( 'Twitter', 'artisan' ),
+        'fa-vimeo'          => __( 'Vimeo', 'artisan' ),
+        'fa-vimeo'          => __( 'Vimeo', 'artisan' ),
+        'fa-xbox'           => __( 'Xbox', 'artisan' ),
+        'fa-yelp'           => __( 'Yelp', 'artisan' ),
+        'fa-youtube'        => __( 'YouTube', 'artisan' ),
     );
     
     return $icons;
@@ -106,18 +106,18 @@ function zenith_get_icons( $subset = null ) {
  * @param string $more "Read more" excerpt string.
  * @return string (Maybe) modified "read more" excerpt string.
  */
-function zenith_add_excerpt_more_link( $more ) {
+function artisan_add_excerpt_more_link( $more ) {
 
 //    return sprintf( '… <a class="read-more" href="%1$s">%2$s</a>',
 //        get_permalink( get_the_ID() ),
-//        __( get_theme_mod( ZENITH_OPTIONS::BLOG_READ_MORE_TEXT, ZENITH_DEFAULTS::BLOG_READ_MORE_TEXT ), 'zenith' )
+//        __( get_theme_mod( ARTISAN_OPTIONS::BLOG_READ_MORE_TEXT, ARTISAN_DEFAULTS::BLOG_READ_MORE_TEXT ), 'artisan' )
 //    );
     
     /* translators: permalink url, then Read More text theme mod */
-    return sprintf( __( '... <a class="read-more" href="%1$s">%2$s</a>', 'zenith' ), esc_url( get_the_permalink( get_the_ID() ) ), esc_html( get_theme_mod( ZENITH_OPTIONS::BLOG_READ_MORE_TEXT, ZENITH_DEFAULTS::BLOG_READ_MORE_TEXT ) ) );
+    return sprintf( __( '... <a class="read-more" href="%1$s">%2$s</a>', 'artisan' ), esc_url( get_the_permalink( get_the_ID() ) ), esc_html( get_theme_mod( ARTISAN_OPTIONS::BLOG_READ_MORE_TEXT, ARTISAN_DEFAULTS::BLOG_READ_MORE_TEXT ) ) );
     
 }
-add_filter( 'excerpt_more', 'zenith_add_excerpt_more_link' );
+add_filter( 'excerpt_more', 'artisan_add_excerpt_more_link' );
 
 /**
  * Filter the excerpt length to a user-defined number words.
@@ -126,10 +126,10 @@ add_filter( 'excerpt_more', 'zenith_add_excerpt_more_link' );
  * @param int $length Excerpt length.
  * @return int modified excerpt length.
  */
-function zenith_custom_auto_excerpt_length( $length ) {
-    return intval( get_theme_mod( ZENITH_OPTIONS::BLOG_EXCERPT_TRIM_NUM, ZENITH_DEFAULTS::BLOG_EXCERPT_TRIM_NUM ) );
+function artisan_custom_auto_excerpt_length( $length ) {
+    return intval( get_theme_mod( ARTISAN_OPTIONS::BLOG_EXCERPT_TRIM_NUM, ARTISAN_DEFAULTS::BLOG_EXCERPT_TRIM_NUM ) );
 }
-add_filter( 'excerpt_length', 'zenith_custom_auto_excerpt_length', 999 );
+add_filter( 'excerpt_length', 'artisan_custom_auto_excerpt_length', 999 );
 
 /**
  * Hex to rgb(a) converter function.
@@ -139,7 +139,7 @@ add_filter( 'excerpt_length', 'zenith_custom_auto_excerpt_length', 999 );
  * @param decimal $opacity optional opacity decimal.
  * @return string rgba(a) value
  */
-function zenith_hex2rgba( $color, $opacity = false ) {
+function artisan_hex2rgba( $color, $opacity = false ) {
 
     $default = 'rgb(0,0,0)';
 
@@ -186,9 +186,9 @@ function zenith_hex2rgba( $color, $opacity = false ) {
  * @param string $style key to identify what to return.
  * @return either an associative array of percentages (Layers) or a single integer value (Vertical)
  */
-function zenith_get_parallax_preset( $style = 'layers' ) {
+function artisan_get_parallax_preset( $style = 'layers' ) {
 
-    switch ( get_theme_mod( ZENITH_OPTIONS::CUSTOM_HEADER_PLX_INTENSITY, ZENITH_DEFAULTS::CUSTOM_HEADER_PLX_INTENSITY ) ) :
+    switch ( get_theme_mod( ARTISAN_OPTIONS::CUSTOM_HEADER_PLX_INTENSITY, ARTISAN_DEFAULTS::CUSTOM_HEADER_PLX_INTENSITY ) ) :
         
         case 'subtle' :
             $parallax_preset = array(
@@ -232,7 +232,7 @@ function zenith_get_parallax_preset( $style = 'layers' ) {
  * @param array $types - post types to retrieve
  * @return array of posts
  */
-function zenith_all_posts_array( $types = array( 'post' ) ) {
+function artisan_all_posts_array( $types = array( 'post' ) ) {
     
     $posts = get_posts( array(
         'post_type'        => $types,
@@ -243,7 +243,7 @@ function zenith_all_posts_array( $types = array( 'post' ) ) {
     ));
 
     $posts_array = array(
-        'none'  => __( 'None', 'zenith' ),
+        'none'  => __( 'None', 'artisan' ),
     );
     
     foreach ( $posts as $post ) :
@@ -258,9 +258,9 @@ function zenith_all_posts_array( $types = array( 'post' ) ) {
     
 }
 
-function zenith_features_install_url() {
+function artisan_features_install_url() {
     
-    $slug = 'zenith-features';
+    $slug = 'artisan-features';
     $nonce_key = 'install-plugin_' . $slug;
     
     
@@ -294,23 +294,23 @@ function zenith_features_install_url() {
     
 }
 
-function zenith_dismiss_companion() {
+function artisan_dismiss_companion() {
     
-    if( ! isset( $_POST['zenith_dismiss_nonce'] ) || ! wp_verify_nonce( $_POST['zenith_dismiss_nonce'], 'zenith_dismiss_nonce' ) ) {
-        die( esc_html__( 'Invalid nonce', 'zenith' ) );
+    if( ! isset( $_POST['artisan_dismiss_nonce'] ) || ! wp_verify_nonce( $_POST['artisan_dismiss_nonce'], 'artisan_dismiss_nonce' ) ) {
+        die( esc_html__( 'Invalid nonce', 'artisan' ) );
         return;
     }
     
     if( current_user_can( 'edit_theme_options' ) ) {
-        set_theme_mod( ZENITH_OPTIONS::COMPANION_NOTICE_DISMISSED, true );
+        set_theme_mod( ARTISAN_OPTIONS::COMPANION_NOTICE_DISMISSED, true );
     }
     
     exit();   
 }
-add_action( 'wp_ajax_zenith_dismiss_companion', 'zenith_dismiss_companion' );
+add_action( 'wp_ajax_artisan_dismiss_companion', 'artisan_dismiss_companion' );
 
 
-function zenith_is_single_sidebar_active( $template = 'page' ) {
+function artisan_is_single_sidebar_active( $template = 'page' ) {
  
     if ( $template != 'post' && $template != 'page' && $template != 'blog' ) { return false; }
     
@@ -319,7 +319,7 @@ function zenith_is_single_sidebar_active( $template = 'page' ) {
 
         // Page & Post Sidebar
         
-        if ( get_post_meta( get_the_ID(), ZENITH_META::SIDEBAR_TEMPLATE, true ) != 'none' && is_active_sidebar( get_post_meta( get_the_ID(), ZENITH_META::SIDEBAR_TEMPLATE, true ) ) ) :
+        if ( get_post_meta( get_the_ID(), ARTISAN_META::SIDEBAR_TEMPLATE, true ) != 'none' && is_active_sidebar( get_post_meta( get_the_ID(), ARTISAN_META::SIDEBAR_TEMPLATE, true ) ) ) :
             return true;                    
         else : 
             return false;

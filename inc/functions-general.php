@@ -2,16 +2,16 @@
 
 
 // Adds custom classes to the array of body classes.
-add_filter( 'body_class', 'zenith_body_classes' );
+add_filter( 'body_class', 'artisan_body_classes' );
 
 // Add a pingback url auto-discovery header for singularly identifiable articles.
-add_action( 'wp_head', 'zenith_pingback_header' );
+add_action( 'wp_head', 'artisan_pingback_header' );
 
 // Set up theme defaults and register various theme support
-add_action( 'after_setup_theme', 'zenith_setup' );
+add_action( 'after_setup_theme', 'artisan_setup' );
 
 // Create theme page in dashboard
-add_action('admin_menu', 'zenith_create_theme_menu' );
+add_action('admin_menu', 'artisan_create_theme_menu' );
 
 /**
  * Adds custom classes to the array of body classes.
@@ -19,7 +19,7 @@ add_action('admin_menu', 'zenith_create_theme_menu' );
  * @param array $classes Classes for the body element.
  * @return array
  */
-function zenith_body_classes( $classes ) {
+function artisan_body_classes( $classes ) {
     // Adds a class of hfeed to non-singular pages.
     if ( !is_singular() ) {
         $classes[] = 'hfeed';
@@ -32,7 +32,7 @@ function zenith_body_classes( $classes ) {
 /**
  * Add a pingback url auto-discovery header for singularly identifiable articles.
  */
-function zenith_pingback_header() {
+function artisan_pingback_header() {
     if ( is_singular() && pings_open() ) {
         echo '<link rel="pingback" href="', esc_url( get_bloginfo( 'pingback_url' ) ), '">';
     }
@@ -40,13 +40,13 @@ function zenith_pingback_header() {
 
 
 /**
- * Zenith functions and definitions
+ * Artisan functions and definitions
  *
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *
- * @package Zenith
+ * @package Artisan
  */
-if ( !function_exists( 'zenith_setup' ) ) :
+if ( !function_exists( 'artisan_setup' ) ) :
 
     /**
      * Sets up theme defaults and registers support for various WordPress features.
@@ -55,19 +55,19 @@ if ( !function_exists( 'zenith_setup' ) ) :
      * runs before the init hook. The init hook is too late for some features, such
      * as indicating support for post thumbnails.
      */
-    function zenith_setup() {
+    function artisan_setup() {
     
-        if( !defined( 'ZENITH_VERSION' ) ) :
-            define( 'ZENITH_VERSION', '1.0.0' );
+        if( !defined( 'ARTISAN_VERSION' ) ) :
+            define( 'ARTISAN_VERSION', '1.0.0' );
         endif;
         
         /*
          * Make theme available for translation.
          * Translations can be filed in the /languages/ directory.
-         * If you're building a theme based on Zenith, use a find and replace
-         * to change 'zenith' to the name of your theme in all the template files.
+         * If you're building a theme based on Artisan, use a find and replace
+         * to change 'artisan' to the name of your theme in all the template files.
          */
-        load_theme_textdomain( 'zenith', get_template_directory() . '/languages' );
+        load_theme_textdomain( 'artisan', get_template_directory() . '/languages' );
 
         // Add default posts and comments RSS feed links to head.
         add_theme_support( 'automatic-feed-links' );
@@ -89,11 +89,11 @@ if ( !function_exists( 'zenith_setup' ) ) :
 
         // This theme uses wp_nav_menu() in one location.
         register_nav_menus( array(
-            'primary-menu'              => esc_html__( 'Navbar: Primary Menu', 'zenith' ),
-            'split-primary-left'        => esc_html__( 'Navbar: Split - Left', 'zenith' ),
-            'split-primary-right'       => esc_html__( 'Navbar: Split - Right', 'zenith' ),
-            'mobile-menu'               => esc_html__( 'Mobile', 'zenith' ),
-            'custom-header'             => esc_html__( 'Custom Header', 'zenith' ),
+            'primary-menu'              => esc_html__( 'Navbar: Primary Menu', 'artisan' ),
+            'split-primary-left'        => esc_html__( 'Navbar: Split - Left', 'artisan' ),
+            'split-primary-right'       => esc_html__( 'Navbar: Split - Right', 'artisan' ),
+            'mobile-menu'               => esc_html__( 'Mobile', 'artisan' ),
+            'custom-header'             => esc_html__( 'Custom Header', 'artisan' ),
         ) );
 
         /*
@@ -134,21 +134,21 @@ if ( ! isset( $content_width ) ) {
     $content_width = 1170;
 }
 
-function zenith_create_theme_menu() {
-    add_theme_page( __( 'Theme Docs', 'zenith' ), __( 'Theme Docs', 'zenith' ), 'edit_theme_options', 'zenith-theme-info', function() {
-        include_once get_template_directory() . '/admin/zenith-menu.php';
+function artisan_create_theme_menu() {
+    add_theme_page( __( 'Theme Docs', 'artisan' ), __( 'Theme Docs', 'artisan' ), 'edit_theme_options', 'artisan-theme-info', function() {
+        include_once get_template_directory() . '/admin/artisan-menu.php';
     });
 }
 
-function zenith_theme_path( $path = null ) {
+function artisan_theme_path( $path = null ) {
     return trailingslashit( get_template_directory() ) . $path;
 }
 
-function zenith_theme_url( $url = null ) {
+function artisan_theme_url( $url = null ) {
     return trailingslashit( get_template_directory_uri() ) . $url;
 }
 
-add_action( 'after_setup_theme', 'zenith_load_acid_customize', 99 );  
-function zenith_load_acid_customize() { 
+add_action( 'after_setup_theme', 'artisan_load_acid_customize', 99 );
+function artisan_load_acid_customize() {
     require get_template_directory() . '/inc/functions-customizer.php';
 }

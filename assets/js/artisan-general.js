@@ -24,7 +24,7 @@ jQuery(document).ready(function ($) {
         }
     }).init();
     
-    if ( zenith_local_general.ease_scroll_toggle == 'yes' ) {
+    if ( artisan_local_general.ease_scroll_toggle == 'yes' ) {
         
         $("html").easeScroll({
 

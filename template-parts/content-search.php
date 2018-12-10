@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package Zenith
+ * @package Artisan
  */
 ?>
 
@@ -15,20 +15,20 @@
         <?php if ( 'post' === get_post_type() ) : ?>
             <div class="entry-meta">
                 <?php
-                zenith_posted_on();
-                zenith_posted_by();
+                artisan_posted_on();
+                artisan_posted_by();
                 ?>
             </div><!-- .entry-meta -->
         <?php endif; ?>
     </header><!-- .entry-header -->
 
-    <?php zenith_post_thumbnail(); ?>
+    <?php artisan_post_thumbnail(); ?>
 
     <div class="entry-summary">
         <?php the_excerpt(); ?>
     </div><!-- .entry-summary -->
 
     <footer class="entry-footer">
-        <?php zenith_entry_footer(); ?>
+        <?php artisan_entry_footer(); ?>
     </footer><!-- .entry-footer -->
 </article><!-- #post-<?php the_ID(); ?> -->

@@ -6,7 +6,7 @@
  * @since  1.0.0
  * @access public
  */
-final class Zenith_Docs_Customize {
+final class Artisan_Docs_Customize {
 
     /**
      * Returns the instance.
@@ -68,15 +68,15 @@ final class Zenith_Docs_Customize {
         require_once( trailingslashit( get_template_directory() ) . 'inc/lib/trt-customize/documentation/section-pro.php' );
 
         // Register custom section types.
-        $manager->register_section_type( 'Zenith_Docs_Customize_Section_Pro' );
+        $manager->register_section_type( 'Artisan_Docs_Customize_Section_Pro' );
 
         // Register sections.
         $manager->add_section(
-            new Zenith_Docs_Customize_Section_Pro(
-                $manager, 'zenith_docs', array (
-                    'title'         => esc_html__( 'Documentation', 'zenith' ),
-                    'pro_text'      => esc_html__( 'View Docs', 'zenith' ),
-                    'pro_url'       => esc_url( admin_url( 'themes.php?page=zenith-theme-info' ) )
+            new Artisan_Docs_Customize_Section_Pro(
+                $manager, 'artisan_docs', array (
+                    'title'         => esc_html__( 'Documentation', 'artisan' ),
+                    'pro_text'      => esc_html__( 'View Docs', 'artisan' ),
+                    'pro_url'       => esc_url( admin_url( 'themes.php?page=artisan-theme-info' ) )
                 )
             )
         );
@@ -91,12 +91,12 @@ final class Zenith_Docs_Customize {
      */
     public function enqueue_control_scripts() {
 
-        wp_enqueue_script( 'zenith-docs-customize-controls', trailingslashit( get_template_directory_uri() ) . 'inc/lib/trt-customize/documentation/customize-controls.js', array ( 'customize-controls' ) );
+        wp_enqueue_script( 'artisan-docs-customize-controls', trailingslashit( get_template_directory_uri() ) . 'inc/lib/trt-customize/documentation/customize-controls.js', array ( 'customize-controls' ) );
 
-        wp_enqueue_style( 'zenith-docs-customize-controls', trailingslashit( get_template_directory_uri() ) . 'inc/lib/trt-customize/documentation/customize-controls.css' );
+        wp_enqueue_style( 'artisan-docs-customize-controls', trailingslashit( get_template_directory_uri() ) . 'inc/lib/trt-customize/documentation/customize-controls.css' );
     }
 
 }
 
 // Doing this customizer thang!
-Zenith_Docs_Customize::get_instance();
+Artisan_Docs_Customize::get_instance();

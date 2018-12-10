@@ -1,20 +1,20 @@
 <?php
 
-interface ZENITH_OPTIONS {
+interface ARTISAN_OPTIONS {
     
     const   CUSTOM_HEADER_STYLE_TOGGLE              = 'custom_header_style_toggle',
-            CUSTOM_HEADER_HEIGHT_CALC               = 'zenith_custom_header_height_unit',
-            CUSTOM_HEADER_HEIGHT_PCT                = 'zenith_custom_header_height_percent',
-            CUSTOM_HEADER_HEIGHT_PCT_MBL            = 'zenith_custom_header_height_percent_mbl',
-            CUSTOM_HEADER_HEIGHT_PX                 = 'zenith_custom_header_height_pixels',
-            CUSTOM_HEADER_HEIGHT_PX_MBL             = 'zenith_custom_header_height_pixels_mbl',
+            CUSTOM_HEADER_HEIGHT_CALC               = 'artisan_custom_header_height_unit',
+            CUSTOM_HEADER_HEIGHT_PCT                = 'artisan_custom_header_height_percent',
+            CUSTOM_HEADER_HEIGHT_PCT_MBL            = 'artisan_custom_header_height_percent_mbl',
+            CUSTOM_HEADER_HEIGHT_PX                 = 'artisan_custom_header_height_pixels',
+            CUSTOM_HEADER_HEIGHT_PX_MBL             = 'artisan_custom_header_height_pixels_mbl',
             CUSTOM_HEADER_PLX_INTENSITY             = 'parallax_layers_parallax_style',
             CUSTOM_HEADER_TEXTURE_IMG               = 'parallax_layers_texture_pattern',
             CUSTOM_HEADER_TEXTURE_OPAC              = 'parallax_layers_texture_layer_opacity',
             
             CUSTOM_HEADER_SHOW_LOGO                 = 'custom_header_show_logo',
-            CUSTOM_HEADER_LOGO_HEIGHT               = 'zenith_custom_header_logo_height',
-            CUSTOM_HEADER_LOGO_HEIGHT_MBL           = 'zenith_custom_header_logo_height_mbl',
+            CUSTOM_HEADER_LOGO_HEIGHT               = 'artisan_custom_header_logo_height',
+            CUSTOM_HEADER_LOGO_HEIGHT_MBL           = 'artisan_custom_header_logo_height_mbl',
             
             CUSTOM_HEADER_SHOW_TITLE                = 'custom_header_show_heading',
             CUSTOM_HEADER_TITLE_CONTENT             = 'custom_header_title_content',
@@ -104,9 +104,9 @@ interface ZENITH_OPTIONS {
             NAVBAR_FINAL_LINK_ROUNDED               = 'navbar_final_link_rounded',
             NAVBAR_FINAL_LINK_FILL                  = 'navbar_final_link_fill',
             
-            VERT_NAVBAR_DISPLAY_SETTING             = 'zenith_vertical_navbar_display_setting',
-            VERT_NAVBAR_TAB_BACKGROUND              = 'zenith_vertical_navbar_tab_background',
-            VERT_NAVBAR_TAB_FOREGROUND              = 'zenith_vertical_navbar_tab_foreground',
+            VERT_NAVBAR_DISPLAY_SETTING             = 'artisan_vertical_navbar_display_setting',
+            VERT_NAVBAR_TAB_BACKGROUND              = 'artisan_vertical_navbar_tab_background',
+            VERT_NAVBAR_TAB_FOREGROUND              = 'artisan_vertical_navbar_tab_foreground',
     
             NAVBAR_SHOW_SOCIAL                      = 'navbar_show_social',
             SOCIAL_URL_1                            = 'social_icon_1_url',
@@ -154,7 +154,7 @@ interface ZENITH_OPTIONS {
             FOOTER_COPYRIGHT_TAGLINE                = 'footer_copyright_tagline',
             FOOTER_BRANDING_TYPE                    = 'footer_branding',
             FOOTER_ALTERNATE_LOGO                   = 'alternate_logo',
-            FOOTER_ALTERNATE_LOGO_HEIGHT            = 'zenith_footer_logo_height',
+            FOOTER_ALTERNATE_LOGO_HEIGHT            = 'artisan_footer_logo_height',
             FOOTER_SITE_TITLE_FONT_SIZE             = 'footer_site_title_font_size',
             FOOTER_SITE_TITLE_ALL_CAPS              = 'footer_site_title_uppercase',
             FOOTER_COPYRIGHT_TAGLINE_FONT_SIZE      = 'footer_copyright_font_size',
@@ -184,7 +184,7 @@ interface ZENITH_OPTIONS {
 
 }
 
-interface ZENITH_DEFAULTS {
+interface ARTISAN_DEFAULTS {
     
     const   CUSTOM_HEADER_STYLE_TOGGLE              = 'social',
             CUSTOM_HEADER_HEIGHT_CALC               = 'percent',

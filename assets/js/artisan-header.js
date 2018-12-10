@@ -25,14 +25,14 @@ jQuery(document).ready(function ($) {
         $('#custom-logo-wrap.sometimes-hidden img.custom-logo').removeClass('fadeOut').addClass('bounceIn');
         
         // Expand Padding Top on #content
-        $('div#content,div#zenith-custom-header,div#cart-panel-trigger').addClass('sticky-header');
+        $('div#content,div#artisan-custom-header,div#cart-panel-trigger').addClass('sticky-header');
         
     }).on('sticky-end', function() { 
         
         $('#custom-logo-wrap.sometimes-hidden img.custom-logo').removeClass('bounceIn').addClass('fadeOut');
         
         // Contract Padding Top on #content
-        $('div#content,div#zenith-custom-header,div#cart-panel-trigger').removeClass('sticky-header');
+        $('div#content,div#artisan-custom-header,div#cart-panel-trigger').removeClass('sticky-header');
         
     });
    
@@ -96,7 +96,7 @@ jQuery(document).ready(function ($) {
      * Custom Header: Layered Parallax Section
      * ---------------------------------------------------------------------- */
     
-    if ( $('div#zenith-custom-header.parallax_layers').length ) {
+    if ( $('div#artisan-custom-header.parallax_layers').length ) {
         
         $(window).resize( function(){
             $( '.jparallax-layer' ).parallax({
@@ -104,23 +104,23 @@ jQuery(document).ready(function ($) {
                 mouseport: $('body')
             },{
                 // Image Layer
-                xparallax: zenith_local.parallax_image_layer,
-                yparallax: zenith_local.parallax_image_layer
+                xparallax: artisan_local.parallax_image_layer,
+                yparallax: artisan_local.parallax_image_layer
             },
             {
                 // Texture Layer Options
-                xparallax: zenith_local.parallax_texture_layer,
-                yparallax: zenith_local.parallax_texture_layer
+                xparallax: artisan_local.parallax_texture_layer,
+                yparallax: artisan_local.parallax_texture_layer
             },{
                 // Color Layer Options
-                xparallax: zenith_local.parallax_color_layer,
-                yparallax: zenith_local.parallax_color_layer,
+                xparallax: artisan_local.parallax_color_layer,
+                yparallax: artisan_local.parallax_color_layer,
                 xorigin: 0,
                 yorigin: 0,
             },{
                 // Content Layer Options
-                xparallax: zenith_local.parallax_content_layer,
-                yparallax: zenith_local.parallax_content_layer
+                xparallax: artisan_local.parallax_content_layer,
+                yparallax: artisan_local.parallax_content_layer
             });
         });
 
@@ -129,23 +129,23 @@ jQuery(document).ready(function ($) {
             mouseport: $('body')
         },{
             // Image Layer
-            xparallax: zenith_local.parallax_image_layer,
-            yparallax: zenith_local.parallax_image_layer
+            xparallax: artisan_local.parallax_image_layer,
+            yparallax: artisan_local.parallax_image_layer
         },
         {
             // Texture Layer Options
-            xparallax: zenith_local.parallax_texture_layer,
-            yparallax: zenith_local.parallax_texture_layer
+            xparallax: artisan_local.parallax_texture_layer,
+            yparallax: artisan_local.parallax_texture_layer
         },{
             // Color Layer Options
-            xparallax: zenith_local.parallax_color_layer,
-            yparallax: zenith_local.parallax_color_layer,
+            xparallax: artisan_local.parallax_color_layer,
+            yparallax: artisan_local.parallax_color_layer,
             xorigin: 0,
             yorigin: 0,
         },{
             // Content Layer Options
-            xparallax: zenith_local.parallax_content_layer,
-            yparallax: zenith_local.parallax_content_layer
+            xparallax: artisan_local.parallax_content_layer,
+            yparallax: artisan_local.parallax_content_layer
         }).parent().find('.jparallax-layer.content-layer').fadeIn();
         
     }
@@ -195,7 +195,7 @@ jQuery(document).ready(function ($) {
      * ---------------------------------------------------------------------- */
     
     var default_state;
-    default_state = ( zenith_local.vert_state == 'always' ) ? 'open' : 'closed';
+    default_state = ( artisan_local.vert_state == 'always' ) ? 'open' : 'closed';
     
     $('#vertical-menu-toggle-wrap').bigSlide({
         menu: 'header#masthead.header-style-vertical #vertical-header-wrap',
@@ -233,7 +233,7 @@ jQuery(document).ready(function ($) {
      * ---------------------------------------------------------------------- */
     $('#down-scroll-tab-trigger,#down-scroll-tab-trigger span').on( 'click', function() {
         $('html, body').stop().animate({
-            scrollTop: $('#zenith-custom-header').offset().top + $('#zenith-custom-header').outerHeight() - ( $('body').hasClass('admin-bar') ? 32 : 0 )
+            scrollTop: $('#artisan-custom-header').offset().top + $('#artisan-custom-header').outerHeight() - ( $('body').hasClass('admin-bar') ? 32 : 0 )
         }, 1000);
     });
     

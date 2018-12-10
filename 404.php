@@ -4,7 +4,7 @@
  *
  * @link https://codex.wordpress.org/Creating_an_Error_404_Page
  *
- * @package Zenith
+ * @package Artisan
  */
 get_header(); ?>
 
@@ -23,12 +23,12 @@ get_header(); ?>
                             <section class="error-404 not-found">
 
                                 <header class="page-header">
-                                    <h1 class="page-title"><?php esc_html_e( 'Oops! That page can&rsquo;t be found.', 'zenith' ); ?></h1>
+                                    <h1 class="page-title"><?php esc_html_e( 'Oops! That page can&rsquo;t be found.', 'artisan' ); ?></h1>
                                 </header><!-- .page-header -->
 
                                 <div class="page-content">
 
-                                    <p><?php esc_html_e( 'It looks like nothing was found at this location. Maybe try one of the links below or a search?', 'zenith' ); ?></p>
+                                    <p><?php esc_html_e( 'It looks like nothing was found at this location. Maybe try one of the links below or a search?', 'artisan' ); ?></p>
 
                                     <?php get_search_form(); ?>
 
