@@ -1,7 +1,7 @@
 ( function( api ) {
 
 	// Extends our custom "companion-plugin" section.
-	api.sectionConstructor['artisan_docs'] = api.Section.extend( {
+	api.sectionConstructor['beyrouth_docs'] = api.Section.extend( {
 
 		// No events for this type of section.
 		attachEvents: function () {},

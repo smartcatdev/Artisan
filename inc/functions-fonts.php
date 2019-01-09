@@ -1,8 +1,8 @@
 <?php
 
-if( !function_exists( 'artisan_fonts' ) ) {
+if( !function_exists( 'beyrouth_fonts' ) ) {
 
-    function artisan_fonts(){
+    function beyrouth_fonts(){
 
         $font_family_array = array(
 
@@ -43,7 +43,7 @@ if( !function_exists( 'artisan_fonts' ) ) {
 
         );
 
-        return apply_filters( 'artisan_fonts', $font_family_array );
+        return apply_filters( 'beyrouth_fonts', $font_family_array );
 
     }
     

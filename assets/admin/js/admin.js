@@ -1,6 +1,6 @@
 jQuery( document ).ready( function ( $ ) {
 
-    $.artisanMediaUploader({
+    $.beyrouthMediaUploader({
 
         target : '.smartcat-multiple-uploader', // The class wrapping the textbox
         uploaderTitle : 'Select or upload image', // The title of the media upload popup

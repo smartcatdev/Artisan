@@ -1,23 +1,23 @@
-=== Artisan ===
+=== Beyrouth ===
 
 Contributors: smartcat
 Tags: two-columns, three-columns, four-columns, right-sidebar, grid-layout, flexible-header, custom-colors, custom-header, custom-menu, custom-logo, featured-images, footer-widgets, full-width-template, theme-options, threaded-comments, translation-ready, e-commerce, blog, entertainment
 
 Requires at least: 4.9
-Tested up to: 4.9.5
-Stable tag: 1.0.0
-Requires PHP: 5.3
+Tested up to: 5.0.2
+Stable tag: 1.0.1
+Requires PHP: 5.4
 License: GNU General Public License v2 or later
 License URI: LICENSE
 
-Build a professional site for yourself, for one client, or for all your clients using Artisan, without touching a line of code. A highly customizable theme which packs tons of premium features in a free theme. 3 navbar menu styles, custom header, 3 blog styles, customizable colors, fonts and so much more! Artisan comes with a free companion plugin which includes many drag & drop widgets that you can use to build your pages any way you like, as well as 3 pre-designed presets that you can install with one click, saving you time, and providing you with a professionally desined site to start from.
+Build a professional site for yourself, for one client, or for all your clients using Beyrouth, without touching a line of code. A highly customizable theme which packs tons of premium features in a free theme. 3 navbar menu styles, custom header, 3 blog styles, customizable colors, fonts and so much more! Beyrouth comes with a free companion plugin which includes many drag & drop widgets that you can use to build your pages any way you like, as well as 3 pre-designed presets that you can install with one click, saving you time, and providing you with a professionally desined site to start from.
 
-Artisan theme, Copyright 2018 Smartcat Solutions Inc.
+Beyrouth theme, Copyright 2018 Smartcat Solutions Inc.
 This theme, like WordPress, is distributed under the terms of the GNU GPL.
 
 == Description ==
 
-Build a professional site for yourself, for one client, or for all your clients using Artisan. A highly customizable theme which packs tons of premium features in a free theme. 3 navbar menu styles, custom header, 3 blog styles, customizable colors, fonts and so much more! Artisan comes with a free companion plugin which includes many drag & drop widgets that you can use to build your pages any way you like, as well as 3 pre-designed presets that you can install with one click, saving you time, and providing you with a professionally desined site to start from.
+Build a professional site for yourself, for one client, or for all your clients using Beyrouth. A highly customizable theme which packs tons of premium features in a free theme. 3 navbar menu styles, custom header, 3 blog styles, customizable colors, fonts and so much more! Beyrouth comes with a free companion plugin which includes many drag & drop widgets that you can use to build your pages any way you like, as well as 3 pre-designed presets that you can install with one click, saving you time, and providing you with a professionally desined site to start from.
 
 == Installation ==
 
@@ -29,50 +29,14 @@ Build a professional site for yourself, for one client, or for all your clients 
 
 = Does this theme support any plugins? =
 
-Artisan includes support for Infinite Scroll in Jetpack.
+Beyrouth includes support for Infinite Scroll in Jetpack.
 
 == Changelog ==
 
-= 1.2.0
-* Added 3 sidebar options for Page & Post templates, allowing user to set the sidebar location to left or right
+= 1.0.1 - December 20 2018 =
+* Updated screenshot
 
-= 1.1.1
-* Fix for bug in Navbar CTA
-
-= 1.1.0
-* updates to theme and companion plugin adding new widgets
-
-= 1.0.9 - May 15 2018 =
-* Bug fix for cart location option
-
-= 1.0.8 - May 15 2018 =
-* Minor menu style fix
-
-= 1.0.7 - April 30 2018 =
-* Minor menu style fix
-* Theme code review / QA changes
-
-= 1.0.6 - April 27 2018 =
-* Added Theme URI
-
-= 1.0.5 - April 27 2018 =
-* Theme code review / QA changes
-
-= 1.0.4 - April 26 2018 =
-* Updated docs & readme
-* Re-check NS Theme Sniffer and Theme Check plugin
-* minor tweaks to template parts
-
-= 1.0.3 - April 23 2018 =
-* Code cleanup
-
-= 1.0.2 - April 18 2018 =
-* Code cleanup
-
-= 1.0.1 - April 16 2018 =
-* Code cleanup
-
-= 1.0.0 - April 16 2018 =
+= 1.0.0 - December 20 2018 =
 * Initial release
 
 

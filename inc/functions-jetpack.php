@@ -5,7 +5,7 @@
  *
  * @link https://jetpack.com/
  *
- * @package Artisan
+ * @package Beyrouth
  */
 
 /**
@@ -15,11 +15,11 @@
  * See: https://jetpack.com/support/responsive-videos/
  * See: https://jetpack.com/support/content-options/
  */
-function artisan_jetpack_setup() {
+function beyrouth_jetpack_setup() {
     // Add theme support for Infinite Scroll.
     add_theme_support( 'infinite-scroll', array (
         'container' => 'main',
-        'render' => 'artisan_infinite_scroll_render',
+        'render' => 'beyrouth_infinite_scroll_render',
         'footer' => 'page',
     ) );
 
@@ -29,7 +29,7 @@ function artisan_jetpack_setup() {
     // Add theme support for Content Options.
     add_theme_support( 'jetpack-content-options', array (
         'post-details' => array (
-            'stylesheet' => 'artisan-style',
+            'stylesheet' => 'beyrouth-style',
             'date' => '.posted-on',
             'categories' => '.cat-links',
             'tags' => '.tags-links',
@@ -44,12 +44,12 @@ function artisan_jetpack_setup() {
     ) );
 }
 
-add_action( 'after_setup_theme', 'artisan_jetpack_setup' );
+add_action( 'after_setup_theme', 'beyrouth_jetpack_setup' );
 
 /**
  * Custom render function for Infinite Scroll.
  */
-function artisan_infinite_scroll_render() {
+function beyrouth_infinite_scroll_render() {
     while ( have_posts() ) {
         the_post();
         if ( is_search() ) :

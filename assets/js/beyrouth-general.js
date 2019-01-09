@@ -24,7 +24,7 @@ jQuery(document).ready(function ($) {
         }
     }).init();
     
-    if ( artisan_local_general.ease_scroll_toggle == 'yes' ) {
+    if ( beyrouth_local_general.ease_scroll_toggle == 'yes' ) {
         
         $("html").easeScroll({
 

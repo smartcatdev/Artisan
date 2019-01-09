@@ -1,20 +1,20 @@
 <?php
 /**
  * 
- * Functions available for the artisan admin menu
+ * Functions available for the beyrouth admin menu
  * 
  */
 
-add_action( 'admin_enqueue_scripts', 'artisan_load_admin_css' );
+add_action( 'admin_enqueue_scripts', 'beyrouth_load_admin_css' );
 
 
-function artisan_load_admin_css( $hook ) {
+function beyrouth_load_admin_css( $hook ) {
     
     // Enqueue fonts and css only on this page
-    if( 'appearance_page_artisan-theme-info' == $hook ) {
-        wp_enqueue_style( 'font-awesome', get_template_directory_uri() . '/assets/lib/font-awesome/fontawesome-all.min.css', array(), ARTISAN_VERSION );
-        wp_enqueue_style( 'artisan-admin-fonts', '//fonts.googleapis.com/css?family=Lato:300,700,900', array(), ARTISAN_VERSION );
-        wp_enqueue_style( 'artisan-admin-css', get_template_directory_uri() . '/assets/admin/css/docs.css', array(), ARTISAN_VERSION );
+    if( 'appearance_page_beyrouth-theme-info' == $hook ) {
+        wp_enqueue_style( 'font-awesome', get_template_directory_uri() . '/assets/lib/font-awesome/fontawesome-all.min.css', array(), BEYROUTH_VERSION );
+        wp_enqueue_style( 'beyrouth-admin-fonts', '//fonts.googleapis.com/css?family=Lato:300,700,900', array(), BEYROUTH_VERSION );
+        wp_enqueue_style( 'beyrouth-admin-css', get_template_directory_uri() . '/assets/admin/css/docs.css', array(), BEYROUTH_VERSION );
     }
     
     // Uploader JS & CSS
@@ -24,9 +24,9 @@ function artisan_load_admin_css( $hook ) {
 
         if( is_object( $screen ) && 'download' == $screen->post_type ) {
 
-            wp_enqueue_style( 'artisan-media-uploader', get_template_directory_uri() . '/assets/admin/css/uploader.css', array(), ARTISAN_VERSION );
-            wp_enqueue_script( 'artisan-media-uploader', get_template_directory_uri() . '/assets/lib/wp-media-uploader/wp_media_uploader.js', array( 'jquery' ), ARTISAN_VERSION );
-            wp_enqueue_script( 'artisan-admin-script', get_template_directory_uri() . '/assets/admin/js/admin.js', array( 'jquery', 'jquery-ui-sortable', 'artisan-media-uploader' ), ARTISAN_VERSION );
+            wp_enqueue_style( 'beyrouth-media-uploader', get_template_directory_uri() . '/assets/admin/css/uploader.css', array(), BEYROUTH_VERSION );
+            wp_enqueue_script( 'beyrouth-media-uploader', get_template_directory_uri() . '/assets/lib/wp-media-uploader/wp_media_uploader.js', array( 'jquery' ), BEYROUTH_VERSION );
+            wp_enqueue_script( 'beyrouth-admin-script', get_template_directory_uri() . '/assets/admin/js/admin.js', array( 'jquery', 'jquery-ui-sortable', 'beyrouth-media-uploader' ), BEYROUTH_VERSION );
             
         }
         
@@ -34,22 +34,22 @@ function artisan_load_admin_css( $hook ) {
     
 }
 
-function artisan_docs_partial( $file ) {
+function beyrouth_docs_partial( $file ) {
     return trailingslashit( get_template_directory() ) . 'admin/doc-partials/' . $file . '.php';
 }
 
-function artisan_render_doc( $filename ) {
+function beyrouth_render_doc( $filename ) {
     
-    if( file_exists( artisan_docs_partial( $filename ) ) ) {
-        require artisan_docs_partial( $filename );
+    if( file_exists( beyrouth_docs_partial( $filename ) ) ) {
+        require beyrouth_docs_partial( $filename );
     }
     
 }
 
-function artisan_docs_tab( $jump_link, $label, $children = null ) { ?>
+function beyrouth_docs_tab( $jump_link, $label, $children = null ) { ?>
     
 <li>
-    <a href="<?php echo esc_url( admin_url( 'themes.php?page=artisan-theme-info' . $jump_link ) ); ?>">
+    <a href="<?php echo esc_url( admin_url( 'themes.php?page=beyrouth-theme-info' . $jump_link ) ); ?>">
         <?php echo esc_html( $label ); ?>
     </a>
     
@@ -60,7 +60,7 @@ function artisan_docs_tab( $jump_link, $label, $children = null ) { ?>
         <?php foreach( $children as $child_link => $child_label ) : ?>
 
         <li>
-            <a href="<?php echo esc_url( admin_url( 'themes.php?page=artisan-theme-info' . $child_link ) ); ?>">
+            <a href="<?php echo esc_url( admin_url( 'themes.php?page=beyrouth-theme-info' . $child_link ) ); ?>">
                 <?php echo esc_html( $child_label ); ?>
             </a>
 
@@ -77,7 +77,7 @@ function artisan_docs_tab( $jump_link, $label, $children = null ) { ?>
 
 <?php }
 
-function artisan_docs_subsection( $jump_id, $heading, $paragraphs ) { ?>
+function beyrouth_docs_subsection( $jump_id, $heading, $paragraphs ) { ?>
 
     <section class="sub-section">
 
@@ -102,11 +102,11 @@ function artisan_docs_subsection( $jump_id, $heading, $paragraphs ) { ?>
 <?php 
 }
 
-function artisan_docs_quickstart_cta( $jump_link, $font_icon, $label ) { ?>
+function beyrouth_docs_quickstart_cta( $jump_link, $font_icon, $label ) { ?>
 
     <div class="quickstart-cta">
 
-        <a href="<?php echo esc_url( admin_url( 'themes.php?page=artisan-theme-info#' . $jump_link ) ); ?>">
+        <a href="<?php echo esc_url( admin_url( 'themes.php?page=beyrouth-theme-info#' . $jump_link ) ); ?>">
 
             <span class="fas <?php echo esc_attr( $font_icon ); ?>"></span>
 

@@ -4,13 +4,13 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#single-post
  *
- * @package Artisan
+ * @package Beyrouth
  */
 get_header(); ?>
 
     <div id="primary" class="content-area">
         
-        <main id="main" class="site-main artisan-single-edd-product">
+        <main id="main" class="site-main beyrouth-single-edd-product">
 
             <?php
             while ( have_posts() ) : the_post();

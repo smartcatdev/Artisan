@@ -55,7 +55,7 @@
                             'class' => 'button primary'
                         ) ); ?>
                     <?php endif; ?>
-                    <a class="button <?php echo edd_has_variable_prices( get_the_ID() ) ? 'primary' : 'secondary'; ?>" href="<?php the_permalink(); ?>"><?php esc_html_e( 'Product details', 'artisan' ); ?></a>
+                    <a class="button <?php echo edd_has_variable_prices( get_the_ID() ) ? 'primary' : 'secondary'; ?>" href="<?php the_permalink(); ?>"><?php esc_html_e( 'Product details', 'beyrouth' ); ?></a>
                 </div>
             </div><!--end .product-buttons-->
 

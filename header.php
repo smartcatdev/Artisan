@@ -6,7 +6,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
- * @package Artisan
+ * @package Beyrouth
  */
 ?>
 <!doctype html>
@@ -24,20 +24,20 @@
 
     <body <?php body_class(); ?>>
         
-        <?php do_action( 'artisan_body_start' ); ?>
+        <?php do_action( 'beyrouth_body_start' ); ?>
         
         <div id="page" class="site">
             
-            <a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'artisan' ); ?></a>
+            <a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'beyrouth' ); ?></a>
 
-            <?php get_template_part( 'template-parts/navbar', get_theme_mod( ARTISAN_OPTIONS::NAVBAR_STYLE, ARTISAN_DEFAULTS::NAVBAR_STYLE ) ); ?>
+            <?php get_template_part( 'template-parts/navbar', get_theme_mod( BEYROUTH_OPTIONS::NAVBAR_STYLE, BEYROUTH_DEFAULTS::NAVBAR_STYLE ) ); ?>
             
-            <?php if ( class_exists('WooCommerce') && get_theme_mod( ARTISAN_OPTIONS::WOO_SLIDE_CART_TOGGLE, ARTISAN_DEFAULTS::WOO_SLIDE_CART_TOGGLE ) ) { get_template_part( 'template-parts/cart-slide_in' ); } ?>
+            <?php if ( class_exists('WooCommerce') && get_theme_mod( BEYROUTH_OPTIONS::WOO_SLIDE_CART_TOGGLE, BEYROUTH_DEFAULTS::WOO_SLIDE_CART_TOGGLE ) ) { get_template_part( 'template-parts/cart-slide_in' ); } ?>
 
-            <?php if ( get_theme_mod( ARTISAN_OPTIONS::NAVBAR_STYLE, ARTISAN_DEFAULTS::NAVBAR_STYLE ) == 'vertical' ) : ?>
-                <div id="vertical-navbar-push" class="<?php echo get_theme_mod( ARTISAN_OPTIONS::VERT_NAVBAR_DISPLAY_SETTING, ARTISAN_DEFAULTS::VERT_NAVBAR_DISPLAY_SETTING ) == 'always'? 'expanded' : ''; ?>">
+            <?php if ( get_theme_mod( BEYROUTH_OPTIONS::NAVBAR_STYLE, BEYROUTH_DEFAULTS::NAVBAR_STYLE ) == 'vertical' ) : ?>
+                <div id="vertical-navbar-push" class="<?php echo get_theme_mod( BEYROUTH_OPTIONS::VERT_NAVBAR_DISPLAY_SETTING, BEYROUTH_DEFAULTS::VERT_NAVBAR_DISPLAY_SETTING ) == 'always'? 'expanded' : ''; ?>">
             <?php endif; ?>
             
             <div id="content" class="site-content">
 
-                <?php do_action( 'artisan_custom_header' ); ?>
+                <?php do_action( 'beyrouth_custom_header' ); ?>

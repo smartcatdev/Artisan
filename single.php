@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#single-post
  *
- * @package Artisan
+ * @package Beyrouth
  */
 get_header(); ?>
 
@@ -26,9 +26,9 @@ get_header(); ?>
             
                 <div class="row">
                 
-                    <?php artisan_output_side_sidebar( 'single', 'left' ) ?>
+                    <?php beyrouth_output_side_sidebar( 'single', 'left' ) ?>
                     
-                    <div class="<?php echo artisan_is_single_sidebar_active( 'post' ) ? 'has-side-sidebar ' . esc_attr( get_post_meta( get_the_ID(), ARTISAN_META::SIDEBAR_LOCATION, true ) ) . ' col-sm-9 col-md-9 col-lg-9' : 'col-sm-10 col-md-10 col-lg-9'; ?>">
+                    <div class="<?php echo beyrouth_is_single_sidebar_active( 'post' ) ? 'has-side-sidebar ' . esc_attr( get_post_meta( get_the_ID(), BEYROUTH_META::SIDEBAR_LOCATION, true ) ) . ' col-sm-9 col-md-9 col-lg-9' : 'col-sm-10 col-md-10 col-lg-9'; ?>">
             
                         <?php
                         while ( have_posts() ) : the_post();
@@ -40,7 +40,7 @@ get_header(); ?>
             
                     </div>
                     
-                    <?php artisan_output_side_sidebar( 'single', 'right' ) ?>
+                    <?php beyrouth_output_side_sidebar( 'single', 'right' ) ?>
                     
                 </div>
                 

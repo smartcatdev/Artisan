@@ -5,7 +5,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package Artisan
+ * @package Beyrouth
  */
 get_header();
 
@@ -30,14 +30,14 @@ get_header();
             <?php if ( have_posts() ) : ?>
 
                 <?php 
-                switch ( get_theme_mod( ARTISAN_OPTIONS::EDD_LAYOUT_STYLE, ARTISAN_DEFAULTS::EDD_LAYOUT_STYLE ) ) :
+                switch ( get_theme_mod( BEYROUTH_OPTIONS::EDD_LAYOUT_STYLE, BEYROUTH_DEFAULTS::EDD_LAYOUT_STYLE ) ) :
 
                     case 'edd_masonry' :
-                        do_action( 'artisan_edd_masonry_wrap_open');
+                        do_action( 'beyrouth_edd_masonry_wrap_open');
                         break;
 
                     default :
-                        do_action( 'artisan_edd_masonry_wrap_open');
+                        do_action( 'beyrouth_edd_masonry_wrap_open');
 
                 endswitch; 
                 ?>
@@ -46,20 +46,20 @@ get_header();
                     /* Start the Loop */
                     while ( have_posts() ) : the_post();
 
-                        get_template_part( 'template-parts/content', get_theme_mod( ARTISAN_OPTIONS::EDD_LAYOUT_STYLE, ARTISAN_DEFAULTS::EDD_LAYOUT_STYLE ) );
+                        get_template_part( 'template-parts/content', get_theme_mod( BEYROUTH_OPTIONS::EDD_LAYOUT_STYLE, BEYROUTH_DEFAULTS::EDD_LAYOUT_STYLE ) );
 
                     endwhile;
                     ?>
 
                 <?php 
-                switch ( get_theme_mod( ARTISAN_OPTIONS::EDD_LAYOUT_STYLE, ARTISAN_DEFAULTS::EDD_LAYOUT_STYLE ) ) :
+                switch ( get_theme_mod( BEYROUTH_OPTIONS::EDD_LAYOUT_STYLE, BEYROUTH_DEFAULTS::EDD_LAYOUT_STYLE ) ) :
 
                     case 'edd_masonry' :
-                        do_action( 'artisan_edd_masonry_wrap_close');
+                        do_action( 'beyrouth_edd_masonry_wrap_close');
                         break;
 
                     default :
-                        do_action( 'artisan_edd_masonry_wrap_close');
+                        do_action( 'beyrouth_edd_masonry_wrap_close');
 
                 endswitch; 
                 ?>

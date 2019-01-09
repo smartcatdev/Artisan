@@ -1,20 +1,19 @@
 <?php
 
-interface ARTISAN_OPTIONS {
+interface BEYROUTH_OPTIONS {
     
     const   CUSTOM_HEADER_STYLE_TOGGLE              = 'custom_header_style_toggle',
-            CUSTOM_HEADER_HEIGHT_CALC               = 'artisan_custom_header_height_unit',
-            CUSTOM_HEADER_HEIGHT_PCT                = 'artisan_custom_header_height_percent',
-            CUSTOM_HEADER_HEIGHT_PCT_MBL            = 'artisan_custom_header_height_percent_mbl',
-            CUSTOM_HEADER_HEIGHT_PX                 = 'artisan_custom_header_height_pixels',
-            CUSTOM_HEADER_HEIGHT_PX_MBL             = 'artisan_custom_header_height_pixels_mbl',
+            CUSTOM_HEADER_HEIGHT_CALC               = 'beyrouth_custom_header_height_unit',
+            CUSTOM_HEADER_HEIGHT_PCT                = 'beyrouth_custom_header_height_percent',
+            CUSTOM_HEADER_HEIGHT_PCT_MBL            = 'beyrouth_custom_header_height_percent_mbl',
+            CUSTOM_HEADER_HEIGHT_PX                 = 'beyrouth_custom_header_height_pixels',
+            CUSTOM_HEADER_HEIGHT_PX_MBL             = 'beyrouth_custom_header_height_pixels_mbl',
             CUSTOM_HEADER_PLX_INTENSITY             = 'parallax_layers_parallax_style',
             CUSTOM_HEADER_TEXTURE_IMG               = 'parallax_layers_texture_pattern',
             CUSTOM_HEADER_TEXTURE_OPAC              = 'parallax_layers_texture_layer_opacity',
-            
-            CUSTOM_HEADER_SHOW_LOGO                 = 'custom_header_show_logo',
-            CUSTOM_HEADER_LOGO_HEIGHT               = 'artisan_custom_header_logo_height',
-            CUSTOM_HEADER_LOGO_HEIGHT_MBL           = 'artisan_custom_header_logo_height_mbl',
+
+            CUSTOM_HEADER_LOGO_HEIGHT               = 'beyrouth_custom_header_logo_height',
+            CUSTOM_HEADER_LOGO_HEIGHT_MBL           = 'beyrouth_custom_header_logo_height_mbl',
             
             CUSTOM_HEADER_SHOW_TITLE                = 'custom_header_show_heading',
             CUSTOM_HEADER_TITLE_CONTENT             = 'custom_header_title_content',
@@ -95,7 +94,6 @@ interface ARTISAN_OPTIONS {
             NAVBAR_TRANSPARENT_MENU_BG              = 'navbar_banner_transparent_menu_toggle',
             NAVBAR_BRANDING_ALIGNMENT               = 'navbar_banner_logo_alignment',
             NAVBAR_MENU_ALIGNMENT                   = 'navbar_banner_menu_alignment',
-            NAVBAR_BRANDING_WHAT_TO_SHOW            = 'navbar_branding_what_to_show',
             NAVBAR_BRANDING_SPACE_TOP_DSK           = 'navbar_banner_logo_top_spacing',
             NAVBAR_BRANDING_SPACE_BOTTOM_DSK        = 'navbar_banner_logo_bottom_spacing',
             NAVBAR_BRANDING_SPACE_TOP_MBL           = 'navbar_banner_logo_top_spacing_mbl',
@@ -104,9 +102,9 @@ interface ARTISAN_OPTIONS {
             NAVBAR_FINAL_LINK_ROUNDED               = 'navbar_final_link_rounded',
             NAVBAR_FINAL_LINK_FILL                  = 'navbar_final_link_fill',
             
-            VERT_NAVBAR_DISPLAY_SETTING             = 'artisan_vertical_navbar_display_setting',
-            VERT_NAVBAR_TAB_BACKGROUND              = 'artisan_vertical_navbar_tab_background',
-            VERT_NAVBAR_TAB_FOREGROUND              = 'artisan_vertical_navbar_tab_foreground',
+            VERT_NAVBAR_DISPLAY_SETTING             = 'beyrouth_vertical_navbar_display_setting',
+            VERT_NAVBAR_TAB_BACKGROUND              = 'beyrouth_vertical_navbar_tab_background',
+            VERT_NAVBAR_TAB_FOREGROUND              = 'beyrouth_vertical_navbar_tab_foreground',
     
             NAVBAR_SHOW_SOCIAL                      = 'navbar_show_social',
             SOCIAL_URL_1                            = 'social_icon_1_url',
@@ -154,7 +152,7 @@ interface ARTISAN_OPTIONS {
             FOOTER_COPYRIGHT_TAGLINE                = 'footer_copyright_tagline',
             FOOTER_BRANDING_TYPE                    = 'footer_branding',
             FOOTER_ALTERNATE_LOGO                   = 'alternate_logo',
-            FOOTER_ALTERNATE_LOGO_HEIGHT            = 'artisan_footer_logo_height',
+            FOOTER_ALTERNATE_LOGO_HEIGHT            = 'beyrouth_footer_logo_height',
             FOOTER_SITE_TITLE_FONT_SIZE             = 'footer_site_title_font_size',
             FOOTER_SITE_TITLE_ALL_CAPS              = 'footer_site_title_uppercase',
             FOOTER_COPYRIGHT_TAGLINE_FONT_SIZE      = 'footer_copyright_font_size',
@@ -184,7 +182,7 @@ interface ARTISAN_OPTIONS {
 
 }
 
-interface ARTISAN_DEFAULTS {
+interface BEYROUTH_DEFAULTS {
     
     const   CUSTOM_HEADER_STYLE_TOGGLE              = 'social',
             CUSTOM_HEADER_HEIGHT_CALC               = 'percent',
@@ -195,13 +193,12 @@ interface ARTISAN_DEFAULTS {
             CUSTOM_HEADER_PLX_INTENSITY             = 'default',
             CUSTOM_HEADER_TEXTURE_IMG               = '',
             CUSTOM_HEADER_TEXTURE_OPAC              = .75,
-            
-            CUSTOM_HEADER_SHOW_LOGO                 = true,
+
             CUSTOM_HEADER_LOGO_HEIGHT               = 150,
             CUSTOM_HEADER_LOGO_HEIGHT_MBL           = 80,
     
             CUSTOM_HEADER_SHOW_TITLE                = true,
-            CUSTOM_HEADER_TITLE_CONTENT             = 'site_title',
+            CUSTOM_HEADER_TITLE_CONTENT             = 'both',
             CUSTOM_HEADER_TITLE_FONT_FAMILY         = 'secondary',
             CUSTOM_HEADER_TITLE_FONT_SIZE           = 65,
             CUSTOM_HEADER_TITLE_LETTER_GAP          = '.250',
@@ -218,7 +215,7 @@ interface ARTISAN_DEFAULTS {
             CUSTOM_HEADER_COLOR_LAYER_COLOR         = '#000000',
             CUSTOM_HEADER_COLOR_LAYER_OPACITY       = .5,
             
-            CUSTOM_HEADER_SHOW_ON_POSTS             = true,
+            CUSTOM_HEADER_SHOW_ON_POSTS             = false,
             CUSTOM_HEADER_SHOW_ON_PAGES             = false,
             CUSTOM_HEADER_SHOW_ON_FRONT             = true,
             CUSTOM_HEADER_SHOW_ON_BLOG              = true,
@@ -264,7 +261,7 @@ interface ARTISAN_DEFAULTS {
             NAVBAR_TAGLINE_FONT_FAMILY              = 'secondary',
             NAVBAR_TAGLINE_FONT_SIZE                = 12,
             NAVBAR_LINKS_FONT_FAMILY                = 'primary',
-            NAVBAR_LINKS_FONT_SIZE                  = 10,
+            NAVBAR_LINKS_FONT_SIZE                  = 14,
             NAVBAR_LINKS_GAP                        = 30,
             NAVBAR_HAS_SHADOW                       = true,
     
@@ -279,7 +276,6 @@ interface ARTISAN_DEFAULTS {
             NAVBAR_TRANSPARENT_MENU_BG              = true,
             NAVBAR_BRANDING_ALIGNMENT               = 'left',
             NAVBAR_MENU_ALIGNMENT                   = 'left',
-            NAVBAR_BRANDING_WHAT_TO_SHOW            = 'title_tagline',
             NAVBAR_BRANDING_SPACE_TOP_DSK           = 60,
             NAVBAR_BRANDING_SPACE_BOTTOM_DSK        = 20,
             NAVBAR_BRANDING_SPACE_TOP_MBL           = 30,

@@ -13,7 +13,7 @@
  * @see 	    https://docs.woocommerce.com/document/template-structure/
  * @author 		WooThemes
  * @package 	WooCommerce/Templates
- * @version     3.3.0
+ * @version     3.4.0
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
@@ -56,7 +56,7 @@ if ( have_posts() ) { ?>
                         the_post();
                         
                         /**
-                         * Include "artisan_woocommerce_product_loop_cta( $ctr )" before $ctr++ to inject loop CTA
+                         * Include "beyrouth_woocommerce_product_loop_cta( $ctr )" before $ctr++ to inject loop CTA
                          */
                         $ctr++;
                         

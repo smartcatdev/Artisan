@@ -6,38 +6,38 @@
  * @since 1.0.0
  * @return array of hex colors
  */
-function artisan_get_all_theme_colors() {
+function beyrouth_get_all_theme_colors() {
     
     $theme_colors = array();
     
-    $theme_colors['navbar_bg']              = get_theme_mod( ARTISAN_OPTIONS::NAVBAR_BG_COLOR, ARTISAN_DEFAULTS::NAVBAR_BG_COLOR );
-    $theme_colors['navbar_fg']              = get_theme_mod( ARTISAN_OPTIONS::NAVBAR_FG_COLOR, ARTISAN_DEFAULTS::NAVBAR_FG_COLOR );
+    $theme_colors['navbar_bg']              = get_theme_mod( BEYROUTH_OPTIONS::NAVBAR_BG_COLOR, BEYROUTH_DEFAULTS::NAVBAR_BG_COLOR );
+    $theme_colors['navbar_fg']              = get_theme_mod( BEYROUTH_OPTIONS::NAVBAR_FG_COLOR, BEYROUTH_DEFAULTS::NAVBAR_FG_COLOR );
     
-    $theme_colors['navbar_menu_bg']         = get_theme_mod( ARTISAN_OPTIONS::NAVBAR_MENU_BG_COLOR, ARTISAN_DEFAULTS::NAVBAR_MENU_BG_COLOR );
-    $theme_colors['navbar_menu_fg']         = get_theme_mod( ARTISAN_OPTIONS::NAVBAR_MENU_FG_COLOR, ARTISAN_DEFAULTS::NAVBAR_MENU_FG_COLOR );
+    $theme_colors['navbar_menu_bg']         = get_theme_mod( BEYROUTH_OPTIONS::NAVBAR_MENU_BG_COLOR, BEYROUTH_DEFAULTS::NAVBAR_MENU_BG_COLOR );
+    $theme_colors['navbar_menu_fg']         = get_theme_mod( BEYROUTH_OPTIONS::NAVBAR_MENU_FG_COLOR, BEYROUTH_DEFAULTS::NAVBAR_MENU_FG_COLOR );
     
-    $theme_colors['prefooter_bg']           = get_theme_mod( ARTISAN_OPTIONS::PRE_FOOTER_BG_COLOR, ARTISAN_DEFAULTS::PRE_FOOTER_BG_COLOR );
-    $theme_colors['prefooter_fg']           = get_theme_mod( ARTISAN_OPTIONS::PRE_FOOTER_FG_COLOR, ARTISAN_DEFAULTS::PRE_FOOTER_FG_COLOR );
+    $theme_colors['prefooter_bg']           = get_theme_mod( BEYROUTH_OPTIONS::PRE_FOOTER_BG_COLOR, BEYROUTH_DEFAULTS::PRE_FOOTER_BG_COLOR );
+    $theme_colors['prefooter_fg']           = get_theme_mod( BEYROUTH_OPTIONS::PRE_FOOTER_FG_COLOR, BEYROUTH_DEFAULTS::PRE_FOOTER_FG_COLOR );
     
-    $theme_colors['footer_bg']              = get_theme_mod( ARTISAN_OPTIONS::FOOTER_BG_COLOR, ARTISAN_DEFAULTS::FOOTER_BG_COLOR );
-    $theme_colors['footer_fg']              = get_theme_mod( ARTISAN_OPTIONS::FOOTER_FG_COLOR, ARTISAN_DEFAULTS::FOOTER_FG_COLOR );
+    $theme_colors['footer_bg']              = get_theme_mod( BEYROUTH_OPTIONS::FOOTER_BG_COLOR, BEYROUTH_DEFAULTS::FOOTER_BG_COLOR );
+    $theme_colors['footer_fg']              = get_theme_mod( BEYROUTH_OPTIONS::FOOTER_FG_COLOR, BEYROUTH_DEFAULTS::FOOTER_FG_COLOR );
     
-    $theme_colors['primary']                = get_theme_mod( ARTISAN_OPTIONS::COLOR_SKIN_PRIMARY, ARTISAN_DEFAULTS::COLOR_SKIN_PRIMARY );
-    $theme_colors['secondary']              = get_theme_mod( ARTISAN_OPTIONS::COLOR_SKIN_SECONDARY, ARTISAN_DEFAULTS::COLOR_SKIN_SECONDARY );
+    $theme_colors['primary']                = get_theme_mod( BEYROUTH_OPTIONS::COLOR_SKIN_PRIMARY, BEYROUTH_DEFAULTS::COLOR_SKIN_PRIMARY );
+    $theme_colors['secondary']              = get_theme_mod( BEYROUTH_OPTIONS::COLOR_SKIN_SECONDARY, BEYROUTH_DEFAULTS::COLOR_SKIN_SECONDARY );
     
-    $theme_colors['social_bg']              = get_theme_mod( ARTISAN_OPTIONS::NAVBAR_SOCIAL_BG_COLOR, ARTISAN_DEFAULTS::NAVBAR_SOCIAL_BG_COLOR );
-    $theme_colors['social_fg']              = get_theme_mod( ARTISAN_OPTIONS::NAVBAR_SOCIAL_FG_COLOR, ARTISAN_DEFAULTS::NAVBAR_SOCIAL_FG_COLOR );
-    $theme_colors['social_fg_hov']          = get_theme_mod( ARTISAN_OPTIONS::NAVBAR_SOCIAL_FG_COLOR_HOVER, ARTISAN_DEFAULTS::NAVBAR_SOCIAL_FG_COLOR_HOVER );
-    $theme_colors['custom_header_title']    = get_theme_mod( ARTISAN_OPTIONS::CUSTOM_HEADER_TITLE_COLOR, ARTISAN_DEFAULTS::CUSTOM_HEADER_TITLE_COLOR );
-    $theme_colors['custom_header_menu']     = get_theme_mod( ARTISAN_OPTIONS::CUSTOM_HEADER_MENU_COLOR, ARTISAN_DEFAULTS::CUSTOM_HEADER_MENU_COLOR );
+    $theme_colors['social_bg']              = get_theme_mod( BEYROUTH_OPTIONS::NAVBAR_SOCIAL_BG_COLOR, BEYROUTH_DEFAULTS::NAVBAR_SOCIAL_BG_COLOR );
+    $theme_colors['social_fg']              = get_theme_mod( BEYROUTH_OPTIONS::NAVBAR_SOCIAL_FG_COLOR, BEYROUTH_DEFAULTS::NAVBAR_SOCIAL_FG_COLOR );
+    $theme_colors['social_fg_hov']          = get_theme_mod( BEYROUTH_OPTIONS::NAVBAR_SOCIAL_FG_COLOR_HOVER, BEYROUTH_DEFAULTS::NAVBAR_SOCIAL_FG_COLOR_HOVER );
+    $theme_colors['custom_header_title']    = get_theme_mod( BEYROUTH_OPTIONS::CUSTOM_HEADER_TITLE_COLOR, BEYROUTH_DEFAULTS::CUSTOM_HEADER_TITLE_COLOR );
+    $theme_colors['custom_header_menu']     = get_theme_mod( BEYROUTH_OPTIONS::CUSTOM_HEADER_MENU_COLOR, BEYROUTH_DEFAULTS::CUSTOM_HEADER_MENU_COLOR );
     
-    $theme_colors['cart_tab']               = get_theme_mod( ARTISAN_OPTIONS::WOO_SLIDE_CART_TAB_COLOR, ARTISAN_DEFAULTS::WOO_SLIDE_CART_TAB_COLOR );
+    $theme_colors['cart_tab']               = get_theme_mod( BEYROUTH_OPTIONS::WOO_SLIDE_CART_TAB_COLOR, BEYROUTH_DEFAULTS::WOO_SLIDE_CART_TAB_COLOR );
     
-    $theme_colors['plx_overlay_single']     = get_theme_mod( ARTISAN_OPTIONS::CUSTOM_HEADER_COLOR_LAYER_COLOR, ARTISAN_DEFAULTS::CUSTOM_HEADER_COLOR_LAYER_COLOR );
-    $theme_colors['plx_overlay_grad_start'] = get_theme_mod( ARTISAN_OPTIONS::GRADIENT_START_COLOR, ARTISAN_DEFAULTS::GRADIENT_START_COLOR );
-    $theme_colors['plx_overlay_grad_end']   = get_theme_mod( ARTISAN_OPTIONS::GRADIENT_END_COLOR, ARTISAN_DEFAULTS::GRADIENT_END_COLOR );
+    $theme_colors['plx_overlay_single']     = get_theme_mod( BEYROUTH_OPTIONS::CUSTOM_HEADER_COLOR_LAYER_COLOR, BEYROUTH_DEFAULTS::CUSTOM_HEADER_COLOR_LAYER_COLOR );
+    $theme_colors['plx_overlay_grad_start'] = get_theme_mod( BEYROUTH_OPTIONS::GRADIENT_START_COLOR, BEYROUTH_DEFAULTS::GRADIENT_START_COLOR );
+    $theme_colors['plx_overlay_grad_end']   = get_theme_mod( BEYROUTH_OPTIONS::GRADIENT_END_COLOR, BEYROUTH_DEFAULTS::GRADIENT_END_COLOR );
    
-    $theme_colors['footer_widget_title']    = get_theme_mod( ARTISAN_OPTIONS::PRE_FOOTER_WIDGET_TITLE_COLOR, ARTISAN_DEFAULTS::PRE_FOOTER_WIDGET_TITLE_COLOR );
+    $theme_colors['footer_widget_title']    = get_theme_mod( BEYROUTH_OPTIONS::PRE_FOOTER_WIDGET_TITLE_COLOR, BEYROUTH_DEFAULTS::PRE_FOOTER_WIDGET_TITLE_COLOR );
  
     return $theme_colors;
     
@@ -49,50 +49,50 @@ function artisan_get_all_theme_colors() {
  * @since 1.0.0
  * @return array of Font Awesome 5 icons
  */
-function artisan_get_icons( $subset = null ) {
+function beyrouth_get_icons( $subset = null ) {
     
     $icons = array(
-        'fa-app-store'      => __( 'App Store', 'artisan' ),
-        'fa-apple'          => __( 'Apple', 'artisan' ),
-        'fa-bandcamp'       => __( 'Bandcamp', 'artisan' ),
-        'fa-behance'        => __( 'Behance', 'artisan' ),
-        'fa-codepen'        => __( 'CodePen', 'artisan' ),
-        'fa-discord'        => __( 'Discord', 'artisan' ),
-        'fa-dribbble'       => __( 'Dribbble', 'artisan' ),
-        'fa-etsy'           => __( 'Etsy', 'artisan' ),
-        'fa-facebook-f'     => __( 'Facebook', 'artisan' ),
-        'fa-git'            => __( 'Git', 'artisan' ),
-        'fa-github'         => __( 'GitHub', 'artisan' ),
-        'fa-google-play'    => __( 'Google Play', 'artisan' ),
-        'fa-google-plus-g'  => __( 'Google+', 'artisan' ),
-        'fa-imdb'           => __( 'IMDb', 'artisan' ),
-        'fa-instagram'      => __( 'Instagram', 'artisan' ),
-        'fa-itunes-note'    => __( 'iTunes', 'artisan' ),
-        'fa-kickstarter-k'  => __( 'Kickstarter', 'artisan' ),
-        'fa-lastfm'         => __( 'Last.fm', 'artisan' ),
-        'fa-linkedin-in'    => __( 'LinkedIn', 'artisan' ),
-        'fa-medium-m'       => __( 'Medium', 'artisan' ),
-        'fa-microsoft'      => __( 'Microsoft', 'artisan' ),
-        'fa-mixcloud'       => __( 'Mixcloud', 'artisan' ),
-        'fa-patreon'        => __( 'Patreon', 'artisan' ),
-        'fa-pinterest-p'    => __( 'Pinterest', 'artisan' ),
-        'fa-playstation'    => __( 'PlayStation', 'artisan' ),
-        'fa-reddit-alien'   => __( 'Reddit', 'artisan' ),
-        'fas fa-rss'        => __( 'RSS', 'artisan' ),
-        'fa-slack-hash'     => __( 'Slack', 'artisan' ),
-        'fa-snapchat-ghost' => __( 'Snapchat', 'artisan' ),
-        'fa-soundcloud'     => __( 'SoundCloud', 'artisan' ),
-        'fa-spotify'        => __( 'Spotify', 'artisan' ),
-        'fa-steam'          => __( 'Steam', 'artisan' ),
-        'fa-stumbleupon'    => __( 'StumbleUpon', 'artisan' ),
-        'fa-tumblr'         => __( 'Tumblr', 'artisan' ),
-        'fa-twitch'         => __( 'Twitch', 'artisan' ),
-        'fa-twitter'        => __( 'Twitter', 'artisan' ),
-        'fa-vimeo'          => __( 'Vimeo', 'artisan' ),
-        'fa-vimeo'          => __( 'Vimeo', 'artisan' ),
-        'fa-xbox'           => __( 'Xbox', 'artisan' ),
-        'fa-yelp'           => __( 'Yelp', 'artisan' ),
-        'fa-youtube'        => __( 'YouTube', 'artisan' ),
+        'fa-app-store'      => __( 'App Store', 'beyrouth' ),
+        'fa-apple'          => __( 'Apple', 'beyrouth' ),
+        'fa-bandcamp'       => __( 'Bandcamp', 'beyrouth' ),
+        'fa-behance'        => __( 'Behance', 'beyrouth' ),
+        'fa-codepen'        => __( 'CodePen', 'beyrouth' ),
+        'fa-discord'        => __( 'Discord', 'beyrouth' ),
+        'fa-dribbble'       => __( 'Dribbble', 'beyrouth' ),
+        'fa-etsy'           => __( 'Etsy', 'beyrouth' ),
+        'fa-facebook-f'     => __( 'Facebook', 'beyrouth' ),
+        'fa-git'            => __( 'Git', 'beyrouth' ),
+        'fa-github'         => __( 'GitHub', 'beyrouth' ),
+        'fa-google-play'    => __( 'Google Play', 'beyrouth' ),
+        'fa-google-plus-g'  => __( 'Google+', 'beyrouth' ),
+        'fa-imdb'           => __( 'IMDb', 'beyrouth' ),
+        'fa-instagram'      => __( 'Instagram', 'beyrouth' ),
+        'fa-itunes-note'    => __( 'iTunes', 'beyrouth' ),
+        'fa-kickstarter-k'  => __( 'Kickstarter', 'beyrouth' ),
+        'fa-lastfm'         => __( 'Last.fm', 'beyrouth' ),
+        'fa-linkedin-in'    => __( 'LinkedIn', 'beyrouth' ),
+        'fa-medium-m'       => __( 'Medium', 'beyrouth' ),
+        'fa-microsoft'      => __( 'Microsoft', 'beyrouth' ),
+        'fa-mixcloud'       => __( 'Mixcloud', 'beyrouth' ),
+        'fa-patreon'        => __( 'Patreon', 'beyrouth' ),
+        'fa-pinterest-p'    => __( 'Pinterest', 'beyrouth' ),
+        'fa-playstation'    => __( 'PlayStation', 'beyrouth' ),
+        'fa-reddit-alien'   => __( 'Reddit', 'beyrouth' ),
+        'fas fa-rss'        => __( 'RSS', 'beyrouth' ),
+        'fa-slack-hash'     => __( 'Slack', 'beyrouth' ),
+        'fa-snapchat-ghost' => __( 'Snapchat', 'beyrouth' ),
+        'fa-soundcloud'     => __( 'SoundCloud', 'beyrouth' ),
+        'fa-spotify'        => __( 'Spotify', 'beyrouth' ),
+        'fa-steam'          => __( 'Steam', 'beyrouth' ),
+        'fa-stumbleupon'    => __( 'StumbleUpon', 'beyrouth' ),
+        'fa-tumblr'         => __( 'Tumblr', 'beyrouth' ),
+        'fa-twitch'         => __( 'Twitch', 'beyrouth' ),
+        'fa-twitter'        => __( 'Twitter', 'beyrouth' ),
+        'fa-vimeo'          => __( 'Vimeo', 'beyrouth' ),
+        'fa-vimeo'          => __( 'Vimeo', 'beyrouth' ),
+        'fa-xbox'           => __( 'Xbox', 'beyrouth' ),
+        'fa-yelp'           => __( 'Yelp', 'beyrouth' ),
+        'fa-youtube'        => __( 'YouTube', 'beyrouth' ),
     );
     
     return $icons;
@@ -106,18 +106,18 @@ function artisan_get_icons( $subset = null ) {
  * @param string $more "Read more" excerpt string.
  * @return string (Maybe) modified "read more" excerpt string.
  */
-function artisan_add_excerpt_more_link( $more ) {
+function beyrouth_add_excerpt_more_link( $more ) {
 
 //    return sprintf( '… <a class="read-more" href="%1$s">%2$s</a>',
 //        get_permalink( get_the_ID() ),
-//        __( get_theme_mod( ARTISAN_OPTIONS::BLOG_READ_MORE_TEXT, ARTISAN_DEFAULTS::BLOG_READ_MORE_TEXT ), 'artisan' )
+//        __( get_theme_mod( BEYROUTH_OPTIONS::BLOG_READ_MORE_TEXT, BEYROUTH_DEFAULTS::BLOG_READ_MORE_TEXT ), 'beyrouth' )
 //    );
     
     /* translators: permalink url, then Read More text theme mod */
-    return sprintf( __( '... <a class="read-more" href="%1$s">%2$s</a>', 'artisan' ), esc_url( get_the_permalink( get_the_ID() ) ), esc_html( get_theme_mod( ARTISAN_OPTIONS::BLOG_READ_MORE_TEXT, ARTISAN_DEFAULTS::BLOG_READ_MORE_TEXT ) ) );
+    return sprintf( __( '... <a class="read-more" href="%1$s">%2$s</a>', 'beyrouth' ), esc_url( get_the_permalink( get_the_ID() ) ), esc_html( get_theme_mod( BEYROUTH_OPTIONS::BLOG_READ_MORE_TEXT, BEYROUTH_DEFAULTS::BLOG_READ_MORE_TEXT ) ) );
     
 }
-add_filter( 'excerpt_more', 'artisan_add_excerpt_more_link' );
+add_filter( 'excerpt_more', 'beyrouth_add_excerpt_more_link' );
 
 /**
  * Filter the excerpt length to a user-defined number words.
@@ -126,10 +126,10 @@ add_filter( 'excerpt_more', 'artisan_add_excerpt_more_link' );
  * @param int $length Excerpt length.
  * @return int modified excerpt length.
  */
-function artisan_custom_auto_excerpt_length( $length ) {
-    return intval( get_theme_mod( ARTISAN_OPTIONS::BLOG_EXCERPT_TRIM_NUM, ARTISAN_DEFAULTS::BLOG_EXCERPT_TRIM_NUM ) );
+function beyrouth_custom_auto_excerpt_length( $length ) {
+    return intval( get_theme_mod( BEYROUTH_OPTIONS::BLOG_EXCERPT_TRIM_NUM, BEYROUTH_DEFAULTS::BLOG_EXCERPT_TRIM_NUM ) );
 }
-add_filter( 'excerpt_length', 'artisan_custom_auto_excerpt_length', 999 );
+add_filter( 'excerpt_length', 'beyrouth_custom_auto_excerpt_length', 999 );
 
 /**
  * Hex to rgb(a) converter function.
@@ -139,7 +139,7 @@ add_filter( 'excerpt_length', 'artisan_custom_auto_excerpt_length', 999 );
  * @param decimal $opacity optional opacity decimal.
  * @return string rgba(a) value
  */
-function artisan_hex2rgba( $color, $opacity = false ) {
+function beyrouth_hex2rgba( $color, $opacity = false ) {
 
     $default = 'rgb(0,0,0)';
 
@@ -186,9 +186,9 @@ function artisan_hex2rgba( $color, $opacity = false ) {
  * @param string $style key to identify what to return.
  * @return either an associative array of percentages (Layers) or a single integer value (Vertical)
  */
-function artisan_get_parallax_preset( $style = 'layers' ) {
+function beyrouth_get_parallax_preset( $style = 'layers' ) {
 
-    switch ( get_theme_mod( ARTISAN_OPTIONS::CUSTOM_HEADER_PLX_INTENSITY, ARTISAN_DEFAULTS::CUSTOM_HEADER_PLX_INTENSITY ) ) :
+    switch ( get_theme_mod( BEYROUTH_OPTIONS::CUSTOM_HEADER_PLX_INTENSITY, BEYROUTH_DEFAULTS::CUSTOM_HEADER_PLX_INTENSITY ) ) :
         
         case 'subtle' :
             $parallax_preset = array(
@@ -232,7 +232,7 @@ function artisan_get_parallax_preset( $style = 'layers' ) {
  * @param array $types - post types to retrieve
  * @return array of posts
  */
-function artisan_all_posts_array( $types = array( 'post' ) ) {
+function beyrouth_all_posts_array( $types = array( 'post' ) ) {
     
     $posts = get_posts( array(
         'post_type'        => $types,
@@ -243,7 +243,7 @@ function artisan_all_posts_array( $types = array( 'post' ) ) {
     ));
 
     $posts_array = array(
-        'none'  => __( 'None', 'artisan' ),
+        'none'  => __( 'None', 'beyrouth' ),
     );
     
     foreach ( $posts as $post ) :
@@ -258,9 +258,9 @@ function artisan_all_posts_array( $types = array( 'post' ) ) {
     
 }
 
-function artisan_features_install_url() {
+function beyrouth_features_install_url() {
     
-    $slug = 'artisan-features';
+    $slug = 'beyrouth-features';
     $nonce_key = 'install-plugin_' . $slug;
     
     
@@ -294,23 +294,23 @@ function artisan_features_install_url() {
     
 }
 
-function artisan_dismiss_companion() {
+function beyrouth_dismiss_companion() {
     
-    if( ! isset( $_POST['artisan_dismiss_nonce'] ) || ! wp_verify_nonce( $_POST['artisan_dismiss_nonce'], 'artisan_dismiss_nonce' ) ) {
-        die( esc_html__( 'Invalid nonce', 'artisan' ) );
+    if( ! isset( $_POST['beyrouth_dismiss_nonce'] ) || ! wp_verify_nonce( $_POST['beyrouth_dismiss_nonce'], 'beyrouth_dismiss_nonce' ) ) {
+        die( esc_html__( 'Invalid nonce', 'beyrouth' ) );
         return;
     }
     
     if( current_user_can( 'edit_theme_options' ) ) {
-        set_theme_mod( ARTISAN_OPTIONS::COMPANION_NOTICE_DISMISSED, true );
+        set_theme_mod( BEYROUTH_OPTIONS::COMPANION_NOTICE_DISMISSED, true );
     }
     
     exit();   
 }
-add_action( 'wp_ajax_artisan_dismiss_companion', 'artisan_dismiss_companion' );
+add_action( 'wp_ajax_beyrouth_dismiss_companion', 'beyrouth_dismiss_companion' );
 
 
-function artisan_is_single_sidebar_active( $template = 'page' ) {
+function beyrouth_is_single_sidebar_active( $template = 'page' ) {
  
     if ( $template != 'post' && $template != 'page' && $template != 'blog' ) { return false; }
     
@@ -319,7 +319,7 @@ function artisan_is_single_sidebar_active( $template = 'page' ) {
 
         // Page & Post Sidebar
         
-        if ( get_post_meta( get_the_ID(), ARTISAN_META::SIDEBAR_TEMPLATE, true ) != 'none' && is_active_sidebar( get_post_meta( get_the_ID(), ARTISAN_META::SIDEBAR_TEMPLATE, true ) ) ) :
+        if ( get_post_meta( get_the_ID(), BEYROUTH_META::SIDEBAR_TEMPLATE, true ) != 'none' && is_active_sidebar( get_post_meta( get_the_ID(), BEYROUTH_META::SIDEBAR_TEMPLATE, true ) ) ) :
             return true;                    
         else : 
             return false;

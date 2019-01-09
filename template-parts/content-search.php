@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package Artisan
+ * @package Beyrouth
  */
 ?>
 
@@ -15,20 +15,20 @@
         <?php if ( 'post' === get_post_type() ) : ?>
             <div class="entry-meta">
                 <?php
-                artisan_posted_on();
-                artisan_posted_by();
+                beyrouth_posted_on();
+                beyrouth_posted_by();
                 ?>
             </div><!-- .entry-meta -->
         <?php endif; ?>
     </header><!-- .entry-header -->
 
-    <?php artisan_post_thumbnail(); ?>
+    <?php beyrouth_post_thumbnail(); ?>
 
     <div class="entry-summary">
         <?php the_excerpt(); ?>
     </div><!-- .entry-summary -->
 
     <footer class="entry-footer">
-        <?php artisan_entry_footer(); ?>
+        <?php beyrouth_entry_footer(); ?>
     </footer><!-- .entry-footer -->
 </article><!-- #post-<?php the_ID(); ?> -->

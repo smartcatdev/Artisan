@@ -2,9 +2,9 @@
 
     <div id="banner-header-wrap">
 
-        <div id="banner-header" class="<?php echo get_theme_mod( ARTISAN_OPTIONS::NAVBAR_BOXED_CONTENT, ARTISAN_DEFAULTS::NAVBAR_BOXED_CONTENT ) ? 'container' : ''; ?>">
+        <div id="banner-header" class="<?php echo get_theme_mod( BEYROUTH_OPTIONS::NAVBAR_BOXED_CONTENT, BEYROUTH_DEFAULTS::NAVBAR_BOXED_CONTENT ) ? 'container' : ''; ?>">
 
-            <?php if ( function_exists( 'has_custom_logo' ) && has_custom_logo() && get_theme_mod( ARTISAN_OPTIONS::NAVBAR_BRANDING_WHAT_TO_SHOW, ARTISAN_DEFAULTS::NAVBAR_BRANDING_WHAT_TO_SHOW ) == 'logo' ) : ?>
+            <?php if ( function_exists( 'has_custom_logo' ) && has_custom_logo() ) : ?>
 
                 <div id="custom-logo-wrap" class="has-logo">
             
@@ -54,7 +54,7 @@
                             <li class="menu-item menu-item-type-custom menu-item-object-custom">
 
                                 <a href="<?php echo esc_url( admin_url( 'nav-menus.php' ) ); ?>">
-                                   <?php esc_html_e( 'Add a Primary Menu?', 'artisan' ); ?>
+                                   <?php esc_html_e( 'Add a Primary Menu?', 'beyrouth' ); ?>
                                 </a>
 
                             </li>
@@ -69,7 +69,7 @@
                 
             </div>
             
-            <?php do_action( 'artisan_mobile_menu' ); ?>
+            <?php do_action( 'beyrouth_mobile_menu' ); ?>
             
         </div>
 

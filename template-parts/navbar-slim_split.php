@@ -23,7 +23,7 @@
                             <li class="menu-item menu-item-type-custom menu-item-object-custom">
 
                                 <a href="<?php echo esc_url( admin_url( 'nav-menus.php' ) ); ?>">
-                                   <?php esc_html_e( 'Add a Left Menu?', 'artisan' ); ?>
+                                   <?php esc_html_e( 'Add a Left Menu?', 'beyrouth' ); ?>
                                 </a>
 
                             </li>
@@ -36,9 +36,9 @@
 
             </div>
 
-            <?php if ( function_exists( 'has_custom_logo' ) && has_custom_logo() && get_theme_mod( ARTISAN_OPTIONS::NAVBAR_BRANDING_WHAT_TO_SHOW, ARTISAN_DEFAULTS::NAVBAR_BRANDING_WHAT_TO_SHOW ) == 'logo' ) : ?>
+            <?php if ( function_exists( 'has_custom_logo' ) && has_custom_logo() ) : ?>
 
-                <div id="custom-logo-wrap" class="has-logo <?php echo ! get_theme_mod( ARTISAN_OPTIONS::NAVBAR_ALWAYS_SHOW_LOGO, ARTISAN_DEFAULTS::NAVBAR_ALWAYS_SHOW_LOGO ) ? 'sometimes-hidden' : ''; ?>">
+                <div id="custom-logo-wrap" class="has-logo <?php echo ! get_theme_mod( BEYROUTH_OPTIONS::NAVBAR_ALWAYS_SHOW_LOGO, BEYROUTH_DEFAULTS::NAVBAR_ALWAYS_SHOW_LOGO ) ? 'sometimes-hidden' : ''; ?>">
             
                     <?php the_custom_logo(); ?>
 
@@ -46,7 +46,7 @@
                     
             <?php else : ?> 
             
-                <div id="custom-logo-wrap" class="<?php echo ! get_theme_mod( ARTISAN_OPTIONS::NAVBAR_ALWAYS_SHOW_LOGO, ARTISAN_DEFAULTS::NAVBAR_ALWAYS_SHOW_LOGO ) ? 'sometimes-hidden' : ''; ?>">
+                <div id="custom-logo-wrap" class="<?php echo ! get_theme_mod( BEYROUTH_OPTIONS::NAVBAR_ALWAYS_SHOW_LOGO, BEYROUTH_DEFAULTS::NAVBAR_ALWAYS_SHOW_LOGO ) ? 'sometimes-hidden' : ''; ?>">
             
                     <div class="site-branding">
                         <h1 class="site-title">
@@ -86,7 +86,7 @@
                             <li class="menu-item menu-item-type-custom menu-item-object-custom">
 
                                 <a href="<?php echo esc_url( admin_url( 'nav-menus.php' ) ); ?>">
-                                   <?php esc_html_e( 'Add a Right Menu?', 'artisan' ); ?>
+                                   <?php esc_html_e( 'Add a Right Menu?', 'beyrouth' ); ?>
                                 </a>
 
                             </li>
@@ -99,7 +99,7 @@
 
             </div>
 
-            <?php if ( get_theme_mod( ARTISAN_OPTIONS::NAVBAR_SHOW_SOCIAL, ARTISAN_DEFAULTS::NAVBAR_SHOW_SOCIAL ) ) : ?>
+            <?php if ( get_theme_mod( BEYROUTH_OPTIONS::NAVBAR_SHOW_SOCIAL, BEYROUTH_DEFAULTS::NAVBAR_SHOW_SOCIAL ) ) : ?>
             
                 <div class="left-half split-social">
 
@@ -107,37 +107,37 @@
                         
                         <a id="split-social-trigger" class="navbar-icon">
                             <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" viewBox="0 0 20 20">
-                                <path fill="<?php echo esc_attr( get_theme_mod( ARTISAN_OPTIONS::NAVBAR_FG_COLOR, ARTISAN_DEFAULTS::NAVBAR_FG_COLOR ) ); ?>" d="M10.707 10.5l5.646-5.646c0.195-0.195 0.195-0.512 0-0.707s-0.512-0.195-0.707 0l-5.646 5.646-5.646-5.646c-0.195-0.195-0.512-0.195-0.707 0s-0.195 0.512 0 0.707l5.646 5.646-5.646 5.646c-0.195 0.195-0.195 0.512 0 0.707 0.098 0.098 0.226 0.146 0.354 0.146s0.256-0.049 0.354-0.146l5.646-5.646 5.646 5.646c0.098 0.098 0.226 0.146 0.354 0.146s0.256-0.049 0.354-0.146c0.195-0.195 0.195-0.512 0-0.707l-5.646-5.646z"></path>
+                                <path fill="<?php echo esc_attr( get_theme_mod( BEYROUTH_OPTIONS::NAVBAR_FG_COLOR, BEYROUTH_DEFAULTS::NAVBAR_FG_COLOR ) ); ?>" d="M10.707 10.5l5.646-5.646c0.195-0.195 0.195-0.512 0-0.707s-0.512-0.195-0.707 0l-5.646 5.646-5.646-5.646c-0.195-0.195-0.512-0.195-0.707 0s-0.195 0.512 0 0.707l5.646 5.646-5.646 5.646c-0.195 0.195-0.195 0.512 0 0.707 0.098 0.098 0.226 0.146 0.354 0.146s0.256-0.049 0.354-0.146l5.646-5.646 5.646 5.646c0.098 0.098 0.226 0.146 0.354 0.146s0.256-0.049 0.354-0.146c0.195-0.195 0.195-0.512 0-0.707l-5.646-5.646z"></path>
                             </svg>
                         </a>
                         
-                        <?php if ( get_theme_mod( ARTISAN_OPTIONS::SOCIAL_ICON_1, ARTISAN_DEFAULTS::SOCIAL_ICON_1 ) != '' ) : ?>
-                            <a class="navbar-icon" href="<?php echo esc_url( get_theme_mod( ARTISAN_OPTIONS::SOCIAL_URL_1, ARTISAN_DEFAULTS::SOCIAL_URL_1 ) ); ?>">
-                                <span class="fab <?php echo esc_attr( get_theme_mod( ARTISAN_OPTIONS::SOCIAL_ICON_1, ARTISAN_DEFAULTS::SOCIAL_ICON_1 ) ); ?>"></span>
+                        <?php if ( get_theme_mod( BEYROUTH_OPTIONS::SOCIAL_ICON_1, BEYROUTH_DEFAULTS::SOCIAL_ICON_1 ) != '' ) : ?>
+                            <a class="navbar-icon" href="<?php echo esc_url( get_theme_mod( BEYROUTH_OPTIONS::SOCIAL_URL_1, BEYROUTH_DEFAULTS::SOCIAL_URL_1 ) ); ?>">
+                                <span class="fab <?php echo esc_attr( get_theme_mod( BEYROUTH_OPTIONS::SOCIAL_ICON_1, BEYROUTH_DEFAULTS::SOCIAL_ICON_1 ) ); ?>"></span>
                             </a>
                         <?php endif; ?>
                         
-                        <?php if ( get_theme_mod( ARTISAN_OPTIONS::SOCIAL_ICON_2, ARTISAN_DEFAULTS::SOCIAL_ICON_2 ) != '' ) : ?>
-                            <a class="navbar-icon" href="<?php echo esc_url( get_theme_mod( ARTISAN_OPTIONS::SOCIAL_URL_2, ARTISAN_DEFAULTS::SOCIAL_URL_2 ) ); ?>">
-                                <span class="fab <?php echo esc_attr( get_theme_mod( ARTISAN_OPTIONS::SOCIAL_ICON_2, ARTISAN_DEFAULTS::SOCIAL_ICON_2 ) ); ?>"></span>
+                        <?php if ( get_theme_mod( BEYROUTH_OPTIONS::SOCIAL_ICON_2, BEYROUTH_DEFAULTS::SOCIAL_ICON_2 ) != '' ) : ?>
+                            <a class="navbar-icon" href="<?php echo esc_url( get_theme_mod( BEYROUTH_OPTIONS::SOCIAL_URL_2, BEYROUTH_DEFAULTS::SOCIAL_URL_2 ) ); ?>">
+                                <span class="fab <?php echo esc_attr( get_theme_mod( BEYROUTH_OPTIONS::SOCIAL_ICON_2, BEYROUTH_DEFAULTS::SOCIAL_ICON_2 ) ); ?>"></span>
                             </a>
                         <?php endif; ?>
                         
-                        <?php if ( get_theme_mod( ARTISAN_OPTIONS::SOCIAL_ICON_3, ARTISAN_DEFAULTS::SOCIAL_ICON_3 ) != '' ) : ?>
-                            <a class="navbar-icon" href="<?php echo esc_url( get_theme_mod( ARTISAN_OPTIONS::SOCIAL_URL_3, ARTISAN_DEFAULTS::SOCIAL_URL_3 ) ); ?>">
-                                <span class="fab <?php echo esc_attr( get_theme_mod( ARTISAN_OPTIONS::SOCIAL_ICON_3, ARTISAN_DEFAULTS::SOCIAL_ICON_3 ) ); ?>"></span>
+                        <?php if ( get_theme_mod( BEYROUTH_OPTIONS::SOCIAL_ICON_3, BEYROUTH_DEFAULTS::SOCIAL_ICON_3 ) != '' ) : ?>
+                            <a class="navbar-icon" href="<?php echo esc_url( get_theme_mod( BEYROUTH_OPTIONS::SOCIAL_URL_3, BEYROUTH_DEFAULTS::SOCIAL_URL_3 ) ); ?>">
+                                <span class="fab <?php echo esc_attr( get_theme_mod( BEYROUTH_OPTIONS::SOCIAL_ICON_3, BEYROUTH_DEFAULTS::SOCIAL_ICON_3 ) ); ?>"></span>
                             </a>
                         <?php endif; ?>
                         
-                        <?php if ( get_theme_mod( ARTISAN_OPTIONS::SOCIAL_ICON_4, ARTISAN_DEFAULTS::SOCIAL_ICON_4 ) != '' ) : ?>
-                            <a class="navbar-icon" href="<?php echo esc_url( get_theme_mod( ARTISAN_OPTIONS::SOCIAL_URL_4, ARTISAN_DEFAULTS::SOCIAL_URL_4 ) ); ?>">
-                                <span class="fab <?php echo esc_attr( get_theme_mod( ARTISAN_OPTIONS::SOCIAL_ICON_4, ARTISAN_DEFAULTS::SOCIAL_ICON_4 ) ); ?>"></span>
+                        <?php if ( get_theme_mod( BEYROUTH_OPTIONS::SOCIAL_ICON_4, BEYROUTH_DEFAULTS::SOCIAL_ICON_4 ) != '' ) : ?>
+                            <a class="navbar-icon" href="<?php echo esc_url( get_theme_mod( BEYROUTH_OPTIONS::SOCIAL_URL_4, BEYROUTH_DEFAULTS::SOCIAL_URL_4 ) ); ?>">
+                                <span class="fab <?php echo esc_attr( get_theme_mod( BEYROUTH_OPTIONS::SOCIAL_ICON_4, BEYROUTH_DEFAULTS::SOCIAL_ICON_4 ) ); ?>"></span>
                             </a>
                         <?php endif; ?>
                         
-                        <?php if ( get_theme_mod( ARTISAN_OPTIONS::SOCIAL_ICON_5, ARTISAN_DEFAULTS::SOCIAL_ICON_5 ) != '' ) : ?>
-                            <a class="navbar-icon" href="<?php echo esc_url( get_theme_mod( ARTISAN_OPTIONS::SOCIAL_URL_5, ARTISAN_DEFAULTS::SOCIAL_URL_5 ) ); ?>">
-                                <span class="fab <?php echo esc_attr( get_theme_mod( ARTISAN_OPTIONS::SOCIAL_ICON_5, ARTISAN_DEFAULTS::SOCIAL_ICON_5 ) ); ?>"></span>
+                        <?php if ( get_theme_mod( BEYROUTH_OPTIONS::SOCIAL_ICON_5, BEYROUTH_DEFAULTS::SOCIAL_ICON_5 ) != '' ) : ?>
+                            <a class="navbar-icon" href="<?php echo esc_url( get_theme_mod( BEYROUTH_OPTIONS::SOCIAL_URL_5, BEYROUTH_DEFAULTS::SOCIAL_URL_5 ) ); ?>">
+                                <span class="fab <?php echo esc_attr( get_theme_mod( BEYROUTH_OPTIONS::SOCIAL_ICON_5, BEYROUTH_DEFAULTS::SOCIAL_ICON_5 ) ); ?>"></span>
                             </a>
                         <?php endif; ?>
                         
@@ -147,39 +147,39 @@
             
             <?php endif; ?>
             
-            <?php do_action( 'artisan_mobile_menu' ); ?>
+            <?php do_action( 'beyrouth_mobile_menu' ); ?>
 
         </div>
         
         <div id="split-social-slide-in">
             
-            <?php if ( get_theme_mod( ARTISAN_OPTIONS::SOCIAL_ICON_1, ARTISAN_DEFAULTS::SOCIAL_ICON_1 ) != '' ) : ?>
-                <a class="navbar-icon" href="<?php echo esc_url( get_theme_mod( ARTISAN_OPTIONS::SOCIAL_URL_1, ARTISAN_DEFAULTS::SOCIAL_URL_1 ) ); ?>">
-                    <span class="fab <?php echo esc_attr( get_theme_mod( ARTISAN_OPTIONS::SOCIAL_ICON_1, ARTISAN_DEFAULTS::SOCIAL_ICON_1 ) ); ?>"></span>
+            <?php if ( get_theme_mod( BEYROUTH_OPTIONS::SOCIAL_ICON_1, BEYROUTH_DEFAULTS::SOCIAL_ICON_1 ) != '' ) : ?>
+                <a class="navbar-icon" href="<?php echo esc_url( get_theme_mod( BEYROUTH_OPTIONS::SOCIAL_URL_1, BEYROUTH_DEFAULTS::SOCIAL_URL_1 ) ); ?>">
+                    <span class="fab <?php echo esc_attr( get_theme_mod( BEYROUTH_OPTIONS::SOCIAL_ICON_1, BEYROUTH_DEFAULTS::SOCIAL_ICON_1 ) ); ?>"></span>
                 </a>
             <?php endif; ?>
 
-            <?php if ( get_theme_mod( ARTISAN_OPTIONS::SOCIAL_ICON_2, ARTISAN_DEFAULTS::SOCIAL_ICON_2 ) != '' ) : ?>
-                <a class="navbar-icon" href="<?php echo esc_url( get_theme_mod( ARTISAN_OPTIONS::SOCIAL_URL_2, ARTISAN_DEFAULTS::SOCIAL_URL_2 ) ); ?>">
-                    <span class="fab <?php echo esc_attr( get_theme_mod( ARTISAN_OPTIONS::SOCIAL_ICON_2, ARTISAN_DEFAULTS::SOCIAL_ICON_2 ) ); ?>"></span>
+            <?php if ( get_theme_mod( BEYROUTH_OPTIONS::SOCIAL_ICON_2, BEYROUTH_DEFAULTS::SOCIAL_ICON_2 ) != '' ) : ?>
+                <a class="navbar-icon" href="<?php echo esc_url( get_theme_mod( BEYROUTH_OPTIONS::SOCIAL_URL_2, BEYROUTH_DEFAULTS::SOCIAL_URL_2 ) ); ?>">
+                    <span class="fab <?php echo esc_attr( get_theme_mod( BEYROUTH_OPTIONS::SOCIAL_ICON_2, BEYROUTH_DEFAULTS::SOCIAL_ICON_2 ) ); ?>"></span>
                 </a>
             <?php endif; ?>
 
-            <?php if ( get_theme_mod( ARTISAN_OPTIONS::SOCIAL_ICON_3, ARTISAN_DEFAULTS::SOCIAL_ICON_3 ) != '' ) : ?>
-                <a class="navbar-icon" href="<?php echo esc_url( get_theme_mod( ARTISAN_OPTIONS::SOCIAL_URL_3, ARTISAN_DEFAULTS::SOCIAL_URL_3 ) ); ?>">
-                    <span class="fab <?php echo esc_attr( get_theme_mod( ARTISAN_OPTIONS::SOCIAL_ICON_3, ARTISAN_DEFAULTS::SOCIAL_ICON_3 ) ); ?>"></span>
+            <?php if ( get_theme_mod( BEYROUTH_OPTIONS::SOCIAL_ICON_3, BEYROUTH_DEFAULTS::SOCIAL_ICON_3 ) != '' ) : ?>
+                <a class="navbar-icon" href="<?php echo esc_url( get_theme_mod( BEYROUTH_OPTIONS::SOCIAL_URL_3, BEYROUTH_DEFAULTS::SOCIAL_URL_3 ) ); ?>">
+                    <span class="fab <?php echo esc_attr( get_theme_mod( BEYROUTH_OPTIONS::SOCIAL_ICON_3, BEYROUTH_DEFAULTS::SOCIAL_ICON_3 ) ); ?>"></span>
                 </a>
             <?php endif; ?>
 
-            <?php if ( get_theme_mod( ARTISAN_OPTIONS::SOCIAL_ICON_4, ARTISAN_DEFAULTS::SOCIAL_ICON_4 ) != '' ) : ?>
-                <a class="navbar-icon" href="<?php echo esc_url( get_theme_mod( ARTISAN_OPTIONS::SOCIAL_URL_4, ARTISAN_DEFAULTS::SOCIAL_URL_4 ) ); ?>">
-                    <span class="fab <?php echo esc_attr( get_theme_mod( ARTISAN_OPTIONS::SOCIAL_ICON_4, ARTISAN_DEFAULTS::SOCIAL_ICON_4 ) ); ?>"></span>
+            <?php if ( get_theme_mod( BEYROUTH_OPTIONS::SOCIAL_ICON_4, BEYROUTH_DEFAULTS::SOCIAL_ICON_4 ) != '' ) : ?>
+                <a class="navbar-icon" href="<?php echo esc_url( get_theme_mod( BEYROUTH_OPTIONS::SOCIAL_URL_4, BEYROUTH_DEFAULTS::SOCIAL_URL_4 ) ); ?>">
+                    <span class="fab <?php echo esc_attr( get_theme_mod( BEYROUTH_OPTIONS::SOCIAL_ICON_4, BEYROUTH_DEFAULTS::SOCIAL_ICON_4 ) ); ?>"></span>
                 </a>
             <?php endif; ?>
 
-            <?php if ( get_theme_mod( ARTISAN_OPTIONS::SOCIAL_ICON_5, ARTISAN_DEFAULTS::SOCIAL_ICON_5 ) != '' ) : ?>
-                <a class="navbar-icon" href="<?php echo esc_url( get_theme_mod( ARTISAN_OPTIONS::SOCIAL_URL_5, ARTISAN_DEFAULTS::SOCIAL_URL_5 ) ); ?>">
-                    <span class="fab <?php echo esc_attr( get_theme_mod( ARTISAN_OPTIONS::SOCIAL_ICON_5, ARTISAN_DEFAULTS::SOCIAL_ICON_5 ) ); ?>"></span>
+            <?php if ( get_theme_mod( BEYROUTH_OPTIONS::SOCIAL_ICON_5, BEYROUTH_DEFAULTS::SOCIAL_ICON_5 ) != '' ) : ?>
+                <a class="navbar-icon" href="<?php echo esc_url( get_theme_mod( BEYROUTH_OPTIONS::SOCIAL_URL_5, BEYROUTH_DEFAULTS::SOCIAL_URL_5 ) ); ?>">
+                    <span class="fab <?php echo esc_attr( get_theme_mod( BEYROUTH_OPTIONS::SOCIAL_ICON_5, BEYROUTH_DEFAULTS::SOCIAL_ICON_5 ) ); ?>"></span>
                 </a>
             <?php endif; ?>
             

@@ -19,29 +19,29 @@
 (function ($) {
     
     // Clicker so that theme editor can dismiss notice to install plugin
-    $(document).on( 'click', '.artisan-dismiss-companion', function(e) {
+    $(document).on( 'click', '.beyrouth-dismiss-companion', function(e) {
        
         e.preventDefault()
         
         $.ajax({
-            url         : artisan_customize.ajax_url,
+            url         : beyrouth_customize.ajax_url,
             type        : 'post',
             dataType    : 'json',
             data        : {
-                'action'                : 'artisan_dismiss_companion',
-                'artisan_dismiss_nonce'  : artisan_customize.artisan_dismiss_nonce
+                'action'                : 'beyrouth_dismiss_companion',
+                'beyrouth_dismiss_nonce'  : beyrouth_customize.beyrouth_dismiss_nonce
             }
         })
         
         .done( function( data) {
-            wp.customize.section('artisan_companion').deactivate()
+            wp.customize.section('beyrouth_companion').deactivate()
         })
        
     })
     
-    $(document).on( 'click', '.artisan-initiate-dismiss', function(e) {
+    $(document).on( 'click', '.beyrouth-initiate-dismiss', function(e) {
         $(this).hide()
-        $('.artisan-dismiss-confirm').slideDown(300)
+        $('.beyrouth-dismiss-confirm').slideDown(300)
     })
     
 })(jQuery);

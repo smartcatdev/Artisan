@@ -9,7 +9,7 @@
     background-color: #f1f1f1 !important;
 }
 
-#accordion-section-artisan_companion .accordion-section-details {
+#accordion-section-beyrouth_companion .accordion-section-details {
     background-color: #fff;
     margin: 0;
     padding: 10px 10px 11px 14px;
@@ -17,7 +17,7 @@
     background-color: #f1f1f1;
 }
 
-#accordion-section-artisan_companion .accordion-section-buttons {
+#accordion-section-beyrouth_companion .accordion-section-buttons {
     background-color: #fff;
     margin: 0;
     padding: 10px 10px 11px 14px;
@@ -25,7 +25,7 @@
     background-color: #f1f1f1;
 }
 
-.artisan-companion-icon {
+.beyrouth-companion-icon {
     line-height: 26px;
 }
 
@@ -40,6 +40,6 @@
     margin-right: 8px;
 }
 
-.artisan-dismiss-confirm {
+.beyrouth-dismiss-confirm {
     display: none;
 }

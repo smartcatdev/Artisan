@@ -4,7 +4,7 @@
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
- * @package Artisan
+ * @package Beyrouth
  */
 
 get_header(); ?>
@@ -30,18 +30,18 @@ get_header(); ?>
                 <?php if ( get_option( 'show_on_front' ) == 'posts' ) : ?>
 
                     <?php 
-                    switch ( get_theme_mod( ARTISAN_OPTIONS::BLOG_LAYOUT_STYLE, ARTISAN_DEFAULTS::BLOG_LAYOUT_STYLE ) ) :
+                    switch ( get_theme_mod( BEYROUTH_OPTIONS::BLOG_LAYOUT_STYLE, BEYROUTH_DEFAULTS::BLOG_LAYOUT_STYLE ) ) :
 
                         case 'blog_masonry' :
-                            do_action( 'artisan_blog_masonry_wrap_open');
+                            do_action( 'beyrouth_blog_masonry_wrap_open');
                             break;
 
                         case 'blog_mosaic' :
-                            do_action( 'artisan_blog_mosaic_wrap_open');
+                            do_action( 'beyrouth_blog_mosaic_wrap_open');
                             break;
 
                         default :
-                            do_action( 'artisan_blog_standard_wrap_open');
+                            do_action( 'beyrouth_blog_standard_wrap_open');
 
                     endswitch; 
                     ?>
@@ -49,24 +49,24 @@ get_header(); ?>
                         <?php
                         while ( have_posts() ) : the_post();
 
-                            get_template_part( 'template-parts/content', get_theme_mod( ARTISAN_OPTIONS::BLOG_LAYOUT_STYLE, ARTISAN_DEFAULTS::BLOG_LAYOUT_STYLE ) );
+                            get_template_part( 'template-parts/content', get_theme_mod( BEYROUTH_OPTIONS::BLOG_LAYOUT_STYLE, BEYROUTH_DEFAULTS::BLOG_LAYOUT_STYLE ) );
 
                         endwhile;
                         ?>
 
                     <?php 
-                    switch ( get_theme_mod( ARTISAN_OPTIONS::BLOG_LAYOUT_STYLE, ARTISAN_DEFAULTS::BLOG_LAYOUT_STYLE ) ) :
+                    switch ( get_theme_mod( BEYROUTH_OPTIONS::BLOG_LAYOUT_STYLE, BEYROUTH_DEFAULTS::BLOG_LAYOUT_STYLE ) ) :
 
                         case 'blog_masonry' :
-                            do_action( 'artisan_blog_masonry_wrap_close');
+                            do_action( 'beyrouth_blog_masonry_wrap_close');
                             break;
 
                         case 'blog_mosaic' :
-                            do_action( 'artisan_blog_mosaic_wrap_close');
+                            do_action( 'beyrouth_blog_mosaic_wrap_close');
                             break;
 
                         default :
-                            do_action( 'artisan_blog_standard_wrap_close');
+                            do_action( 'beyrouth_blog_standard_wrap_close');
 
                     endswitch; 
                     ?>

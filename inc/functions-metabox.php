@@ -1,8 +1,8 @@
 <?php
 
-new Artisan_Left_Right_Sidebar_Meta_Box;
+new Beyrouth_Left_Right_Sidebar_Meta_Box;
 
-class Artisan_Left_Right_Sidebar_Meta_Box {
+class Beyrouth_Left_Right_Sidebar_Meta_Box {
 
     public function __construct() {
 
@@ -22,7 +22,7 @@ class Artisan_Left_Right_Sidebar_Meta_Box {
 
     public function add_metabox() {
 
-        add_meta_box( 'artisan_left_right_sidebar_meta', __( 'Sidebar Options', 'artisan' ), array ( $this, 'render_left_right_sidebar_metabox' ), array( 'post', 'page' ), 'normal', 'high' );
+        add_meta_box( 'beyrouth_left_right_sidebar_meta', __( 'Sidebar Options', 'beyrouth' ), array ( $this, 'render_left_right_sidebar_metabox' ), array( 'post', 'page' ), 'normal', 'high' );
         
     }
 
@@ -32,8 +32,8 @@ class Artisan_Left_Right_Sidebar_Meta_Box {
         wp_nonce_field( 'left_right_sidebar_meta_box_nonce_action', 'left_right_sidebar_meta_box_nonce' );
 
         // Retrieve an existing value from the database.
-        $sidebar_template       = get_post_meta( $post->ID, ARTISAN_META::SIDEBAR_TEMPLATE, true );
-        $sidebar_location       = get_post_meta( $post->ID, ARTISAN_META::SIDEBAR_LOCATION, true );
+        $sidebar_template       = get_post_meta( $post->ID, BEYROUTH_META::SIDEBAR_TEMPLATE, true );
+        $sidebar_location       = get_post_meta( $post->ID, BEYROUTH_META::SIDEBAR_LOCATION, true );
         
         // Set default values.
         if ( empty( $sidebar_template ) )       { $sidebar_template = 'none'; } 
@@ -43,23 +43,23 @@ class Artisan_Left_Right_Sidebar_Meta_Box {
         echo '<table class="form-table">';
 
         echo '	<tr>';
-        echo '		<th><label for="' . esc_attr( ARTISAN_META::SIDEBAR_TEMPLATE ) . '" class="' . esc_attr( ARTISAN_META::SIDEBAR_TEMPLATE ) . '_label">' . __( 'Sidebar - Template', 'artisan' ) . '</label></th>';
+        echo '		<th><label for="' . esc_attr( BEYROUTH_META::SIDEBAR_TEMPLATE ) . '" class="' . esc_attr( BEYROUTH_META::SIDEBAR_TEMPLATE ) . '_label">' . __( 'Sidebar - Template', 'beyrouth' ) . '</label></th>';
         echo '		<td>';
-        echo '			<select id="' . esc_attr( ARTISAN_META::SIDEBAR_TEMPLATE ) . '" name="' . esc_attr( ARTISAN_META::SIDEBAR_TEMPLATE ) . '" class="' . esc_attr( ARTISAN_META::SIDEBAR_TEMPLATE ) . '_field">';
-        echo '                      <option value="none" ' . selected( $sidebar_template, 'none', false ) . ' >'  . __( 'None', 'artisan' ) . '</option>';
-        echo '                      <option value="sidebar-side-a" ' . selected( $sidebar_template, 'sidebar-side-a', false ) . ' >'  . __( 'Sidebar A', 'artisan' ) . '</option>';
-        echo '                      <option value="sidebar-side-b" ' . selected( $sidebar_template, 'sidebar-side-b', false ) . ' >'  . __( 'Sidebar B', 'artisan' ) . '</option>';
-        echo '                      <option value="sidebar-side-c" ' . selected( $sidebar_template, 'sidebar-side-c', false ) . ' >'  . __( 'Sidebar C', 'artisan' ) . '</option>';
+        echo '			<select id="' . esc_attr( BEYROUTH_META::SIDEBAR_TEMPLATE ) . '" name="' . esc_attr( BEYROUTH_META::SIDEBAR_TEMPLATE ) . '" class="' . esc_attr( BEYROUTH_META::SIDEBAR_TEMPLATE ) . '_field">';
+        echo '                      <option value="none" ' . selected( $sidebar_template, 'none', false ) . ' >'  . __( 'None', 'beyrouth' ) . '</option>';
+        echo '                      <option value="sidebar-side-a" ' . selected( $sidebar_template, 'sidebar-side-a', false ) . ' >'  . __( 'Sidebar A', 'beyrouth' ) . '</option>';
+        echo '                      <option value="sidebar-side-b" ' . selected( $sidebar_template, 'sidebar-side-b', false ) . ' >'  . __( 'Sidebar B', 'beyrouth' ) . '</option>';
+        echo '                      <option value="sidebar-side-c" ' . selected( $sidebar_template, 'sidebar-side-c', false ) . ' >'  . __( 'Sidebar C', 'beyrouth' ) . '</option>';
         echo '			</select>';
         echo '		</td>';
         echo '	</tr>';
 
         echo '	<tr>';
-        echo '		<th><label for="' . esc_attr( ARTISAN_META::SIDEBAR_LOCATION ) . '" class="' . esc_attr( ARTISAN_META::SIDEBAR_LOCATION ) . '_label">' . __( 'Sidebar - Location', 'artisan' ) . '</label></th>';
+        echo '		<th><label for="' . esc_attr( BEYROUTH_META::SIDEBAR_LOCATION ) . '" class="' . esc_attr( BEYROUTH_META::SIDEBAR_LOCATION ) . '_label">' . __( 'Sidebar - Location', 'beyrouth' ) . '</label></th>';
         echo '		<td>';
-        echo '			<select id="' . esc_attr( ARTISAN_META::SIDEBAR_LOCATION ) . '" name="' . esc_attr( ARTISAN_META::SIDEBAR_LOCATION ) . '" class="' . esc_attr( ARTISAN_META::SIDEBAR_LOCATION ) . '_field">';
-        echo '                      <option value="sidebar-left" '  . selected( $sidebar_location, 'sidebar-left', false ) . ' >'  . __( 'Left', 'artisan' ) . '</option>';
-        echo '                      <option value="sidebar-right" ' . selected( $sidebar_location, 'sidebar-right', false ) . ' >'  . __( 'Right', 'artisan' ) . '</option>';
+        echo '			<select id="' . esc_attr( BEYROUTH_META::SIDEBAR_LOCATION ) . '" name="' . esc_attr( BEYROUTH_META::SIDEBAR_LOCATION ) . '" class="' . esc_attr( BEYROUTH_META::SIDEBAR_LOCATION ) . '_field">';
+        echo '                      <option value="sidebar-left" '  . selected( $sidebar_location, 'sidebar-left', false ) . ' >'  . __( 'Left', 'beyrouth' ) . '</option>';
+        echo '                      <option value="sidebar-right" ' . selected( $sidebar_location, 'sidebar-right', false ) . ' >'  . __( 'Right', 'beyrouth' ) . '</option>';
         echo '			</select>';
         echo '		</td>';
         echo '	</tr>';
@@ -79,12 +79,12 @@ class Artisan_Left_Right_Sidebar_Meta_Box {
         if ( !wp_verify_nonce( $nonce_name, $nonce_action ) ) { return; }
             
         // Sanitize user input.
-        $sidebar_template       = isset( $_POST[ ARTISAN_META::SIDEBAR_TEMPLATE ] ) ? sanitize_text_field( $_POST[ ARTISAN_META::SIDEBAR_TEMPLATE ] ) : '';
-        $sidebar_location       = isset( $_POST[ ARTISAN_META::SIDEBAR_LOCATION ] ) ? sanitize_text_field( $_POST[ ARTISAN_META::SIDEBAR_LOCATION ] ) : '';
+        $sidebar_template       = isset( $_POST[ BEYROUTH_META::SIDEBAR_TEMPLATE ] ) ? sanitize_text_field( $_POST[ BEYROUTH_META::SIDEBAR_TEMPLATE ] ) : '';
+        $sidebar_location       = isset( $_POST[ BEYROUTH_META::SIDEBAR_LOCATION ] ) ? sanitize_text_field( $_POST[ BEYROUTH_META::SIDEBAR_LOCATION ] ) : '';
 
         // Update the meta field in the database.
-        update_post_meta( $post_id, ARTISAN_META::SIDEBAR_TEMPLATE, $sidebar_template );
-        update_post_meta( $post_id, ARTISAN_META::SIDEBAR_LOCATION, $sidebar_location );
+        update_post_meta( $post_id, BEYROUTH_META::SIDEBAR_TEMPLATE, $sidebar_template );
+        update_post_meta( $post_id, BEYROUTH_META::SIDEBAR_LOCATION, $sidebar_location );
         
     }
     

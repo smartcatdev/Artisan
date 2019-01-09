@@ -1122,7 +1122,7 @@ header#masthead.header-style-split .navbar-social.expanded .navbar-icon {
 /* -----------------------------------------------------------------------------
  * Custom Header
  * -------------------------------------------------------------------------- */
-#artisan-custom-header {
+#beyrouth-custom-header {
     background-size: cover;
     background-position: 50%;
     position: relative;
@@ -1152,6 +1152,12 @@ div#custom-header-content .custom-header-title {
     margin-top: 0;
 }
 
+div#custom-header-content .custom-header-subtitle.custom-header-title,
+div#beyrouth-custom-header.parallax_layers .custom-header-subtitle.custom-header-title{
+    text-transform: none;
+    letter-spacing: 0;
+}
+
 ul#custom-header-menu {
     padding: 0;
     margin: 0;
@@ -1175,18 +1181,18 @@ ul#custom-header-menu > li ul.sub-menu li {
     padding: 0;
 }
 
-div#artisan-custom-header.parallax_layers .jparallax-layer.texture-layer {
+div#beyrouth-custom-header.parallax_layers .jparallax-layer.texture-layer {
     background-size: unset !important;
 }
 
-div#artisan-custom-header.parallax_layers .jparallax-layer.content-layer {
+div#beyrouth-custom-header.parallax_layers .jparallax-layer.content-layer {
     left: 50%;
     top: 50%;
     display: none;
 }
 
-div#artisan-custom-header.artisan_parallax img.custom-logo,
-div#artisan-custom-header.parallax_layers .jparallax-layer.content-layer img.custom-logo {
+div#beyrouth-custom-header.beyrouth_parallax img.custom-logo,
+div#beyrouth-custom-header.parallax_layers .jparallax-layer.content-layer img.custom-logo {
     width: auto;
     margin-bottom: 15px;
 }
@@ -1255,7 +1261,7 @@ div#footer-branding-wrap svg {
     margin-left: 4px;
 }
 
-footer #artisan_designer {
+footer #beyrouth_designer {
 /*    transform: scale(1.75);
     margin-left: 25px;*/
 }
@@ -1265,7 +1271,7 @@ footer .footer-copyright {
     display: inline-block;
 }
 
-footer span.artisan_by {
+footer span.beyrouth_by {
     border-left: thin solid white;
     padding-left: 15px;
 }
@@ -1315,7 +1321,7 @@ aside.widget table#wp-calendar td {
     border-radius: 2px;
 }
 
-.artisan-sidebar .widget-title {
+.beyrouth-sidebar .widget-title {
     color: #373737;
     border-bottom-color: #eee;
 }
@@ -1353,7 +1359,7 @@ form textarea {
 button, 
 input[type="submit"],
 a.button,
-.artisan-module.featured-pages .featured-inner a.read-more {
+.beyrouth-module.featured-pages .featured-inner a.read-more {
     background: none;
     border: 2px solid;
     color: #fff;
@@ -1712,14 +1718,14 @@ div#cart-panel ul.product_list_widget .product-wrap a.remove {
     margin-top: 50px;
 }*/
 
-.sidebar-wrap > :not(.artisan-module) {
+.sidebar-wrap > :not(.beyrouth-module) {
     color: #333333;
     padding: 30px 15px;
     max-width: 1170px;
     margin: 0 auto !important;
 }
 
-.sidebar-wrap > :not(.artisan-module) .widget-title {
+.sidebar-wrap > :not(.beyrouth-module) .widget-title {
     color: #333;
 }
 
@@ -1739,12 +1745,12 @@ div#primary.widget-shell main#main > article {
 /* -----------------------------------------------------------------------------
  * Pagination Links
  * -------------------------------------------------------------------------- */
-.artisan-pagination-links {
+.beyrouth-pagination-links {
     text-align: center;
     padding: 15px 0;
 }
 
-.artisan-pagination-links .page-numbers,
+.beyrouth-pagination-links .page-numbers,
 .woocommerce nav.woocommerce-pagination ul li span,
 .woocommerce nav.woocommerce-pagination ul li > a {
     padding: 4px 12px;
@@ -1756,13 +1762,13 @@ div#primary.widget-shell main#main > article {
     -webkit-transition: .3s all ease-in-out;
 }
 
-.artisan-pagination-links .page-numbers:hover,
+.beyrouth-pagination-links .page-numbers:hover,
 .woocommerce nav.woocommerce-pagination ul li:hover span,
 .woocommerce nav.woocommerce-pagination ul li:hover > a {
     color: #ffffff;
 }
 
-.artisan-pagination-links .page-numbers.current,
+.beyrouth-pagination-links .page-numbers.current,
 .woocommerce nav.woocommerce-pagination ul li span.current {
     background-color: #f0f0f0;
 }
@@ -1855,42 +1861,42 @@ div#author-meta-wrap .author-job-location-social .author-social a.social-link:ho
  * Left and Right Sidebars
  * -------------------------------------------------------------------------- */
 
-.artisan-landr-sidebar-wrap aside.widget table#wp-calendar th,
-.artisan-landr-sidebar-wrap aside.widget table#wp-calendar td {
+.beyrouth-landr-sidebar-wrap aside.widget table#wp-calendar th,
+.beyrouth-landr-sidebar-wrap aside.widget table#wp-calendar td {
     color: #373737;
 }
 
 @media (min-width:768px) {
-    .artisan-landr-sidebar-wrap {
+    .beyrouth-landr-sidebar-wrap {
         margin-top: 100px;
     }    
-    body.blog .artisan-landr-sidebar-wrap,
-    body.archive .artisan-landr-sidebar-wrap,
-    body.search .artisan-landr-sidebar-wrap {
+    body.blog .beyrouth-landr-sidebar-wrap,
+    body.archive .beyrouth-landr-sidebar-wrap,
+    body.search .beyrouth-landr-sidebar-wrap {
         margin-top: 0;
     }
 }
 
-.artisan-landr-sidebar-wrap > aside.widget:first-child h2.widget-title {
+.beyrouth-landr-sidebar-wrap > aside.widget:first-child h2.widget-title {
     margin-top: 0;
 }
 
-.artisan-landr-sidebar-wrap h2.widget-title {
+.beyrouth-landr-sidebar-wrap h2.widget-title {
     color: #373737;
     border-bottom-color: #eee;
 }
 
 @media (max-width:1199px) and (min-width:768px) {
-    .artisan-landr-sidebar-wrap ul.product_list_widget .product-wrap {
+    .beyrouth-landr-sidebar-wrap ul.product_list_widget .product-wrap {
         display: block;
     }
-    .artisan-landr-sidebar-wrap ul.product_list_widget .product-wrap > a img {
+    .beyrouth-landr-sidebar-wrap ul.product_list_widget .product-wrap > a img {
         max-width: 100%;
         float: none;
     }
 
-    .artisan-landr-sidebar-wrap ul.product_list_widget .product-wrap > .product-title,
-    .artisan-landr-sidebar-wrap ul.product_list_widget .product-wrap > .quantity {
+    .beyrouth-landr-sidebar-wrap ul.product_list_widget .product-wrap > .product-title,
+    .beyrouth-landr-sidebar-wrap ul.product_list_widget .product-wrap > .quantity {
         font-size: 14px;
         padding: 0;
         margin-top: 15px;
@@ -1904,10 +1910,10 @@ div#author-meta-wrap .author-job-location-social .author-social a.social-link:ho
     .has-side-sidebar.sidebar-left > article {
         padding-top: 15px !important;
     }
-    .artisan-landr-sidebar-wrap.single.right {
+    .beyrouth-landr-sidebar-wrap.single.right {
         margin-bottom: 100px;
     }
-    .artisan-landr-sidebar-wrap.single.left {
+    .beyrouth-landr-sidebar-wrap.single.left {
         margin-top: 100px;
     }
 }
@@ -2003,13 +2009,13 @@ div#author-meta-wrap .author-job-location-social .author-social a.social-link:ho
  * EDD Single Product Page
  * -------------------------------------------------------------------------- */
 
-div#artisan-edd-header {
+div#beyrouth-edd-header {
     background: #ffffff;
     box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.15);
     position: relative;
 }
 
-div#artisan-edd-header article {
+div#beyrouth-edd-header article {
     padding: 50px 0;
 }
 
@@ -2027,7 +2033,7 @@ div#edd-header-wrap-gallery {
     width: 40%;
 }
 
-div#artisan-edd-body {
+div#beyrouth-edd-body {
     padding: 50px 0;
     background: #f8f8f8;
 }
@@ -2042,7 +2048,7 @@ span.product-category {
     display: block;
 }
 
-div#artisan-edd-header h1.product_title {
+div#beyrouth-edd-header h1.product_title {
     font-size: 48px;
     text-transform: uppercase;
     letter-spacing: .15em;
@@ -2052,27 +2058,27 @@ div#artisan-edd-header h1.product_title {
     margin-bottom: 5px;
 }
 
-div#artisan-edd-header .price {
+div#beyrouth-edd-header .price {
     font-size: 42px;
     display: block;
     margin-bottom: 15px;
 }
 
-div#artisan-edd-header .price del {
+div#beyrouth-edd-header .price del {
     color: #333;
 }
 
-div#artisan-edd-header .edd-buttons {
+div#beyrouth-edd-header .edd-buttons {
     margin-top: 30px;
 }
 
-div#artisan-edd-header .edd-buttons .edd_purchase_submit_wrapper {
+div#beyrouth-edd-header .edd-buttons .edd_purchase_submit_wrapper {
     display: inline-block;
     float: left;
     margin-right: 10px;
 }
 
-div#artisan-edd-header .edd-buttons span.edd-cart-added-alert {
+div#beyrouth-edd-header .edd-buttons span.edd-cart-added-alert {
 /*    position: relative;
     text-align: center;
     color: #333;
@@ -2091,11 +2097,11 @@ div#artisan-edd-header .edd-buttons span.edd-cart-added-alert {
     margin-top: -2.5px;
 }
 
-div#artisan-edd-header .edd-buttons .edd_download_purchase_form {
+div#beyrouth-edd-header .edd-buttons .edd_download_purchase_form {
     margin-bottom: 0px !important;
 }
 
-div#artisan-edd-header .edd-buttons a.button.edd_go_to_checkout {
+div#beyrouth-edd-header .edd-buttons a.button.edd_go_to_checkout {
     margin-bottom: 5px;
 }
 
@@ -2149,16 +2155,16 @@ div#edd-gallery-wrap .slick-arrow:hover {
     opacity: .75;
 }
 
-#artisan-edd-body #edd-tab-nav {
+#beyrouth-edd-body #edd-tab-nav {
     margin-bottom: 30px;
 }
 
-#artisan-edd-body .tab-content {
+#beyrouth-edd-body .tab-content {
     margin-bottom: 50px;
     padding: 15px 0 30px 0;
 }
 
-#artisan-edd-header iframe.edd-product-video {
+#beyrouth-edd-header iframe.edd-product-video {
     max-width: 100%;
 }
 
@@ -2169,8 +2175,8 @@ div#edd-gallery-wrap .slick-arrow:hover {
         padding-top: 0 !important;  
     }
     
-    div#artisan-edd-header h1.product_title,
-    div#artisan-edd-header .price {
+    div#beyrouth-edd-header h1.product_title,
+    div#beyrouth-edd-header .price {
         font-size: 32px;
     }
     div#edd-gallery-wrap {
@@ -2200,12 +2206,12 @@ div#edd-gallery-wrap .slick-arrow:hover {
         margin-bottom: 15px;
     }
     
-    div#artisan-edd-header .edd-buttons .edd_purchase_submit_wrapper {
+    div#beyrouth-edd-header .edd-buttons .edd_purchase_submit_wrapper {
         float: none;
         margin-right: 0;
     }
     
-    div#artisan-edd-header .edd-buttons span.edd-cart-added-alert {
+    div#beyrouth-edd-header .edd-buttons span.edd-cart-added-alert {
         margin-top: 0px;
         margin-bottom: 5px;
     }
@@ -2249,7 +2255,7 @@ div#edd-gallery-wrap .slick-arrow:hover {
 }
 
 @media (max-width:767px) {
-    #artisan-edd-body #edd-tab-nav {
+    #beyrouth-edd-body #edd-tab-nav {
         margin-bottom: 15px;
     }
     .nav-pills > li {
@@ -2260,15 +2266,15 @@ div#edd-gallery-wrap .slick-arrow:hover {
         width: 100%;
         text-align: center;
     }
-    div#artisan-edd-header .edd-buttons .edd_purchase_submit_wrapper {
+    div#beyrouth-edd-header .edd-buttons .edd_purchase_submit_wrapper {
         width: 100%;
     }
-    div#artisan-edd-header .edd-buttons a.button {
+    div#beyrouth-edd-header .edd-buttons a.button {
         width: 100% !important;
     }
 }
 
-.artisan-single-edd-product .edd_price_options input[type="radio"] {
+.beyrouth-single-edd-product .edd_price_options input[type="radio"] {
     display: inline-block !important;
     width: auto !important;
     margin: 0 10px 0 0 !important;
@@ -2575,7 +2581,7 @@ div#footer-branding-wrap .site-title {
     margin-top: 0;
 }
 
-div#vertical-header-wrap #footer-branding-wrap span.artisan_by {
+div#vertical-header-wrap #footer-branding-wrap span.beyrouth_by {
     vertical-align: middle;
 }
 

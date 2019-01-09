@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package Artisan
+ * @package Beyrouth
  */
 ?>
 
@@ -21,13 +21,13 @@
             ?>
             <div class="entry-meta">
                 <?php
-                artisan_posted_on();
-                artisan_posted_by();
+                beyrouth_posted_on();
+                beyrouth_posted_by();
                 ?>
             </div><!-- .entry-meta -->
         <?php endif;
         
-        do_action( 'artisan_social_icons' );
+        do_action( 'beyrouth_social_icons' );
         
         ?>
     </header><!-- .entry-header -->
@@ -37,7 +37,7 @@
         the_content( sprintf(
                         wp_kses(
                                 /* translators: %s: Name of current post. Only visible to screen readers */
-                                __( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'artisan' ), array (
+                                __( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'beyrouth' ), array (
             'span' => array (
                 'class' => array (),
             ),
@@ -46,19 +46,19 @@
         ) );
 
         wp_link_pages( array (
-            'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'artisan' ),
+            'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'beyrouth' ),
             'after' => '</div>',
         ) );
         ?>
     </div><!-- .entry-content -->
 
     <footer class="entry-footer">
-        <?php artisan_entry_footer(); ?>
+        <?php beyrouth_entry_footer(); ?>
     </footer><!-- .entry-footer -->
     
     <?php 
     
-    if ( get_theme_mod( ARTISAN_OPTIONS::SINGLE_POST_SHOW_NAVIGATION, ARTISAN_DEFAULTS::SINGLE_POST_SHOW_NAVIGATION ) ) :
+    if ( get_theme_mod( BEYROUTH_OPTIONS::SINGLE_POST_SHOW_NAVIGATION, BEYROUTH_DEFAULTS::SINGLE_POST_SHOW_NAVIGATION ) ) :
     
         the_post_navigation(); ?>
     

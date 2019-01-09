@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#search-result
  *
- * @package Artisan
+ * @package Beyrouth
  */
 
 get_header();
@@ -26,7 +26,7 @@ get_header();
 
                             <header class="page-header">
                                 <h1 class="page-title">
-                                    <?php printf( esc_html__( 'Search Results for: %s', 'artisan' ), '<span>' . get_search_query() . '</span>' ); ?>
+                                    <?php printf( esc_html__( 'Search Results for: %s', 'beyrouth' ), '<span>' . get_search_query() . '</span>' ); ?>
                                 </h1>
                             </header><!-- .page-header -->
 
@@ -37,18 +37,18 @@ get_header();
                 </div>
 
                 <?php 
-                switch ( get_theme_mod( ARTISAN_OPTIONS::BLOG_LAYOUT_STYLE, ARTISAN_DEFAULTS::BLOG_LAYOUT_STYLE ) ) :
+                switch ( get_theme_mod( BEYROUTH_OPTIONS::BLOG_LAYOUT_STYLE, BEYROUTH_DEFAULTS::BLOG_LAYOUT_STYLE ) ) :
 
                     case 'blog_masonry' :
-                        do_action( 'artisan_blog_masonry_wrap_open');
+                        do_action( 'beyrouth_blog_masonry_wrap_open');
                         break;
 
                     case 'blog_mosaic' :
-                        do_action( 'artisan_blog_mosaic_wrap_open');
+                        do_action( 'beyrouth_blog_mosaic_wrap_open');
                         break;
 
                     default :
-                        do_action( 'artisan_blog_standard_wrap_open');
+                        do_action( 'beyrouth_blog_standard_wrap_open');
 
                 endswitch; 
                 ?>
@@ -62,24 +62,24 @@ get_header();
                          * If you want to override this in a child theme, then include a file
                          * called content-___.php (where ___ is the Post Format name) and that will be used instead.
                          */
-                        get_template_part( 'template-parts/content', get_theme_mod( ARTISAN_OPTIONS::BLOG_LAYOUT_STYLE, ARTISAN_DEFAULTS::BLOG_LAYOUT_STYLE ) );
+                        get_template_part( 'template-parts/content', get_theme_mod( BEYROUTH_OPTIONS::BLOG_LAYOUT_STYLE, BEYROUTH_DEFAULTS::BLOG_LAYOUT_STYLE ) );
 
                     endwhile;
                     ?>
 
                 <?php 
-                switch ( get_theme_mod( ARTISAN_OPTIONS::BLOG_LAYOUT_STYLE, ARTISAN_DEFAULTS::BLOG_LAYOUT_STYLE ) ) :
+                switch ( get_theme_mod( BEYROUTH_OPTIONS::BLOG_LAYOUT_STYLE, BEYROUTH_DEFAULTS::BLOG_LAYOUT_STYLE ) ) :
 
                     case 'blog_masonry' :
-                        do_action( 'artisan_blog_masonry_wrap_close');
+                        do_action( 'beyrouth_blog_masonry_wrap_close');
                         break;
 
                     case 'blog_mosaic' :
-                        do_action( 'artisan_blog_mosaic_wrap_close');
+                        do_action( 'beyrouth_blog_mosaic_wrap_close');
                         break;
 
                     default :
-                        do_action( 'artisan_blog_standard_wrap_close');
+                        do_action( 'beyrouth_blog_standard_wrap_close');
 
                 endswitch; 
                 ?>

@@ -6,7 +6,7 @@
  * @since  1.0.0
  * @access public
  */
-final class Artisan_Customize {
+final class Beyrouth_Customize {
 
     /**
      * Returns the instance.
@@ -68,19 +68,19 @@ final class Artisan_Customize {
         require_once( trailingslashit( get_template_directory() ) . 'inc/lib/trt-customize/companion-plugin/section-pro.php' );
 
         // Register custom section types.
-        $manager->register_section_type( 'Artisan_Customize_Section_Pro' );
+        $manager->register_section_type( 'Beyrouth_Customize_Section_Pro' );
 
         // Register sections.
         $manager->add_section(
-            new Artisan_Customize_Section_Pro(
-                $manager, 'artisan_companion', array (
-                    'title'             => esc_html__( 'Artisan Theme Options & Widgets', 'artisan' ),
-                    'install_text'      => esc_html__( 'Activate Options', 'artisan' ),
-                    'dismiss_text'      => esc_html__( 'Dismiss', 'artisan' ),
-                    'install_url'       => esc_url( artisan_features_install_url() ),
-                    'description'       => esc_html__( 'It seems that you have not yet installed the Artisan Features plugin. It is highly recommended to install the plugin. It includes 3 header styles, 3 blog styles, over 140 customization options, one-click install theme-presets and 7 advanced widgets, completely free!', 'artisan' ),
-                    'confirm_text'      => esc_html__( 'Are you sure? The theme features & widgets will provide you with tons of customization options', 'artisan' ),
-                    'confirm_button'    => esc_html__( 'Confirm', 'artisan' ),
+            new Beyrouth_Customize_Section_Pro(
+                $manager, 'beyrouth_companion', array (
+                    'title'             => esc_html__( 'Beyrouth Theme Options & Widgets', 'beyrouth' ),
+                    'install_text'      => esc_html__( 'Activate Options', 'beyrouth' ),
+                    'dismiss_text'      => esc_html__( 'Dismiss', 'beyrouth' ),
+                    'install_url'       => esc_url( beyrouth_features_install_url() ),
+                    'description'       => esc_html__( 'It seems that you have not yet installed the Beyrouth Features plugin. It is highly recommended to install the plugin. It includes 3 header styles, 3 blog styles, over 140 customization options, one-click install theme-presets and 7 advanced widgets, completely free!', 'beyrouth' ),
+                    'confirm_text'      => esc_html__( 'Are you sure? The theme features & widgets will provide you with tons of customization options', 'beyrouth' ),
+                    'confirm_button'    => esc_html__( 'Confirm', 'beyrouth' ),
                 )
             )
         );
@@ -95,12 +95,12 @@ final class Artisan_Customize {
      */
     public function enqueue_control_scripts() {
 
-        wp_enqueue_script( 'artisan-pro-customize-controls', trailingslashit( get_template_directory_uri() ) . 'inc/lib/trt-customize/companion-plugin/customize-controls.js', array ( 'customize-controls' ) );
-        wp_enqueue_style( 'artisan-pro-customize-controls', trailingslashit( get_template_directory_uri() ) . 'inc/lib/trt-customize/companion-plugin/customize-controls.css' );
+        wp_enqueue_script( 'beyrouth-pro-customize-controls', trailingslashit( get_template_directory_uri() ) . 'inc/lib/trt-customize/companion-plugin/customize-controls.js', array ( 'customize-controls' ) );
+        wp_enqueue_style( 'beyrouth-pro-customize-controls', trailingslashit( get_template_directory_uri() ) . 'inc/lib/trt-customize/companion-plugin/customize-controls.css' );
         
-        wp_localize_script( 'artisan-pro-customize-controls', 'artisan_customize', array(
+        wp_localize_script( 'beyrouth-pro-customize-controls', 'beyrouth_customize', array(
             'ajax_url'                  => esc_url( admin_url( 'admin-ajax.php' ) ),
-            'artisan_dismiss_nonce'      => wp_create_nonce( 'artisan_dismiss_nonce' )
+            'beyrouth_dismiss_nonce'      => wp_create_nonce( 'beyrouth_dismiss_nonce' )
         ) );
         
     }
@@ -108,10 +108,10 @@ final class Artisan_Customize {
 }
 
 // remove this when pushing live
-//set_theme_mod( ARTISAN_OPTIONS::COMPANION_NOTICE_DISMISSED, false );
+//set_theme_mod( BEYROUTH_OPTIONS::COMPANION_NOTICE_DISMISSED, false );
 // If user has dismissed the notice, do not display it
-if( ! get_theme_mod( ARTISAN_OPTIONS::COMPANION_NOTICE_DISMISSED, ARTISAN_DEFAULTS::COMPANION_NOTICE_DISMISSED )
-        && !function_exists( 'artisan\init' )) {
-    Artisan_Customize::get_instance();
+if( ! get_theme_mod( BEYROUTH_OPTIONS::COMPANION_NOTICE_DISMISSED, BEYROUTH_DEFAULTS::COMPANION_NOTICE_DISMISSED )
+        && !function_exists( 'beyrouth\init' )) {
+    Beyrouth_Customize::get_instance();
 }
 

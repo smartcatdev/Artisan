@@ -6,7 +6,7 @@
  * @since  1.0.0
  * @access public
  */
-class Artisan_Docs_Customize_Section_Pro extends WP_Customize_Section {
+class Beyrouth_Docs_Customize_Section_Pro extends WP_Customize_Section {
 
     /**
      * The type of customize section being rendered.
@@ -15,7 +15,7 @@ class Artisan_Docs_Customize_Section_Pro extends WP_Customize_Section {
      * @access public
      * @var    string
      */
-    public $type = 'artisan_docs';
+    public $type = 'beyrouth_docs';
 
     /**
      * Custom button text to output.
