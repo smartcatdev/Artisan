@@ -58,7 +58,7 @@ if ( !function_exists( 'beyrouth_setup' ) ) :
     function beyrouth_setup() {
     
         if( !defined( 'BEYROUTH_VERSION' ) ) :
-            define( 'BEYROUTH_VERSION', '1.0.1' );
+            define( 'BEYROUTH_VERSION', '1.0.2' );
         endif;
         
         /*

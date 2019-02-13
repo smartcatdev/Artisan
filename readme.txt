@@ -5,7 +5,7 @@ Tags: two-columns, three-columns, four-columns, right-sidebar, grid-layout, flex
 
 Requires at least: 4.9
 Tested up to: 5.0.3
-Stable tag: 1.0.1
+Stable tag: 1.0.2
 Requires PHP: 5.4
 License: GNU General Public License v2 or later
 License URI: LICENSE
@@ -33,13 +33,14 @@ Beyrouth includes support for Infinite Scroll in Jetpack.
 
 == Changelog ==
 
+= 1.0.2 - February 13, 2019
+* Updated screenshots
+
 = 1.0.1 - December 20 2018 =
 * Updated screenshot
 
 = 1.0.0 - December 20 2018 =
 * Initial release
-
-= 1.0.2 - February 13, 2019
 
 
 == Credits ==
