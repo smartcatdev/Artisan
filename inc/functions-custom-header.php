@@ -19,7 +19,7 @@
 function beyrouth_custom_header_setup() {
 
     add_theme_support( 'custom-header', apply_filters( 'beyrouth_custom_header_args', array (
-        'default-image'     => get_template_directory_uri() . '/assets/images/header-demo_1.jpg',
+        'default-image'     => get_template_directory_uri() . '/assets/images/header-demo_2.jpg',
         'header-text'       => false,
         'flex-height'       => true,
         'flex-width'        => true,

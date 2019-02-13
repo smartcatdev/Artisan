@@ -213,7 +213,7 @@ interface BEYROUTH_DEFAULTS {
             CUSTOM_HEADER_MENU_LINKS_GAP            = 16,
             CUSTOM_HEADER_COLOR_LAYER_STYLE         = 'single',
             CUSTOM_HEADER_COLOR_LAYER_COLOR         = '#fff',
-            CUSTOM_HEADER_COLOR_LAYER_OPACITY       = .81,
+            CUSTOM_HEADER_COLOR_LAYER_OPACITY       = .5,
             
             CUSTOM_HEADER_SHOW_ON_POSTS             = false,
             CUSTOM_HEADER_SHOW_ON_PAGES             = false,
