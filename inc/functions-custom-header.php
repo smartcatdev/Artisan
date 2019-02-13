@@ -30,12 +30,12 @@ function beyrouth_custom_header_setup() {
     ) ) );
     
     register_default_headers( array(
-        'woman' => array(
+        'desk' => array(
             'url'           => get_template_directory_uri() . '/assets/images/header-demo_1.jpg',
             'thumbnail_url' => get_template_directory_uri() . '/assets/images/header-demo_1.jpg',
             'description'   => __( 'Woman and Reflection', 'beyrouth' )
         ), 
-        'architecture' => array(
+        'girl' => array(
             'url'           => get_template_directory_uri() . '/assets/images/header-demo_2.jpg',
             'thumbnail_url' => get_template_directory_uri() . '/assets/images/header-demo_2.jpg',
             'description'   => __( 'Architecture', 'beyrouth' )

@@ -15,7 +15,7 @@ function beyrouth_wp_head_styles() { ?>
         .site-branding .site-title,
         div#footer-branding-wrap .site-title,
         div#custom-header-content .custom-header-title,
-        div#beyrouth-custom-header.parallax_layers .custom-header-title,
+        div#beyrouth-custom-header.parallax_layerul#custom-header-menu > li as .custom-header-title,
         h2.widget-title,
         ul.product_list_widget .product-wrap .product-title .price-wrap,
         #beyrouth-featured-woocommerce h4.product_category_title,
@@ -895,10 +895,9 @@ function beyrouth_wp_head_styles() { ?>
         <?php if ( get_theme_mod( BEYROUTH_OPTIONS::CUSTOM_HEADER_MENU_BUTTONS, BEYROUTH_DEFAULTS::CUSTOM_HEADER_MENU_BUTTONS ) ) : ?>
             
             ul#custom-header-menu > li a {
-                border: 2px solid;
-                padding: 8px 20px !important;
-                border-radius: 30px;
-                padding-left: calc(20px + .5em) !important;
+                padding: 15px 40px !important;
+                border-radius: 2px;
+                background-color: <?php echo esc_attr( $theme_colors['primary'] ); ?>;
             }
         
         <?php endif; ?>

@@ -1158,10 +1158,15 @@ div#beyrouth-custom-header.parallax_layers .custom-header-subtitle.custom-header
     letter-spacing: 0;
 }
 
+.menu-custom-header-container {
+
+}
+
 ul#custom-header-menu {
     padding: 0;
     margin: 0;
     list-style: none;
+    margin-top: 30px;
 }
 
 ul#custom-header-menu > li {

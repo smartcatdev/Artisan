@@ -18,6 +18,7 @@ if( !function_exists( 'beyrouth_fonts' ) ) {
             'Lato, sans-serif'                                  => 'Lato:100,300,400,700,900,300italic,400italic',
             'Lora, serif'                                       => 'Lora',
             'Lilita One, display'                               => 'Lilita+One',
+            'Mukta Malar, sans-serif'                           => 'Mukta+Malar:200,300,regular,500',
             'Montserrat, sans-serif'                            => 'Montserrat:300,300italic,regular,italic,500,500italic,600,600italic,700,700italic',
             'Noto Serif, serif'                                 => 'Noto+Serif',
             'Old Standard TT, serif'                            => 'Old+Standard+TT:400,400i,700',
