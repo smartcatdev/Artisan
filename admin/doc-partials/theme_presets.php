@@ -12,7 +12,6 @@
         <strong><?php esc_html_e( 'You need to have the Beyrouth Features plugin as well as the One Click Demo Import plugin active to use this feature.', 'beyrouth' ); ?></strong>
     </p>
     
-    <img alt="<?php esc_attr_e( 'Theme Presets', 'beyrouth' ); ?>" src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/docs/theme-presets.jpg' ); ?>">
-    
+
     
 </section>

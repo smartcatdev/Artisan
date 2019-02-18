@@ -13,7 +13,6 @@
     </h3>
     
     <div class="feature-img-wrap">
-        <img alt="<?php esc_attr_e( 'Drag & Drop Page Builder', 'beyrouth' ); ?>" src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/docs/reorder.jpg' ); ?>">
     </div>
     
     <p>
@@ -29,7 +28,7 @@
     </h3>
     
     <div class="feature-img-wrap">
-        <img alt="<?php esc_attr_e( 'One-Click Demo Import', 'beyrouth' ); ?>" src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/docs/theme-presets.jpg' ); ?>">
+
     </div>
     
     <p>

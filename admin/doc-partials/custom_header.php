@@ -8,8 +8,6 @@
         <?php esc_html_e( 'The custom header is a full-screen section that you can optionally display everywhere on your site, or on specific templates only. You can select an image, set the size, and turn enable one of 2 parallax styles. Additionally, you can place a logo, site title, site desctipion and a menu.', 'beyrouth' ); ?>
     </p>
     
-    <img alt="<?php esc_attr_e( 'Header', 'beyrouth' ); ?>" src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/docs/header.jpg' ); ?>">
-    
     <div class="nested-subsection">
     
         <?php $query['autofocus[section]'] = 'section_custom_header_general';

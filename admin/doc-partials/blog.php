@@ -24,7 +24,6 @@
                 <?php esc_html_e( 'This is the default Blog layout style that is set when you first install Beyrouth. It features a single-column stack of posts that users can scroll down through. It also features a toggle that lets you choose from a simple flat appearance for the posts, or a raised 3D card style with a shadow.', 'beyrouth' ); ?>
             </p>
 
-            <img alt="<?php esc_attr_e( 'Blog: Standard', 'beyrouth' ); ?>" src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/docs/blog/blog_default.jpg' ); ?>">
             
             <span class="options-heading">
                 <?php esc_html_e( 'Options:', 'beyrouth' ); ?>
@@ -62,8 +61,6 @@
             <p>
                 <?php esc_html_e( 'The "Masonry - Cards" layout displays your posts as cards that arrange themselves into a dynamic Masonry grid. The cards accommodate featured images of any size and the layout will automatically rearrange itself to maximize space when if the browser window changes size.', 'beyrouth' ); ?>
             </p>
-
-            <img alt="<?php esc_attr_e( 'Blog: Masonry - Cards', 'beyrouth' ); ?>" src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/docs/blog/blog_masonry.jpg' ); ?>">
             
             <span class="options-heading">
                 <?php esc_html_e( 'Options:', 'beyrouth' ); ?>
@@ -102,7 +99,6 @@
                 <?php esc_html_e( 'The "Mosaic - Grid" layout puts the featured images of your posts front and center. The layout repeats after a set number of posts, which creates a mosaic-style grid. You can set the excerpt length to a shorter value or modify the title font size to increase or reduce the height of the rows in the mosaic.', 'beyrouth' ); ?>
             </p>
 
-            <img alt="<?php esc_attr_e( 'Blog: Mosaic - Grid', 'beyrouth' ); ?>" src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/docs/blog/blog_grid.jpg' ); ?>">
             
             <span class="options-heading">
                 <?php esc_html_e( 'Options:', 'beyrouth' ); ?>
