@@ -20,16 +20,6 @@
                     '#page-templates'           => __( 'Page Templates', 'beyrouth' ),
                     '#theme-presets'            => __( 'Theme Presets', 'beyrouth' ),
                 ) ); ?>
-
-                <?php if ( !function_exists( '\beyrouth_pro\init' ) ) : ?>
-                    <li>
-                        <a href="<?php echo esc_url( admin_url( 'themes.php?page=beyrouth-theme-upgrade' ) ); ?>">
-                            <?php _e( 'Beyrouth Pro', 'beyrouth' ) ?>
-                        </a>
-                    </li>
-                <?php endif; ?>
-                
-
                 
             </ul>
 

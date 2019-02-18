@@ -184,7 +184,7 @@ interface BEYROUTH_OPTIONS {
 
 interface BEYROUTH_DEFAULTS {
     
-    const   CUSTOM_HEADER_STYLE_TOGGLE              = 'social',
+    const   CUSTOM_HEADER_STYLE_TOGGLE              = 'parallax_vertical',
             CUSTOM_HEADER_HEIGHT_CALC               = 'percent',
             CUSTOM_HEADER_HEIGHT_PCT                = 100,
             CUSTOM_HEADER_HEIGHT_PCT_MBL            = 40,
