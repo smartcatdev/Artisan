@@ -7,7 +7,7 @@
  * @package Beyrouth
  */
 
-$edd_gallery = get_post_meta( get_the_ID(), BEYROUTH_META::EDD_GALLERY, true );
+$beyrouth_edd_gallery = get_post_meta( get_the_ID(), BEYROUTH_META::EDD_GALLERY, true );
 
 ?>
 
@@ -39,9 +39,9 @@ $edd_gallery = get_post_meta( get_the_ID(), BEYROUTH_META::EDD_GALLERY, true );
                             
                             <?php if ( function_exists( 'edd_price' ) ) : ?>
                             
-                                <?php $sale_price = get_post_meta( get_the_ID(), 'edd_sale_price', true ); ?>
+                                <?php $beyrouth_sale_price = get_post_meta( get_the_ID(), 'edd_sale_price', true ); ?>
                                 
-                                <div class="price <?php echo isset( $sale_price ) && !empty( $sale_price ) && ! edd_has_variable_prices( get_the_ID() ) ? 'on-sale' : ''; ?> ">
+                                <div class="price <?php echo isset( $beyrouth_sale_price ) && !empty( $beyrouth_sale_price ) && ! edd_has_variable_prices( get_the_ID() ) ? 'on-sale' : ''; ?> ">
                                     <?php if ( edd_has_variable_prices( get_the_ID() ) ) :
                                         echo edd_price_range( get_the_ID() );
                                     else :
@@ -88,7 +88,7 @@ $edd_gallery = get_post_meta( get_the_ID(), BEYROUTH_META::EDD_GALLERY, true );
                         
                         <?php else : ?>
 
-                            <?php beyrouth_output_edd_product_gallery( $edd_gallery ); ?>
+                            <?php beyrouth_output_edd_product_gallery( $beyrouth_edd_gallery ); ?>
                         
                         <?php endif; ?>
                         

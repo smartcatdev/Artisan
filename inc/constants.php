@@ -331,7 +331,7 @@ interface BEYROUTH_DEFAULTS {
             FOOTER_SHOW_SOCIAL                      = false,
             FOOTER_SHOW_BRANDING                    = true,
             FOOTER_SHOW_COPYRIGHT                   = true,
-            FOOTER_COPYRIGHT_TAGLINE                = '2018 Your Company',
+            FOOTER_COPYRIGHT_TAGLINE                = '2019 Your Company',
             FOOTER_BRANDING_TYPE                    = 'site_title',
             FOOTER_ALTERNATE_LOGO                   = '',
             FOOTER_ALTERNATE_LOGO_HEIGHT            = 30,

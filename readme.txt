@@ -4,7 +4,7 @@ Contributors: smartcat
 Tags: two-columns, three-columns, four-columns, right-sidebar, grid-layout, flexible-header, custom-colors, custom-header, custom-menu, custom-logo, featured-images, footer-widgets, full-width-template, theme-options, threaded-comments, translation-ready, e-commerce, blog, entertainment
 
 Requires at least: 4.9
-Tested up to: 5.0.3
+Tested up to: 5.1.0
 Stable tag: 1.0.3
 Requires PHP: 5.4
 License: GNU General Public License v2 or later

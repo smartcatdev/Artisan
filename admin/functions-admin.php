@@ -17,21 +17,6 @@ function beyrouth_load_admin_css( $hook ) {
         wp_enqueue_style( 'beyrouth-admin-css', get_template_directory_uri() . '/assets/admin/css/docs.css', array(), BEYROUTH_VERSION );
     }
     
-    // Uploader JS & CSS
-    if ( in_array( $hook, array( 'post.php', 'post-new.php') ) ) {
-        
-        $screen = get_current_screen();
-
-        if( is_object( $screen ) && 'download' == $screen->post_type ) {
-
-            wp_enqueue_style( 'beyrouth-media-uploader', get_template_directory_uri() . '/assets/admin/css/uploader.css', array(), BEYROUTH_VERSION );
-            wp_enqueue_script( 'beyrouth-media-uploader', get_template_directory_uri() . '/assets/lib/wp-media-uploader/wp_media_uploader.js', array( 'jquery' ), BEYROUTH_VERSION );
-            wp_enqueue_script( 'beyrouth-admin-script', get_template_directory_uri() . '/assets/admin/js/admin.js', array( 'jquery', 'jquery-ui-sortable', 'beyrouth-media-uploader' ), BEYROUTH_VERSION );
-            
-        }
-        
-    }
-    
 }
 
 function beyrouth_docs_partial( $file ) {
